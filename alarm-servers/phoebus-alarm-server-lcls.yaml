@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: phoebus-alarm-server-lcls
+spec:
+  serviceName: phoebus-alarm-server-lcls
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phoebus-alarm-server-lcls
+  template:
+    metadata:
+      labels:
+        app: phoebus-alarm-server-lcls
+    spec:
+      containers:
+        - args:
+            - start-server
+            - nalms-LCLS
+            - /tmp/nalms/LCLS.xml
+          env:
+            - name: ALARM_IOC
+              value: "false"
+            - name: ALARM_SERVER_PROPERTIES
+              value: /opt/nalms/config/alarm_server.properties
+            - name: EPICS_CA_AUTO_ADDR_LIST
+              value: "NO"
+            - name: EPICS_CA_ADDR_LIST
+              value: "134.79.151.21:5068"
+            - name: EPICS_CA_REPEATER_PORT
+              value: "5065"
+            - name: EPICS_CA_SERVER_PORT
+              value: "5064"
+            - name: KAFKA_BOOTSTRAP
+              value: nalms-kafka-cluster-kafka-bootstrap.kafka:9092
+          image: tidacs/nalms-phoebus-alarm-server:v1.1
+          name: phoebus-alarm-server-lcls
+          resources: {}
+          volumeMounts:
+            - mountPath: /tmp/nalms/LCLS.xml
+              subPath: LCLS.xml
+              name: nalms-configmap-1
+            - mountPath: /opt/nalms/config/alarm_server.properties
+              subPath: alarm_server.properties
+              name: nalms-configmap-2
+      restartPolicy: Always
+      volumes:
+        - name: nalms-configmap-1
+          configMap:
+            name: nalms-lcls-configmap
+            items:
+            - key: LCLS.xml
+              path: LCLS.xml
+        - name: nalms-configmap-2
+          configMap:
+            name: nalms-lcls-configmap
+            items:
+            - key: alarm_server.properties
+              path: alarm_server.properties

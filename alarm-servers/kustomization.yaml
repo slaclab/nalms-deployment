@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - phoebus-alarm-server-lcls.yaml
+  - phoebus-alarm-server-cryo.yaml
+
+configMapGenerator:
+- name: nalms-lcls-configmap
+  files:
+  - config/alarm_server.properties
+  - config/LCLS.xml
+
+- name: nalms-cryo-configmap
+  files:
+  - config/alarm_server.properties
+  - config/CRYO.xml
