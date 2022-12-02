@@ -14,6 +14,11 @@
             <latching>True</latching>
             <delay>0</delay>
          </pv>
+         <pv name="VPIO:IN20:111:VRAW">                                                                                                     
+            <description>Voltage</description>                                                                                              
+            <latching>True</latching>                                                                                                       
+            <delay>0</delay>                                                                                                                
+         </pv>              
       </component>
    </component>
 </config>
