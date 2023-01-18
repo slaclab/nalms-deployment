@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: phoebus-alarm-logger-lcls
+  labels:
+    app: phoebus-alarm-logger
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: phoebus-alarm-logger
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: phoebus-alarm-logger
+    spec:
+      containers:
+        - args:
+            - start-logger
+            - nalms-LCLS
+            - '-es_sniff'
+            - 'false'
+          env:
+            - name: ALARM_LOGGER_PROPERTIES
+              value: /opt/nalms/config/alarm_logger.properties
+            - name: BOOTSTRAP_SERVERS
+              value: nalms-kafka-cluster-kafka-bootstrap.kafka:9092
+            - name: ES_HOST
+              value: alarm-history-es-internal-http.elastic-system
+            - name: ES_PORT
+              value: "9200"
+            - name: ELASTICSEARCH_HOST
+              value: alarm-history-es-internal-http.elastic-system
+            - name: ELASTICSEARCH_PORT
+              value: "9200"
+          image: tidacs/nalms-phoebus-alarm-logger:v1.2
+          name: phoebus-alarm-logger
+          resources: {}
+          volumeMounts:
+            - mountPath: /opt/nalms/config/alarm_logger.properties
+              subPath: alarm_logger.properties
+              name: nalms-configmap-1
+      restartPolicy: Always
+      volumes:
+        - name: nalms-configmap-1
+          configMap:
+            name: nalms-logger-configmap
+            items:
+            - key: alarm_logger.properties
+              path: alarm_logger.properties
+status: {}
+
