@@ -18,7 +18,7 @@
          </pv>
          <pv name="BCS:IN20:1:TIUPERM">
             <enabled>true</enabled>
-            <latching>false</latching>
+            <latching>true</latching>
          </pv>
          <pv name="BCS:IN20:1:LSSPERM">
             <enabled>true</enabled>
