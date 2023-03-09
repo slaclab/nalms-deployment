@@ -9319,6 +9319,10 @@
                   <enabled>true</enabled>
                   <latching>false</latching>
                </pv>
+               <pv name="ROOM:LI30:1:OUTSIDE_TEMP">
+                  <enabled>true</enabled>
+                  <latching>false</latching>
+               </pv>
                <pv name="RADM:FEES:90:Alarm2">
                   <enabled>true</enabled>
                   <latching>false</latching>
