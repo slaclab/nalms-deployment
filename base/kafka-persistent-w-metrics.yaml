@@ -65,6 +65,8 @@ spec:
       inter.broker.protocol.version: '3.4'
       auto.create.topics.enable: true
       delete.topic.enabled: true
+      log.cleanup.policy: compact
+      log.cleaner.max.compaction.lag.ms: 1000
     storage:
       type: persistent-claim
       size: 5Gi
