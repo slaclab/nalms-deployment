@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<config name="bcs">
+<config name="LCLS">
    <component name="BCS">
       <guidance>BCS, Group Name: ALL:BCS:1, SummaryPV: ALL:BCS:1:STATSUMY,</guidance>
       <component name="GLOBAL">
