@@ -1,0 +1,140 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.kompose.service: phoebus-alrm-srv-bcs
+    app.kubernetes.io/name: phoebus-alarm-server
+    app.kubernetes.io/part-of: nalms
+  name: phoebus-alrm-srv-bcs-headless
+spec:
+  clusterIP: None
+  selector:
+    io.kompose.service: phoebus-alrm-srv-bcs
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  creationTimestamp:
+  labels:
+    io.kompose.service: phoebus-alrm-srv-bcs
+    app.kubernetes.io/name: phoebus-alarm-server
+    app.kubernetes.io/part-of: nalms
+  name: phoebus-alrm-srv-bcs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: phoebus-alrm-srv-bcs
+  serviceName: phoebus-alrm-srv-bcs
+  template:
+    metadata:
+      creationTimestamp:
+      labels:
+        io.kompose.service: phoebus-alrm-srv-bcs
+        app.kubernetes.io/name: phoebus-alarm-server
+        app.kubernetes.io/part-of: nalms
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: app.kubernetes.io/name
+                      operator: In
+                      values: [phoebus-alarm-server]
+                topologyKey: kubernetes.io/hostname
+      initContainers:
+        - name: initialize-pv-config
+          image: busybox:1.36
+          volumeMounts:
+            - mountPath: /tmp/nalms-cm/bcsAlhConfig.xml
+              name: nalms-configmap-1
+              subPath: bcsAlhConfig.xml
+            - mountPath: /tmp/nalms
+              name: nalms-pv-config
+          command: [sh, -c, cp /tmp/nalms-cm/* /tmp/nalms/]
+        - name: wait-on-kafka
+          image: busybox:1.36
+          command:
+            - sh
+            - -c
+            - until nslookup nalms-kafka-bootstrap.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local;
+              do echo waiting for nalms-kafka-bootstrap; sleep 1; done
+      containers:
+        - args: [start-server, bcs, /tmp/nalms/bcsAlhConfig.xml]
+          env:
+            - name: ALARM_IOC
+              value: 'false'
+            - name: ALARM_SERVER_PROPERTIES
+              value: /opt/nalms/config/alarm_server.properties
+            - name: EPICS_CA_AUTO_ADDR_LIST
+              value: 'NO'
+            - name: EPICS_CA_ADDR_LIST
+              value: 134.79.151.21:5068
+            - name: EPICS_CA_REPEATER_PORT
+              value: '5065'
+            - name: EPICS_CA_SERVER_PORT
+              value: '5064'
+            - name: KAFKA_BOOTSTRAP
+              value: nalms-kafka-bootstrap:9092
+          image: tidacs/nalms-phoebus-alarm-server:v1.4
+          name: phoebus-alrm-srv-bcs
+          resources: {}
+          volumeMounts:
+            - mountPath: /tmp/nalms
+              name: nalms-pv-config
+            - mountPath: /opt/nalms/config/alarm_server.properties
+              name: nalms-configmap-2
+              subPath: alarm_server.properties
+        - name: git-sync
+          image: tidacs/nalms-config-sync:v1.0
+          args: [--wait=600]
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: git-pv-config
+              mountPath: /tmp/pv-config
+            - name: nalms-pv-config
+              mountPath: /tmp/nalms
+          env:
+            - name: GIT_SYNC_REPO
+              value: https://github.com/slaclab/nalms-deployment.git
+            - name: GIT_SYNC_BRANCH
+              value: main
+            - name: GIT_SYNC_ROOT
+              value: /tmp/pv-config
+            - name: GIT_SYNC_PERIOD
+              value: 10m
+            - name: GIT_SYNC_ONE_TIME
+              value: 'false'
+            - name: GIT_SYNC_DEPTH
+              value: '1'
+            - name: GIT_SYNC_SPARSE_CHECKOUT_FILE
+              value: /tmp/sparse-checkout
+            - name: GIT_SYNC_EXECHOOK_COMMAND
+              value: /usr/bin/update_reload_pv_config.sh
+            - name: PV_CONFIG_FILE
+              value: bcsAlhConfig.xml
+            - name: TOPIC_NAME
+              value: bcs
+      restartPolicy: Always
+      volumes:
+        - configMap:
+            items:
+              - key: bcsAlhConfig.xml
+                path: bcsAlhConfig.xml
+            name: nalms-bcs-configmap
+          name: nalms-configmap-1
+        - configMap:
+            items:
+              - key: alarm_server.properties
+                path: alarm_server.properties
+            name: nalms-alarm-server-configmap
+          name: nalms-configmap-2
+        - name: nalms-pv-config
+          emptyDir:
+            sizeLimit: 1Mi
+        - name: git-pv-config
+          emptyDir: {}

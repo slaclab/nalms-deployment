@@ -1,0 +1,59 @@
+---
+apiVersion: elasticsearch.k8s.elastic.co/v1
+kind: Elasticsearch
+metadata:
+  name: nalms
+  namespace: nalms-prod
+spec:
+  version: 8.6.1
+  http:
+    service:
+      spec:
+        type: LoadBalancer
+    tls:
+      selfSignedCertificate:
+        disabled: true
+  podDisruptionBudget:
+    spec:
+      minAvailable: 2
+      selector:
+        matchLabels:
+          elasticsearch.k8s.elastic.co/cluster-name: nalms
+  nodeSets:
+    - name: master
+      count: 3
+      config:
+        xpack.ml.enabled: true
+        node.store.allow_mmap: false
+        xpack.security.authc:
+          anonymous:
+            username: anonymous
+            roles: superuser
+            authz_exception: false
+      podTemplate:
+        spec:
+          initContainers:
+            - name: sysctl
+              securityContext:
+                privileged: true
+              command: [sh, -c, sysctl -w vm.max_map_count=262144]
+          containers:
+            - name: elasticsearch
+              env:
+                - name: ES_JAVA_OPTS
+                  value: -Xms2g -Xmx2g
+              resources:
+                requests:
+                  memory: 2Gi
+                  cpu: 0.5
+                limits:
+                  memory: 4Gi
+                  cpu: 1
+      volumeClaimTemplates:
+        - metadata:
+            name: elasticsearch-data
+          spec:
+            accessModes: [ReadWriteOnce]
+            resources:
+              requests:
+                storage: 5Gi

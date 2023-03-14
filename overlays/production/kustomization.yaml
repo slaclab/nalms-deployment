@@ -1,0 +1,7 @@
+---
+bases: [../../base]
+namespace: nalms-prod
+patchesStrategicMerge:
+  - ns.yaml
+  - eck-es-nodes.yaml
+  - strimzi-cluster-operator-0.33.0.yaml
