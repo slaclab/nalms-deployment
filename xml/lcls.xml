@@ -7407,10 +7407,6 @@
                   <enabled>true</enabled>
                   <latching>false</latching>
                </pv>
-               <pv name="DSC:BSY0:2:ILK2">
-                  <enabled>true</enabled>
-                  <latching>false</latching>
-               </pv>
             </component>
          </component>
          <component name="BSY Cu">
