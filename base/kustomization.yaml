@@ -4,17 +4,16 @@ commonLabels:
   app: nalms
 resources:
   - ns.yaml
-  - eck-es-nodes.yaml
   - kafka-persistent-w-metrics.yaml
-  - phoebus-alrm-srv-bcs.yaml
-  - phoebus-alrm-log-bcs.yaml
+  - phoebus-alrm-srv-lcls.yaml
+  - phoebus-alrm-srv-cryo.yaml
 configMapGenerator:
-  - name: nalms-bcs-configmap
-    files: [xml/bcsAlhConfig.xml]
+  - name: nalms-lcls-configmap
+    files: [xml/lcls.xml]
+  - name: nalms-cryo-configmap
+    files: [xml/cryo.xml]
   - name: nalms-alarm-server-configmap
     files: [alarm-properties/alarm_server.properties]
-  - name: nalms-alarm-logger-configmap
-    files: [alarm-properties/alarm_logger.properties]
 generatorOptions:
   labels:
     app.kubernetes.io/part-of: phoebus

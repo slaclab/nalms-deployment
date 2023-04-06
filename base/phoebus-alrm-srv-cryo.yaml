@@ -3,56 +3,44 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    io.kompose.service: phoebus-alrm-srv-lcls
+    io.kompose.service: phoebus-alrm-srv-cryo
     app.kubernetes.io/name: phoebus-alarm-server
     app.kubernetes.io/part-of: nalms
-  name: phoebus-alrm-srv-lcls-headless
+  name: phoebus-alrm-srv-cryo-headless
 spec:
   clusterIP: None
   selector:
-    io.kompose.service: phoebus-alrm-srv-lcls
+    io.kompose.service: phoebus-alrm-srv-cryo
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   creationTimestamp:
   labels:
-    io.kompose.service: phoebus-alrm-srv-lcls
+    io.kompose.service: phoebus-alrm-srv-cryo
     app.kubernetes.io/name: phoebus-alarm-server
     app.kubernetes.io/part-of: nalms
-  name: phoebus-alrm-srv-lcls
+  name: phoebus-alrm-srv-cryo
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      io.kompose.service: phoebus-alrm-srv-lcls
-  serviceName: phoebus-alrm-srv-lcls
+      io.kompose.service: phoebus-alrm-srv-cryo
+  serviceName: phoebus-alrm-srv-cryo
   template:
     metadata:
       creationTimestamp:
       labels:
-        io.kompose.service: phoebus-alrm-srv-lcls
+        io.kompose.service: phoebus-alrm-srv-cryo
         app.kubernetes.io/name: phoebus-alarm-server
         app.kubernetes.io/part-of: nalms
     spec:
-      affinity:
-        podAntiAffinity:
-          preferredDuringSchedulingIgnoredDuringExecution:
-            - weight: 100
-              podAffinityTerm:
-                labelSelector:
-                  matchExpressions:
-                    - key: app.kubernetes.io/name
-                      operator: In
-                      values: [phoebus-alarm-server]
-                topologyKey: kubernetes.io/hostname
       initContainers:
         - name: initialize-pv-config
           image: busybox:1.36
           volumeMounts:
-            - mountPath: /tmp/nalms-cm/lcls.xml
+            - mountPath: /tmp/nalms-cm/cryo.xml
               name: nalms-configmap-1
-              subPath: lcls.xml
+              subPath: cryo.xml
             - mountPath: /tmp/nalms
               name: nalms-pv-config
           command: [sh, -c, cp /tmp/nalms-cm/* /tmp/nalms/]
@@ -64,7 +52,7 @@ spec:
             - until nslookup nalms-kafka-bootstrap.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local;
               do echo waiting for nalms-kafka-bootstrap; sleep 1; done
       containers:
-        - args: [start-server, LCLS, /tmp/nalms/lcls.xml]
+        - args: [start-server, CRYO, /tmp/nalms/cryo.xml]
           env:
             - name: ALARM_IOC
               value: 'false'
@@ -81,7 +69,7 @@ spec:
             - name: KAFKA_BOOTSTRAP
               value: nalms-kafka-bootstrap:9092
           image: tidacs/nalms-phoebus-alarm-server:v1.4
-          name: phoebus-alrm-srv-lcls
+          name: phoebus-alrm-srv-cryo
           resources: {}
           volumeMounts:
             - mountPath: /tmp/nalms
@@ -116,16 +104,16 @@ spec:
             - name: GIT_SYNC_EXECHOOK_COMMAND
               value: /usr/bin/update_reload_pv_config.sh
             - name: PV_CONFIG_FILE
-              value: lcls.xml
+              value: cryo.xml
             - name: TOPIC_NAME
-              value: LCLS
+              value: CRYO
       restartPolicy: Always
       volumes:
         - configMap:
             items:
-              - key: lcls.xml
-                path: lcls.xml
-            name: nalms-lcls-configmap
+              - key: cryo.xml
+                path: cryo.xml
+            name: nalms-cryo-configmap
           name: nalms-configmap-1
         - configMap:
             items:
