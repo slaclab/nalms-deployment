@@ -32,7 +32,7 @@ spec:
                 topologyKey: kubernetes.io/hostname
       containers:
         - name: loki-alrm-log-lcls
-          image: tidacs/nalms-loki-alarm-logger:v1.3
+          image: tidacs/nalms-loki-alarm-logger:v1.4
           args:
             - --topics
             - LCLS,LCLSCommand
