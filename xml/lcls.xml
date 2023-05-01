@@ -7052,14 +7052,6 @@
                <enabled>true</enabled>
                <latching>false</latching>
             </pv>
-            <pv name="LBLM:BPN23:739:A:FLT_LATCH">
-               <enabled>true</enabled>
-               <latching>false</latching>
-            </pv>
-            <pv name="LBLM:BPN25:739:A:FLT_LATCH">
-               <enabled>true</enabled>
-               <latching>false</latching>
-            </pv>
             <pv name="LBLM:BPN27:739:A:FLT_LATCH">
                <enabled>true</enabled>
                <latching>false</latching>
