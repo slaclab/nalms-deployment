@@ -4,160 +4,220 @@
       <component name="CP0 Common">
          <pv name="SIOC:CP00:CR01:STATSUMY">
             <description>CP0 CTRL IOC - Write permission control</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="SIOC:CP00:CR02:STATSUMY">
             <description>CP0 CTRL IOC - Support calculations</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
       </component>
       <component name="CP1 Utilties">
          <pv name="SIOC:CP08:CR01:STATSUMY">
             <description>CP1 CTRL - Utilities IOC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="PLC:CP08:CR01:ALARM2_B0">
             <description>CP1 CTRL - Utilities PLC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <component name="Instrument Air">
             <pv name="UTIL:CP01:4:ALARM_STATUS">
                <description>CP1 UTIL - Instrument air summary</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:IA1:ALM">
                <description>CP1 UTIL IAIR - CPT-82061 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:IA1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTE:CP08:IA2:ALM">
                <description>CP1 UTIL IAIR - CTE-82061 Temp High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTE:CP08:IA2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Ghe Storage">
             <pv name="CPT:CP01:ST1:ALM">
                <description>CP1 UTIL STOR - CPT-11010 Clean Line Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST2:ALM">
                <description>CP1 UTIL STOR - CPT-11010 Clean Line Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST3:ALM">
                <description>CP1 UTIL STOR - CPT-11100 Tank 1 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST4:ALM">
                <description>CP1 UTIL STOR - CPT-11100 Tank 1 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST5:ALM">
                <description>CP1 UTIL STOR - CPT-11200 Tank 2 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST6:ALM">
                <description>CP1 UTIL STOR - CPT-11200 Tank 2 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST6:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST7:ALM">
                <description>CP1 UTIL STOR - CPT-11300 Tank 3 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST7:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST8:ALM">
                <description>CP1 UTIL STOR - CPT-11300 Tank 3 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST8:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST9:ALM">
                <description>CP1 UTIL STOR - CPT-11400 Tank 4 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST9:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST10:ALM">
                <description>CP1 UTIL STOR - CPT-11400 Tank 4 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST10:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST11:ALM">
                <description>CP1 UTIL STOR - CPT-11500 Tank 5 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST11:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST12:ALM">
                <description>CP1 UTIL STOR - CPT-11500 Tank 5 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST12:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST13:ALM">
                <description>CP1 UTIL STOR - CPT-11600 Tank 6 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST13:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP01:ST14:ALM">
                <description>CP1 UTIL STOR - CPT-11600 Tank 6 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP01:ST14:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="LN2 Dewar">
             <pv name="UTIL:CP01:0:ALARM_STATUS">
                <description>CP1 UTIL - LN2 dewar</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:LN1:ALM">
                <description>CP1 UTIL DWR - CPT-88101 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:LN2:ALM">
                <description>CP1 UTIL DWR - CPT-88101 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:LN3:ALM">
                <description>CP1 UTIL DWR - CPT-88201 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:LN4:ALM">
                <description>CP1 UTIL DWR - CPT-88201 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP08:LN5:ALM">
                <description>CP1 UTIL DWR - CLT-88101 Level Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP08:LN6:ALM">
                <description>CP1 UTIL DWR - CLT-88101 Level High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN6:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP08:LN7:ALM">
                <description>CP1 UTIL DWR - CLT-88201 Level Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN7:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP08:LN8:ALM">
                <description>CP1 UTIL DWR - CLT-88101 Level High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:LN8:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
       </component>
@@ -165,231 +225,319 @@
          <component name="Guard Vacuum">
             <pv name="UTIL:CP01:3:ALARM_STATUS">
                <description>CP1 AUX - Guard Vacuum</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:GV1:ALM">
                <description>CP1 AUX GVAC - CPT-84000 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:GV1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:GV2:ALM">
                <description>CP1 AUX GVAC - C2PT-84030 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:GV2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:GV3:ALM">
                <description>CP1 AUX GVAC - C2PT-84020 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:GV3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:GV4:ALM">
                <description>CP1 AUX GVAC - C1PT-84010 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:GV4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP08:GV5:ALM">
                <description>CP1 AUX GVAC - C1PT-84004 Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP08:GV5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Analyzers">
             <pv name="UTIL:CP01:2:ALARM_STATUS">
                <description>CP1 AUX - Analyzers</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL1:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23821 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL2:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23822 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL3:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23823 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP22:ANL4:ALM">
                <description>CP1 AUX ANLZ - C2-ANL-23821 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL5:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23801 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL6:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23802 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL6:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL7:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23803 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL7:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL8:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23804 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL8:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL9:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23805 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL9:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP12:ANL10:ALM">
                <description>CP1 AUX ANLZ - C1-ANL-23806 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL10:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP22:ANL11:ALM">
                <description>CP1 AUX ANLZ - C2-ANL-23801 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL11:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP22:ANL12:ALM">
                <description>CP1 AUX ANLZ - C2-ANL-23802 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL12:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CANL:CP22:ANL13:ALM">
                <description>CP1 AUX ANLZ - C2-ANL-23803 High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CANL:CP12:ANL13:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Recovery System">
             <pv name="UTIL:CP01:1:ALARM_STATUS">
                <description>CP1 AUX - Recovery System</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC1:ALM">
                <description>CP1 AUX RCVR - CPT-71010 RC Suction Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC2:ALM">
                <description>CP1 AUX RCVR - CPT-71010 RC Suction Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC3:ALM">
                <description>CP1 AUX RCVR - CPT-71030 RC Discharge Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC4:ALM">
                <description>CP1 AUX RCVR - CPT-71030 RC Discharge Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC5:ALM">
                <description>CP1 AUX RCVR - CPT-11034 Purifier Dis. Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC6:ALM">
                <description>CP1 AUX RCVR - CPT-11035 Dirty Line Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC6:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:RC7:ALM">
                <description>CP1 AUX RCVR - CPT-11035 Dirty Line Press. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:RC7:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Purifier 1">
             <pv name="UTIL:CP01:6:ALARM_STATUS">
                <description>CP1 AUX - Purifier 1</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS11:ALM">
                <description>CP1 AUX PUR1 - TP-73112 Temp. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS11:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS12:ALM">
                <description>CP1 AUX PUR1 - TP-73162 Temp. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS12:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS13:ALM">
                <description>CP1 AUX PUR1 - TP-73131 Temp. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS13:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS14:ALM">
                <description>CP1 AUX PUR1 - CTP-73124H Temp. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS14:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP07:ADS15:ALM">
                <description>CP1 AUX PUR1 - PDT-731 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS15:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP07:ADS16:ALM">
                <description>CP1 AUX PUR1 - LT-73162 Level Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS16:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:ADS17:ALM">
                <description>CP1 AUX PUR1 - CPT-73154 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS17:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Purifier 2">
             <pv name="UTIL:CP01:7:ALARM_STATUS">
                <description>CP1 AUX - Purifier 2</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS21:ALM">
                <description>CP1 AUX PUR2 - TP-73212 Temp.High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS21:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS22:ALM">
                <description>CP1 AUX PUR2 - TP-73262 Temp. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS22:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS23:ALM">
                <description>CP1 AUX PUR2 - TP-73231 Temp. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS23:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP07:ADS24:ALM">
                <description>CP1 AUX PUR2 - CTP-73224H Temp. High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS24:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP07:ADS25:ALM">
                <description>CP1 AUX PUR2 - PDT-732 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS25:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CLT:CP07:ADS26:ALM">
                <description>CP1 AUX PUR2 - LT-73262 Level Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP07:ADS26:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP07:ADS27:ALM">
                <description>CP1 AUX PUR2 - CPT-73254 Press. Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP07:ADS27:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
       </component>
@@ -397,997 +545,1387 @@
          <component name="Warm compressor 1">
             <pv name="SIOC:CP12:CR01:STATSUMY">
                <description>CP1 WCMP - Warm compressor 1 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:11:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR01:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 1 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:11:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:11:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 1</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:11:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:11:ALM">
                <description>CP1 WCMP1 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:11:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:21:ALM">
                <description>CP1 WCMP1 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:21:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:31:ALM">
                <description>CP1 WCMP1 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:31:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:41:ALM">
                <description>CP1 WCMP1 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:41:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:51:ALM">
                <description>CP1 WCMP1 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:51:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:61:ALM">
                <description>CP1 WCMP1 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:61:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:71:ALM">
                <description>CP1 WCMP1 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:71:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:81:ALM">
                <description>CP1 WCMP1 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:81:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:91:ALM">
                <description>CP1 WCMP1 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:91:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:101:ALM">
                <description>CP1 WCMP1 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:101:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:111:ALM">
                <description>CP1 WCMP1 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:111:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:121:ALM">
                <description>CP1 WCMP1 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:121:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:131:ALM">
                <description>CP1 WCMP1 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:131:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:141:ALM">
                <description>CP1 WCMP1 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:141:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:151:ALM">
                <description>CP1 WCMP1 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:151:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:161:ALM">
                <description>CP1 WCMP1 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:161:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:171:ALM">
                <description>CP1 WCMP1 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:171:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:181:ALM">
                <description>CP1 WCMP1 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:181:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:191:ALM">
                <description>CP1 WCMP1 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:191:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:201:ALM">
                <description>CP1 WCMP1 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:201:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:211:ALM">
                <description>CP1 WCMP1 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:211:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:221:ALM">
                <description>CP1 WCMP1 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:221:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:231:ALM">
                <description>CP1 WCMP1 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:231:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Warm compressor 2">
             <pv name="SIOC:CP12:CR02:STATSUMY">
                <description>CP1 WCMP - Warm compressor 2 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:12:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR02:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 2 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:12:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:12:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 2</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:12:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:12:ALM">
                <description>CP1 WCMP2 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:12:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:22:ALM">
                <description>CP1 WCMP2 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:22:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:32:ALM">
                <description>CP1 WCMP2 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:32:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:42:ALM">
                <description>CP1 WCMP2 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:42:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:52:ALM">
                <description>CP1 WCMP2 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:52:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:62:ALM">
                <description>CP1 WCMP2 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:62:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:72:ALM">
                <description>CP1 WCMP2 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:72:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:82:ALM">
                <description>CP1 WCMP2 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:82:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:92:ALM">
                <description>CP1 WCMP2 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:92:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:102:ALM">
                <description>CP1 WCMP2 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:102:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:112:ALM">
                <description>CP1 WCMP2 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:112:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:122:ALM">
                <description>CP1 WCMP2 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:122:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:132:ALM">
                <description>CP1 WCMP2 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:132:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:142:ALM">
                <description>CP1 WCMP2 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:142:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:152:ALM">
                <description>CP1 WCMP2 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:152:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:162:ALM">
                <description>CP1 WCMP2 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:162:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:172:ALM">
                <description>CP1 WCMP2 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:172:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:182:ALM">
                <description>CP1 WCMP2 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:182:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:192:ALM">
                <description>CP1 WCMP2 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:192:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:202:ALM">
                <description>CP1 WCMP2 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:202:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:212:ALM">
                <description>CP1 WCMP2 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:212:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:222:ALM">
                <description>CP1 WCMP2 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:222:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:232:ALM">
                <description>CP1 WCMP2 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:232:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Warm compressor 3">
             <pv name="SIOC:CP12:CR03:STATSUMY">
                <description>CP1 WCMP - Warm compressor 3 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:13:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR03:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 3 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:13:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:14:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 3</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:13:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:13:ALM">
                <description>CP1 WCMP3 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:13:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:23:ALM">
                <description>CP1 WCMP3 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:23:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:33:ALM">
                <description>CP1 WCMP3 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:33:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:43:ALM">
                <description>CP1 WCMP3 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:43:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:53:ALM">
                <description>CP1 WCMP3 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:53:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:63:ALM">
                <description>CP1 WCMP3 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:63:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:73:ALM">
                <description>CP1 WCMP3 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:73:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:83:ALM">
                <description>CP1 WCMP3 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:83:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:93:ALM">
                <description>CP1 WCMP3 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:93:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:103:ALM">
                <description>CP1 WCMP3 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:103:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:113:ALM">
                <description>CP1 WCMP3 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:113:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:123:ALM">
                <description>CP1 WCMP3 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:123:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:133:ALM">
                <description>CP1 WCMP3 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:133:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:143:ALM">
                <description>CP1 WCMP3 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:143:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:153:ALM">
                <description>CP1 WCMP3 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:153:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:163:ALM">
                <description>CP1 WCMP3 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:163:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:173:ALM">
                <description>CP1 WCMP3 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:173:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:183:ALM">
                <description>CP1 WCMP3 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:183:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:193:ALM">
                <description>CP1 WCMP3 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:193:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:203:ALM">
                <description>CP1 WCMP3 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:203:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:213:ALM">
                <description>CP1 WCMP3 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:213:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:223:ALM">
                <description>CP1 WCMP3 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:223:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:233:ALM">
                <description>CP1 WCMP3 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:233:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Warm compressor 4">
             <pv name="SIOC:CP12:CR04:STATSUMY">
                <description>CP1 WCMP - Warm compressor 4 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:14:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR04:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 4 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:14:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:14:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 4</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:14:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:14:ALM">
                <description>CP1 WCMP4 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:14:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:24:ALM">
                <description>CP1 WCMP4 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:24:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:34:ALM">
                <description>CP1 WCMP4 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:34:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:44:ALM">
                <description>CP1 WCMP4 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:44:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:54:ALM">
                <description>CP1 WCMP4 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:54:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:64:ALM">
                <description>CP1 WCMP4 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:64:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:74:ALM">
                <description>CP1 WCMP4 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:74:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:84:ALM">
                <description>CP1 WCMP4 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:84:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:94:ALM">
                <description>CP1 WCMP4 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:94:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:104:ALM">
                <description>CP1 WCMP4 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:104:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:114:ALM">
                <description>CP1 WCMP4 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:114:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:124:ALM">
                <description>CP1 WCMP4 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:124:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:134:ALM">
                <description>CP1 WCMP4 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:134:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:144:ALM">
                <description>CP1 WCMP4 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:144:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:154:ALM">
                <description>CP1 WCMP4 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:154:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:164:ALM">
                <description>CP1 WCMP4 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:164:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:174:ALM">
                <description>CP1 WCMP4 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:174:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:184:ALM">
                <description>CP1 WCMP4 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:184:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:194:ALM">
                <description>CP1 WCMP4 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:194:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:204:ALM">
                <description>CP1 WCMP4 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:204:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:214:ALM">
                <description>CP1 WCMP4 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:214:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:224:ALM">
                <description>CP1 WCMP4 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:224:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:234:ALM">
                <description>CP1 WCMP4 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:234:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Warm compressor 5">
             <pv name="SIOC:CP12:CR05:STATSUMY">
                <description>CP1 WCMP - Warm compressor 5 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:15:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR05:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 5 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:15:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:15:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 5</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:15:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:15:ALM">
                <description>CP1 WCMP5 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:15:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:25:ALM">
                <description>CP1 WCMP5 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:25:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:35:ALM">
                <description>CP1 WCMP5 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:35:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:45:ALM">
                <description>CP1 WCMP5 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:45:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:55:ALM">
                <description>CP1 WCMP5 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:55:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:65:ALM">
                <description>CP1 WCMP5 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:65:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:75:ALM">
                <description>CP1 WCMP5 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:75:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:85:ALM">
                <description>CP1 WCMP5 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:85:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:95:ALM">
                <description>CP1 WCMP5 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:95:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:105:ALM">
                <description>CP1 WCMP5 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:105:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:115:ALM">
                <description>CP1 WCMP5 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:115:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:125:ALM">
                <description>CP1 WCMP5 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:125:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:135:ALM">
                <description>CP1 WCMP5 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:135:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:145:ALM">
                <description>CP1 WCMP5 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:145:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:155:ALM">
                <description>CP1 WCMP5 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:155:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:165:ALM">
                <description>CP1 WCMP5 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:165:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:175:ALM">
                <description>CP1 WCMP5 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:175:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:185:ALM">
                <description>CP1 WCMP5 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:185:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:195:ALM">
                <description>CP1 WCMP5 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:195:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:205:ALM">
                <description>CP1 WCMP5 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:205:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:215:ALM">
                <description>CP1 WCMP5 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:215:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:225:ALM">
                <description>CP1 WCMP5 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:225:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:235:ALM">
                <description>CP1 WCMP5 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:235:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Warm compressor 6">
             <pv name="SIOC:CP12:CR06:STATSUMY">
                <description>CP1 WCMP - Warm compressor 6 IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:16:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR06:ALARM2_B0">
                <description>CP1 WCMP - Warm compressor 6 PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:16:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="WCMP:CP12:16:C100_ALARM">
                <description>CP1 WCMP - Warm compressor 6</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>WCMP:CP12:16:CMD_OUT==1</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:16:ALM">
                <description>CP1 WCMP6 - Suction Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:16:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:26:ALM">
                <description>CP1 WCMP6 - Suction Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:26:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:36:ALM">
                <description>CP1 WCMP6 - Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:36:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:46:ALM">
                <description>CP1 WCMP6 - Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:46:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:56:ALM">
                <description>CP1 WCMP6 - Cooling Water Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:56:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:66:ALM">
                <description>CP1 WCMP6 - Oil Cooling DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:66:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:76:ALM">
                <description>CP1 WCMP6 - Oil Cooling DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:76:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:86:ALM">
                <description>CP1 WCMP6 - Bearing Oil DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:86:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:96:ALM">
                <description>CP1 WCMP6 - Bearing Oil DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:96:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPD:CP12:106:ALM">
                <description>CP1 WCMP6 - Bearing Oil FLT21139 DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPD:CP12:106:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:116:ALM">
                <description>CP1 WCMP6 - Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:116:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:126:ALM">
                <description>CP1 WCMP6 - Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:126:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:136:ALM">
                <description>CP1 WCMP6 - Skid Discharge Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:136:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:146:ALM">
                <description>CP1 WCMP6 - Oil Pump Suction Temperature Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:146:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:156:ALM">
                <description>CP1 WCMP6 - Oil Pump Suction Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:156:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:166:ALM">
                <description>CP1 WCMP6 - Cooling Water Inlet Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:166:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CDT:CP12:176:ALM">
                <description>CP1 WCMP6 - Cooling Water Delta Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CDT:CP12:176:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CJTM:CP12:186:ALM">
                <description>CP1 WCMP6 - CMP211 Motor Current High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CJTM:CP12:186:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:196:ALM">
                <description>CP1 WCMP6 - Motor Winding #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:196:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:206:ALM">
                <description>CP1 WCMP6 - Motor Winding #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:206:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:216:ALM">
                <description>CP1 WCMP6 - Motor Winding #3 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:216:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:226:ALM">
                <description>CP1 WCMP6 - Motor Bearing #1 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:226:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:236:ALM">
                <description>CP1 WCMP6 - Motor Bearing #2 Temperature High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CTP:CP12:236:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
          <component name="Gas Management">
             <pv name="SIOC:CP12:CR07:STATSUMY">
                <description>CP1 WCMP - Gas management IOC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="PLC:CP12:CR07:ALARM2_B0">
                <description>CP1 WCMP - Gas management PLC</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter/>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G1:ALM">
                <description>CP1 GMGMT - LP Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G1:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G2:ALM">
                <description>CP1 GMGMT - MP Pressure Ratio Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G2:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G3:ALM">
                <description>CP1 GMGMT - MP Compressor DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G3:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G4:ALM">
                <description>CP1 GMGMT - HP Compressor PR/DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G4:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G5:ALM">
                <description>CP1 GMGMT - HP Compressor DP Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G5:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPV:CP12:G6:ALM">
                <description>CP1 GMGMT - HP-MPH Bypass Valve PID Controller</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G6:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:G7:ALM">
                <description>CP1 GMGMT - Final Oil Removal Discharge Temp Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G7:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:G8:ALM">
                <description>CP1 GMGMT - Final Oil Removal Discharge Temp High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G8:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:G9:ALM">
                <description>CP1 GMGMT - MP Cold Box Return Temp Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G9:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CTP:CP12:G10:ALM">
                <description>CP1 GMGMT - LP Cold Box Return Temp Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G10:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G11:ALM">
                <description>CP1 GMGMT - HP Discharge Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G11:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G12:ALM">
                <description>CP1 GMGMT - HP Discharge Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G12:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G13:ALM">
                <description>CP1 GMGMT - MPH Line Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G13:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G14:ALM">
                <description>CP1 GMGMT - MPH Line Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G14:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G15:ALM">
                <description>CP1 GMGMT - MP Line Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G15:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G16:ALM">
                <description>CP1 GMGMT - MP Line Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G16:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G17:ALM">
                <description>CP1 GMGMT - LP Line Pressure Low</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G17:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPT:CP12:G18:ALM">
                <description>CP1 GMGMT - LP Line Pressure High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPT:CP12:G18:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
             <pv name="CPDT:CP12:G19:ALM">
                <description>CP1 GMGMT - Carbon Bed DP High</description>
-               <latching>true</latching>
+               <latching>True</latching>
                <delay>0</delay>
+               <filter>CPDT:CP12:G19:ALM_DIS == 0</filter>
+               <guidance/>
             </pv>
          </component>
       </component>
       <component name="CP1 4K Coldbox">
          <pv name="SIOC:CP12:CR08:STATSUMY">
             <description>CP1 4KCB - 4K coldbox IOC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="PLC:CP12:CR08:ALARM2_B0">
             <description>CP1 4KCB - 4K coldbox PLC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CCBX:CP12:0:TRIP">
             <description>CP1 4KCB - Overview Trip</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CLT:CP12:2510:LOLO">
             <description>CP1 4KCB - LN2 Pre-cooling</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CCBX:CP12:0:ADS_ALM">
             <description>CP1 4KCB - 80K adsorbers</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CTBN:CP12:1:TRIP">
             <description>CP1 4KCB - Turbine 1</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CTBN:CP12:2:TRIP">
             <description>CP1 4KCB - Turbine 2</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CTBN:CP12:3:TRIP">
             <description>CP1 4KCB - Turbine 3</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CTBN:CP12:4:TRIP">
             <description>CP1 4KCB - Turbine 4</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CVAC:CP12:3610:TRIP">
             <description>CP1 4LCB - Upper coldbox vacuum</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CVAC:CP12:3630:TRIP">
             <description>CP1 4KCB - Lower coldbox vacuum</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
       </component>
       <component name="CP1 2K Coldbox">
          <pv name="SIOC:CP14:CR01:STATSUMY">
             <description>CP1 2KCB - 2K coldbox IOC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="PLC:CP14:CR01:ALARM2_B0">
             <description>CP1 2KCB - 2K coldbox PLC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CCBX:CP14:0:TRIP">
             <description>CP1 2KCB - 2K coldbox</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CVAC:CP14:1010:TRIP">
             <description>CP1 2KCB - 2K coldbox vacuum</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
       </component>
       <component name="CP1 Distribution">
          <pv name="SIOC:DB01:CR01:STATSUMY">
             <description>CP1 DIST - Distribution box 1 IOC</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="CRYO:IFBX:STATSUMY">
             <description>CP1 DIST - Interface box</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
          <pv name="WATR:BSYA:100:COMP_AIR_P">
             <description>CP1 DIST - Helium guard</description>
-            <latching>true</latching>
+            <latching>True</latching>
             <delay>0</delay>
+            <filter/>
+            <guidance/>
          </pv>
       </component>
    </component>
