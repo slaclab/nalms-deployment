@@ -31,6 +31,13 @@ def csvtoxml(infile, outfile, cname):
                     stack.pop()
                 sel = ET.SubElement(stack[level], 'component')
                 sel.set('name', row['Branch'])
+                if row['Description']:
+                    desc = ET.SubElement(sel, 'description')
+                    desc.text = row['Description']
+                if row['Guidance']:
+                    guidance = ET.SubElement(sel, 'guidance')
+                    details = ET.SubElement(guidance, 'details')
+                    details.text = row['Guidance']
                 stack.append(sel)
             else:
                 pv = ET.SubElement(stack[-1], 'pv')
@@ -38,9 +45,16 @@ def csvtoxml(infile, outfile, cname):
                 desc = ET.SubElement(pv, 'description')
                 desc.text = row['Description']
                 latch = ET.SubElement(pv, 'latching')
-                latch.text = row['Latch'].capitalize()
+                latch.text = row['Latch']
                 delay = ET.SubElement(pv, 'delay')
                 delay.text = row['Delay']
+                if row['Filter']:
+                    filt = ET.SubElement(pv, 'filter')
+                    filt.text = row['Filter']
+                if row['Guidance']:
+                    guidance = ET.SubElement(sel, 'guidance')
+                    details = ET.SubElement(guidance, 'details')
+                    details.text = row['Guidance']
 
         xm = minidom.parseString(ET.tostring(config, encoding='utf-8',
                                              xml_declaration=True,
