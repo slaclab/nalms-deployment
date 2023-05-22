@@ -6188,7 +6188,7 @@
                <count>0</count>
             </pv>
             <pv name="CTE:CM30:2503:B2:TEMP">
-               <description>LINAC CM30 - Temperature</>
+               <description>LINAC CM30 - Temperature</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
