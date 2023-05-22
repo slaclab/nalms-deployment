@@ -48,6 +48,9 @@ def csvtoxml(infile, outfile, cname):
                 latch.text = row['Latch']
                 delay = ET.SubElement(pv, 'delay')
                 delay.text = row['Delay']
+                if row['Count']:
+                    filt = ET.SubElement(pv, 'count')
+                    filt.text = row['Count']
                 if row['Filter']:
                     filt = ET.SubElement(pv, 'filter')
                     filt.text = row['Filter']
