@@ -164,7 +164,7 @@
 2,Warm compressor 3,CRYO:CP1:WCMP3:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP3:STATSUMY
 ,,SIOC:CP12:CR03:STATSUMY,CP1 WCMP3 - Warm compressor 3 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
 ,,PLC:CP12:CR03:ALARM2_B0,CP1 WCMP3 - Warm compressor 3 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
-,,WCMP:CP12:14:C100_ALARM,CP1 WCMP3 - Warm compressor 3,TRUE,0,0,,
+,,WCMP:CP12:13:C100_ALARM,CP1 WCMP3 - Warm compressor 3,TRUE,0,0,,
 ,,CPT:CP12:13:ALM,CP1 WCMP3 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:23:ALM,CP1 WCMP3 - Suction Pressure High,TRUE,0,0,,
 ,,CPT:CP12:33:ALM,CP1 WCMP3 - Discharge Pressure Low,TRUE,0,0,,
@@ -394,7 +394,6 @@
 ,,PLC:CP14:CR01:ALARM2_B0,CP1 2KCB - 2K coldbox PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
 ,,CCBX:CP14:0:TRIP,CP1 2KCB - 2K coldbox,TRUE,0,0,,
 ,,CVAC:CP14:1010:TRIP,CP1 2KCB - 2K coldbox vacuum,TRUE,0,0,,
-,,CCBX:CP14:0:TRIP,CP1 2KCB - CC5 Discharge Pressure High,TRUE,0,0,,
 ,,CCBX:CP14:1:TRIP,CP1 2KCB - CC1 Drive Fault,TRUE,0,0,,
 ,,CCBX:CP14:2:TRIP,CP1 2KCB - CC2 Drive Fault,TRUE,0,0,,
 ,,CCBX:CP14:3:TRIP,CP1 2KCB - CC3 Drive Fault,TRUE,0,0,,
@@ -476,7 +475,7 @@
 2,Warm compressor 3,CRYO:CP2:WCMP3:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP2:WCMP3:STATSUMY
 ,,SIOC:CP22:CR03:STATSUMY,CP2 WCMP3 - Warm compressor 3 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
 ,,PLC:CP22:CR03:ALARM2_B0,CP2 WCMP3 - Warm compressor 3 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
-,,WCMP:CP22:14:C100_ALARM,CP2 WCMP3 - Warm compressor 3,TRUE,0,0,,
+,,WCMP:CP22:13:C100_ALARM,CP2 WCMP3 - Warm compressor 3,TRUE,0,0,,
 ,,CPT:CP22:13:ALM,CP2 WCMP3 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP22:23:ALM,CP2 WCMP3 - Suction Pressure High,TRUE,0,0,,
 ,,CPT:CP22:33:ALM,CP2 WCMP3 - Discharge Pressure Low,TRUE,0,0,,
@@ -701,14 +700,11 @@
 ,,CST:CP22:2483:HIHI,CP2 4KCB - Alarm:T4 speed high,TRUE,0,0,,
 ,,CVAC:CP22:3610:TRIP,CP2 4LCB - Upper coldbox vacuum,TRUE,0,0,,
 ,,CVAC:CP22:3630:TRIP,CP2 4KCB - Lower coldbox vacuum,TRUE,0,0,,
-,,CVAC:CP22:3610:TRIP,CP2 4LCB - Upper coldbox vacuum,TRUE,0,0,,
-,,CVAC:CP22:3630:TRIP,CP2 4KCB - Lower coldbox vacuum,TRUE,0,0,,
 1,CP2 2K Coldbox,CRYO:CP2:2KCB:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP2:2KCB:STATSUMY
 ,,SIOC:CP24:CR01:STATSUMY,CP2 2KCB - 2K coldbox IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
 ,,PLC:CP24:CR01:ALARM2_B0,CP2 2KCB - 2K coldbox PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
 ,,CCBX:CP24:0:TRIP,CP2 2KCB - 2K coldbox,TRUE,0,0,,
 ,,CVAC:CP24:1010:TRIP,CP2 2KCB - 2K coldbox vacuum,TRUE,0,0,,
-,,CCBX:CP24:0:TRIP,CP2 2KCB - CC5 Discharge Pressure High,TRUE,0,0,,
 ,,CCBX:CP24:1:TRIP,CP2 2KCB - CC1 Drive Fault,TRUE,0,0,,
 ,,CCBX:CP24:2:TRIP,CP2 2KCB - CC2 Drive Fault,TRUE,0,0,,
 ,,CCBX:CP24:3:TRIP,CP2 2KCB - CC3 Drive Fault,TRUE,0,0,,
