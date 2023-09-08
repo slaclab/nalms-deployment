@@ -68,7 +68,7 @@ spec:
               value: '5064'
             - name: KAFKA_BOOTSTRAP
               value: nalms-kafka-bootstrap:9092
-          image: tidacs/nalms-phoebus-alarm-server:v1.4
+          image: tidacs/nalms-phoebus-alarm-server:v1.5
           name: phoebus-alrm-srv-cryo
           resources: {}
           volumeMounts:
