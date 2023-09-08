@@ -4614,42 +4614,6 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM01:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM01:2502:B1:TEMP">
-               <description>LINAC CM01 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM01:2503:B2:TEMP">
-               <description>LINAC CM01 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM01:0:CM_AVG_TEMP">
-               <description>LINAC CM01 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM01:0:LBR_TEMP">
-               <description>LINAC CM01 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM01:0:LBBL_TEMP">
-               <description>LINAC CM01 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM01:0:LFL_TEMP">
-               <description>LINAC CM01 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM01:3001:PVJT:IMOD">
                <description>LINAC CM01 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -4680,59 +4644,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM01:2602:US:PRESS">
-               <description>LINAC CM01 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM01:2302:DS:PRESS">
-               <description>LINAC CM01 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM02">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM02:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM02:2502:B1:TEMP">
-               <description>LINAC CM02 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM02:2503:B2:TEMP">
-               <description>LINAC CM02 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM02:0:CM_AVG_TEMP">
-               <description>LINAC CM02 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM02:0:LBR_TEMP">
-               <description>LINAC CM02 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM02:0:LBBL_TEMP">
-               <description>LINAC CM02 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM02:0:LFL_TEMP">
-               <description>LINAC CM02 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM02:3001:PVJT:IMOD">
                <description>LINAC CM02 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -4763,59 +4679,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM02:2602:US:PRESS">
-               <description>LINAC CM02 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM02:2302:DS:PRESS">
-               <description>LINAC CM02 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM03">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM03:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM03:2502:B1:TEMP">
-               <description>LINAC CM03 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM03:2503:B2:TEMP">
-               <description>LINAC CM03 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM03:0:CM_AVG_TEMP">
-               <description>LINAC CM03 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM03:0:LBR_TEMP">
-               <description>LINAC CM03 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM03:0:LBBL_TEMP">
-               <description>LINAC CM03 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM03:0:LFL_TEMP">
-               <description>LINAC CM03 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM03:3001:PVJT:IMOD">
                <description>LINAC CM03 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -4846,59 +4714,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM03:2602:US:PRESS">
-               <description>LINAC CM03 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM03:2302:DS:PRESS">
-               <description>LINAC CM03 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="HL01">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CMH1:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CMH1:2502:B1:TEMP">
-               <description>LINAC CMH1 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CMH1:2503:B2:TEMP">
-               <description>LINAC CMH1 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:HL01:0:CM_AVG_TEMP">
-               <description>LINAC CMH1 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL01:0:LBR_TEMP">
-               <description>LINAC CMH1 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL01:0:LBBL_TEMP">
-               <description>LINAC CMH1 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL01:0:LFL_TEMP">
-               <description>LINAC CMH1 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:HL01:3001:PVJT:IMOD">
                <description>LINAC CMH1 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -4929,59 +4749,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CMH1:2602:US:PRESS">
-               <description>LINAC CMH1 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CMH1:2302:DS:PRESS">
-               <description>LINAC CMH1 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="HL02">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CMH2:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CMH2:2502:B1:TEMP">
-               <description>LINAC CMH2 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CMH2:2503:B2:TEMP">
-               <description>LINAC CMH2 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:HL02:0:CM_AVG_TEMP">
-               <description>LINAC CMH2 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL02:0:LBR_TEMP">
-               <description>LINAC CMH2 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL02:0:LBBL_TEMP">
-               <description>LINAC CMH2 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:HL02:0:LFL_TEMP">
-               <description>LINAC CMH2 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:HL02:3001:PVJT:IMOD">
                <description>LINAC CMH2 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5012,59 +4784,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CMH2:2602:US:PRESS">
-               <description>LINAC CMH2 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CMH2:2302:DS:PRESS">
-               <description>LINAC CMH2 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM04">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM04:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM04:2502:B1:TEMP">
-               <description>LINAC CM04 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM04:2503:B2:TEMP">
-               <description>LINAC CM04 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM04:0:CM_AVG_TEMP">
-               <description>LINAC CM04 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM04:0:LBR_TEMP">
-               <description>LINAC CM04 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM04:0:LBBL_TEMP">
-               <description>LINAC CM04 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM04:0:LFL_TEMP">
-               <description>LINAC CM04 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM04:3001:PVJT:IMOD">
                <description>LINAC CM04 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5095,59 +4819,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM04:2602:US:PRESS">
-               <description>LINAC CM04 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM04:2302:DS:PRESS">
-               <description>LINAC CM04 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM05">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM05:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM05:2502:B1:TEMP">
-               <description>LINAC CM05 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM05:2503:B2:TEMP">
-               <description>LINAC CM05 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM05:0:CM_AVG_TEMP">
-               <description>LINAC CM05 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM05:0:LBR_TEMP">
-               <description>LINAC CM05 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM05:0:LBBL_TEMP">
-               <description>LINAC CM05 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM05:0:LFL_TEMP">
-               <description>LINAC CM05 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM05:3001:PVJT:IMOD">
                <description>LINAC CM05 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5178,59 +4854,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM05:2602:US:PRESS">
-               <description>LINAC CM05 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM05:2302:DS:PRESS">
-               <description>LINAC CM05 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM06">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM06:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM06:2502:B1:TEMP">
-               <description>LINAC CM06 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM06:2503:B2:TEMP">
-               <description>LINAC CM06 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM06:0:CM_AVG_TEMP">
-               <description>LINAC CM06 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM06:0:LBR_TEMP">
-               <description>LINAC CM06 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM06:0:LBBL_TEMP">
-               <description>LINAC CM06 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM06:0:LFL_TEMP">
-               <description>LINAC CM06 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM06:3001:PVJT:IMOD">
                <description>LINAC CM06 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5261,59 +4889,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM06:2602:US:PRESS">
-               <description>LINAC CM06 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM06:2302:DS:PRESS">
-               <description>LINAC CM06 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM07">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM07:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM07:2502:B1:TEMP">
-               <description>LINAC CM07 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM07:2503:B2:TEMP">
-               <description>LINAC CM07 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM07:0:CM_AVG_TEMP">
-               <description>LINAC CM07 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM07:0:LBR_TEMP">
-               <description>LINAC CM07 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM07:0:LBBL_TEMP">
-               <description>LINAC CM07 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM07:0:LFL_TEMP">
-               <description>LINAC CM07 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM07:3001:PVJT:IMOD">
                <description>LINAC CM07 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5344,59 +4924,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM07:2602:US:PRESS">
-               <description>LINAC CM07 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM07:2302:DS:PRESS">
-               <description>LINAC CM07 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM08">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM08:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM08:2502:B1:TEMP">
-               <description>LINAC CM08 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM08:2503:B2:TEMP">
-               <description>LINAC CM08 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM08:0:CM_AVG_TEMP">
-               <description>LINAC CM08 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM08:0:LBR_TEMP">
-               <description>LINAC CM08 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM08:0:LBBL_TEMP">
-               <description>LINAC CM08 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM08:0:LFL_TEMP">
-               <description>LINAC CM08 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM08:3001:PVJT:IMOD">
                <description>LINAC CM08 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5427,59 +4959,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM08:2602:US:PRESS">
-               <description>LINAC CM08 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM08:2302:DS:PRESS">
-               <description>LINAC CM08 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM09">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM09:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM09:2502:B1:TEMP">
-               <description>LINAC CM09 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM09:2503:B2:TEMP">
-               <description>LINAC CM09 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM09:0:CM_AVG_TEMP">
-               <description>LINAC CM09 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM09:0:LBR_TEMP">
-               <description>LINAC CM09 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM09:0:LBBL_TEMP">
-               <description>LINAC CM09 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM09:0:LFL_TEMP">
-               <description>LINAC CM09 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM09:3001:PVJT:IMOD">
                <description>LINAC CM09 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5510,59 +4994,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM09:2602:US:PRESS">
-               <description>LINAC CM09 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM09:2302:DS:PRESS">
-               <description>LINAC CM09 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM10">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM10:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM10:2502:B1:TEMP">
-               <description>LINAC CM10 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM10:2503:B2:TEMP">
-               <description>LINAC CM10 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM10:0:CM_AVG_TEMP">
-               <description>LINAC CM10 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM10:0:LBR_TEMP">
-               <description>LINAC CM10 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM10:0:LBBL_TEMP">
-               <description>LINAC CM10 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM10:0:LFL_TEMP">
-               <description>LINAC CM10 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM10:3001:PVJT:IMOD">
                <description>LINAC CM10 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5593,59 +5029,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM10:2602:US:PRESS">
-               <description>LINAC CM10 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM10:2302:DS:PRESS">
-               <description>LINAC CM10 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM11">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM11:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM11:2502:B1:TEMP">
-               <description>LINAC CM11 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM11:2503:B2:TEMP">
-               <description>LINAC CM11 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM11:0:CM_AVG_TEMP">
-               <description>LINAC CM11 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM11:0:LBR_TEMP">
-               <description>LINAC CM11 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM11:0:LBBL_TEMP">
-               <description>LINAC CM11 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM11:0:LFL_TEMP">
-               <description>LINAC CM11 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM11:3001:PVJT:IMOD">
                <description>LINAC CM11 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5676,59 +5064,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM11:2602:US:PRESS">
-               <description>LINAC CM11 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM11:2302:DS:PRESS">
-               <description>LINAC CM11 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM12">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM12:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM12:2502:B1:TEMP">
-               <description>LINAC CM12 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM12:2503:B2:TEMP">
-               <description>LINAC CM12 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM12:0:CM_AVG_TEMP">
-               <description>LINAC CM12 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM12:0:LBR_TEMP">
-               <description>LINAC CM12 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM12:0:LBBL_TEMP">
-               <description>LINAC CM12 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM12:0:LFL_TEMP">
-               <description>LINAC CM12 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM12:3001:PVJT:IMOD">
                <description>LINAC CM12 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5759,59 +5099,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM12:2602:US:PRESS">
-               <description>LINAC CM12 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM12:2302:DS:PRESS">
-               <description>LINAC CM12 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM13">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM13:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM13:2502:B1:TEMP">
-               <description>LINAC CM13 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM13:2503:B2:TEMP">
-               <description>LINAC CM13 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM13:0:CM_AVG_TEMP">
-               <description>LINAC CM13 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM13:0:LBR_TEMP">
-               <description>LINAC CM13 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM13:0:LBBL_TEMP">
-               <description>LINAC CM13 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM13:0:LFL_TEMP">
-               <description>LINAC CM13 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM13:3001:PVJT:IMOD">
                <description>LINAC CM13 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5842,59 +5134,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM13:2602:US:PRESS">
-               <description>LINAC CM13 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM13:2302:DS:PRESS">
-               <description>LINAC CM13 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM14">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM14:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM14:2502:B1:TEMP">
-               <description>LINAC CM14 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM14:2503:B2:TEMP">
-               <description>LINAC CM14 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM14:0:CM_AVG_TEMP">
-               <description>LINAC CM14 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM14:0:LBR_TEMP">
-               <description>LINAC CM14 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM14:0:LBBL_TEMP">
-               <description>LINAC CM14 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM14:0:LFL_TEMP">
-               <description>LINAC CM14 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM14:3001:PVJT:IMOD">
                <description>LINAC CM14 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -5925,59 +5169,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM14:2602:US:PRESS">
-               <description>LINAC CM14 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM14:2302:DS:PRESS">
-               <description>LINAC CM14 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM15">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM15:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM15:2502:B1:TEMP">
-               <description>LINAC CM15 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM15:2503:B2:TEMP">
-               <description>LINAC CM15 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM15:0:CM_AVG_TEMP">
-               <description>LINAC CM15 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM15:0:LBR_TEMP">
-               <description>LINAC CM15 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM15:0:LBBL_TEMP">
-               <description>LINAC CM15 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM15:0:LFL_TEMP">
-               <description>LINAC CM15 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM15:3001:PVJT:IMOD">
                <description>LINAC CM15 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6008,59 +5204,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM15:2602:US:PRESS">
-               <description>LINAC CM15 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM15:2302:DS:PRESS">
-               <description>LINAC CM15 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM16">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM16:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM16:2502:B1:TEMP">
-               <description>LINAC CM16 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM16:2503:B2:TEMP">
-               <description>LINAC CM16 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM16:0:CM_AVG_TEMP">
-               <description>LINAC CM16 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM16:0:LBR_TEMP">
-               <description>LINAC CM16 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM16:0:LBBL_TEMP">
-               <description>LINAC CM16 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM16:0:LFL_TEMP">
-               <description>LINAC CM16 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM16:3001:PVJT:IMOD">
                <description>LINAC CM16 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6091,59 +5239,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM16:2602:US:PRESS">
-               <description>LINAC CM16 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM16:2302:DS:PRESS">
-               <description>LINAC CM16 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM17">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM17:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM17:2502:B1:TEMP">
-               <description>LINAC CM17 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM17:2503:B2:TEMP">
-               <description>LINAC CM17 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM17:0:CM_AVG_TEMP">
-               <description>LINAC CM17 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM17:0:LBR_TEMP">
-               <description>LINAC CM17 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM17:0:LBBL_TEMP">
-               <description>LINAC CM17 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM17:0:LFL_TEMP">
-               <description>LINAC CM17 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM17:3001:PVJT:IMOD">
                <description>LINAC CM17 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6174,59 +5274,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM17:2602:US:PRESS">
-               <description>LINAC CM17 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM17:2302:DS:PRESS">
-               <description>LINAC CM17 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM18">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM18:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM18:2502:B1:TEMP">
-               <description>LINAC CM18 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM18:2503:B2:TEMP">
-               <description>LINAC CM18 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM18:0:CM_AVG_TEMP">
-               <description>LINAC CM18 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM18:0:LBR_TEMP">
-               <description>LINAC CM18 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM18:0:LBBL_TEMP">
-               <description>LINAC CM18 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM18:0:LFL_TEMP">
-               <description>LINAC CM18 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM18:3001:PVJT:IMOD">
                <description>LINAC CM18 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6257,59 +5309,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM18:2602:US:PRESS">
-               <description>LINAC CM18 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM18:2302:DS:PRESS">
-               <description>LINAC CM18 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM19">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM19:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM19:2502:B1:TEMP">
-               <description>LINAC CM19 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM19:2503:B2:TEMP">
-               <description>LINAC CM19 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM19:0:CM_AVG_TEMP">
-               <description>LINAC CM19 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM19:0:LBR_TEMP">
-               <description>LINAC CM19 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM19:0:LBBL_TEMP">
-               <description>LINAC CM19 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM19:0:LFL_TEMP">
-               <description>LINAC CM19 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM19:3001:PVJT:IMOD">
                <description>LINAC CM19 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6340,59 +5344,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM19:2602:US:PRESS">
-               <description>LINAC CM19 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM19:2302:DS:PRESS">
-               <description>LINAC CM19 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM20">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM20:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM20:2502:B1:TEMP">
-               <description>LINAC CM20 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM20:2503:B2:TEMP">
-               <description>LINAC CM20 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM20:0:CM_AVG_TEMP">
-               <description>LINAC CM20 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM20:0:LBR_TEMP">
-               <description>LINAC CM20 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM20:0:LBBL_TEMP">
-               <description>LINAC CM20 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM20:0:LFL_TEMP">
-               <description>LINAC CM20 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM20:3001:PVJT:IMOD">
                <description>LINAC CM20 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6423,59 +5379,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM20:2602:US:PRESS">
-               <description>LINAC CM20 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM20:2302:DS:PRESS">
-               <description>LINAC CM20 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM21">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM21:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM21:2502:B1:TEMP">
-               <description>LINAC CM21 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM21:2503:B2:TEMP">
-               <description>LINAC CM21 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM21:0:CM_AVG_TEMP">
-               <description>LINAC CM21 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM21:0:LBR_TEMP">
-               <description>LINAC CM21 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM21:0:LBBL_TEMP">
-               <description>LINAC CM21 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM21:0:LFL_TEMP">
-               <description>LINAC CM21 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM21:3001:PVJT:IMOD">
                <description>LINAC CM21 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6506,59 +5414,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM21:2602:US:PRESS">
-               <description>LINAC CM21 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM21:2302:DS:PRESS">
-               <description>LINAC CM21 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM22">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM22:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM22:2502:B1:TEMP">
-               <description>LINAC CM22 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM22:2503:B2:TEMP">
-               <description>LINAC CM22 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM22:0:CM_AVG_TEMP">
-               <description>LINAC CM22 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM22:0:LBR_TEMP">
-               <description>LINAC CM22 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM22:0:LBBL_TEMP">
-               <description>LINAC CM22 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM22:0:LFL_TEMP">
-               <description>LINAC CM22 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM22:3001:PVJT:IMOD">
                <description>LINAC CM22 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6589,59 +5449,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM22:2602:US:PRESS">
-               <description>LINAC CM22 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM22:2302:DS:PRESS">
-               <description>LINAC CM22 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM23">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM23:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM23:2502:B1:TEMP">
-               <description>LINAC CM23 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM23:2503:B2:TEMP">
-               <description>LINAC CM23 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM23:0:CM_AVG_TEMP">
-               <description>LINAC CM23 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM23:0:LBR_TEMP">
-               <description>LINAC CM23 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM23:0:LBBL_TEMP">
-               <description>LINAC CM23 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM23:0:LFL_TEMP">
-               <description>LINAC CM23 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM23:3001:PVJT:IMOD">
                <description>LINAC CM23 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6672,59 +5484,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM23:2602:US:PRESS">
-               <description>LINAC CM23 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM23:2302:DS:PRESS">
-               <description>LINAC CM23 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM24">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM24:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM24:2502:B1:TEMP">
-               <description>LINAC CM24 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM24:2503:B2:TEMP">
-               <description>LINAC CM24 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM24:0:CM_AVG_TEMP">
-               <description>LINAC CM24 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM24:0:LBR_TEMP">
-               <description>LINAC CM24 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM24:0:LBBL_TEMP">
-               <description>LINAC CM24 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM24:0:LFL_TEMP">
-               <description>LINAC CM24 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM24:3001:PVJT:IMOD">
                <description>LINAC CM24 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6755,59 +5519,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM24:2602:US:PRESS">
-               <description>LINAC CM24 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM24:2302:DS:PRESS">
-               <description>LINAC CM24 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM25">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM25:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM25:2502:B1:TEMP">
-               <description>LINAC CM25 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM25:2503:B2:TEMP">
-               <description>LINAC CM25 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM25:0:CM_AVG_TEMP">
-               <description>LINAC CM25 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM25:0:LBR_TEMP">
-               <description>LINAC CM25 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM25:0:LBBL_TEMP">
-               <description>LINAC CM25 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM25:0:LFL_TEMP">
-               <description>LINAC CM25 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM25:3001:PVJT:IMOD">
                <description>LINAC CM25 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6838,59 +5554,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM25:2602:US:PRESS">
-               <description>LINAC CM25 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM25:2302:DS:PRESS">
-               <description>LINAC CM25 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM26">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM26:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM26:2502:B1:TEMP">
-               <description>LINAC CM26 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM26:2503:B2:TEMP">
-               <description>LINAC CM26 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM26:0:CM_AVG_TEMP">
-               <description>LINAC CM26 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM26:0:LBR_TEMP">
-               <description>LINAC CM26 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM26:0:LBBL_TEMP">
-               <description>LINAC CM26 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM26:0:LFL_TEMP">
-               <description>LINAC CM26 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM26:3001:PVJT:IMOD">
                <description>LINAC CM26 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -6921,59 +5589,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM26:2602:US:PRESS">
-               <description>LINAC CM26 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM26:2302:DS:PRESS">
-               <description>LINAC CM26 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM27">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM27:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM27:2502:B1:TEMP">
-               <description>LINAC CM27 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM27:2503:B2:TEMP">
-               <description>LINAC CM27 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM27:0:CM_AVG_TEMP">
-               <description>LINAC CM27 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM27:0:LBR_TEMP">
-               <description>LINAC CM27 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM27:0:LBBL_TEMP">
-               <description>LINAC CM27 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM27:0:LFL_TEMP">
-               <description>LINAC CM27 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM27:3001:PVJT:IMOD">
                <description>LINAC CM27 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7004,59 +5624,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM27:2602:US:PRESS">
-               <description>LINAC CM27 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM27:2302:DS:PRESS">
-               <description>LINAC CM27 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM28">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM28:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM28:2502:B1:TEMP">
-               <description>LINAC CM28 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM28:2503:B2:TEMP">
-               <description>LINAC CM28 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM28:0:CM_AVG_TEMP">
-               <description>LINAC CM28 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM28:0:LBR_TEMP">
-               <description>LINAC CM28 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM28:0:LBBL_TEMP">
-               <description>LINAC CM28 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM28:0:LFL_TEMP">
-               <description>LINAC CM28 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM28:3001:PVJT:IMOD">
                <description>LINAC CM28 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7087,59 +5659,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM28:2602:US:PRESS">
-               <description>LINAC CM28 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM28:2302:DS:PRESS">
-               <description>LINAC CM28 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM29">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM29:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM29:2502:B1:TEMP">
-               <description>LINAC CM29 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM29:2503:B2:TEMP">
-               <description>LINAC CM29 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM29:0:CM_AVG_TEMP">
-               <description>LINAC CM29 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM29:0:LBR_TEMP">
-               <description>LINAC CM29 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM29:0:LBBL_TEMP">
-               <description>LINAC CM29 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM29:0:LFL_TEMP">
-               <description>LINAC CM29 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM29:3001:PVJT:IMOD">
                <description>LINAC CM29 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7170,59 +5694,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM29:2602:US:PRESS">
-               <description>LINAC CM29 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM29:2302:DS:PRESS">
-               <description>LINAC CM29 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM30">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM30:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM30:2502:B1:TEMP">
-               <description>LINAC CM30 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM30:2503:B2:TEMP">
-               <description>LINAC CM30 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM30:0:CM_AVG_TEMP">
-               <description>LINAC CM30 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM30:0:LBR_TEMP">
-               <description>LINAC CM30 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM30:0:LBBL_TEMP">
-               <description>LINAC CM30 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM30:0:LFL_TEMP">
-               <description>LINAC CM30 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM30:3001:PVJT:IMOD">
                <description>LINAC CM30 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7253,59 +5729,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM30:2602:US:PRESS">
-               <description>LINAC CM30 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM30:2302:DS:PRESS">
-               <description>LINAC CM30 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM31">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM31:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM31:2502:B1:TEMP">
-               <description>LINAC CM31 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM31:2503:B2:TEMP">
-               <description>LINAC CM31 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM31:0:CM_AVG_TEMP">
-               <description>LINAC CM31 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM31:0:LBR_TEMP">
-               <description>LINAC CM31 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM31:0:LBBL_TEMP">
-               <description>LINAC CM31 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM31:0:LFL_TEMP">
-               <description>LINAC CM31 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM31:3001:PVJT:IMOD">
                <description>LINAC CM31 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7336,59 +5764,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM31:2602:US:PRESS">
-               <description>LINAC CM31 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM31:2302:DS:PRESS">
-               <description>LINAC CM31 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM32">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM32:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM32:2502:B1:TEMP">
-               <description>LINAC CM32 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM32:2503:B2:TEMP">
-               <description>LINAC CM32 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM32:0:CM_AVG_TEMP">
-               <description>LINAC CM32 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM32:0:LBR_TEMP">
-               <description>LINAC CM32 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM32:0:LBBL_TEMP">
-               <description>LINAC CM32 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM32:0:LFL_TEMP">
-               <description>LINAC CM32 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM32:3001:PVJT:IMOD">
                <description>LINAC CM32 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7419,59 +5799,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM32:2602:US:PRESS">
-               <description>LINAC CM32 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM32:2302:DS:PRESS">
-               <description>LINAC CM32 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM33">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM33:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM33:2502:B1:TEMP">
-               <description>LINAC CM33 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM33:2503:B2:TEMP">
-               <description>LINAC CM33 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM33:0:CM_AVG_TEMP">
-               <description>LINAC CM33 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM33:0:LBR_TEMP">
-               <description>LINAC CM33 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM33:0:LBBL_TEMP">
-               <description>LINAC CM33 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM33:0:LFL_TEMP">
-               <description>LINAC CM33 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM33:3001:PVJT:IMOD">
                <description>LINAC CM33 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7502,59 +5834,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM33:2602:US:PRESS">
-               <description>LINAC CM33 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM33:2302:DS:PRESS">
-               <description>LINAC CM33 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM34">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM34:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM34:2502:B1:TEMP">
-               <description>LINAC CM34 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM34:2503:B2:TEMP">
-               <description>LINAC CM34 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM34:0:CM_AVG_TEMP">
-               <description>LINAC CM34 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM34:0:LBR_TEMP">
-               <description>LINAC CM34 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM34:0:LBBL_TEMP">
-               <description>LINAC CM34 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM34:0:LFL_TEMP">
-               <description>LINAC CM34 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM34:3001:PVJT:IMOD">
                <description>LINAC CM34 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7585,59 +5869,11 @@
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CPT:CM34:2602:US:PRESS">
-               <description>LINAC CM34 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM34:2302:DS:PRESS">
-               <description>LINAC CM34 - Downstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
          </component>
          <component name="CM35">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:CM35:STATSUMY</details>
             </guidance>
-            <pv name="CTE:CM35:2502:B1:TEMP">
-               <description>LINAC CM35 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM35:2503:B2:TEMP">
-               <description>LINAC CM35 - Temperature</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CTE:CM35:0:CM_AVG_TEMP">
-               <description>LINAC CM35 - Average Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM35:0:LBR_TEMP">
-               <description>LINAC CM35 - Line B Radial Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM35:0:LBBL_TEMP">
-               <description>LINAC CM35 - Line B Bot. Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CDT:CM35:0:LFL_TEMP">
-               <description>LINAC CM35 - Line F  Long. Delta Temp</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
             <pv name="CLIC:CM35:3001:PVJT:IMOD">
                <description>LINAC CM35 - Valve Interlock Mode status</description>
                <latching>TRUE</latching>
@@ -7664,18 +5900,6 @@
             </pv>
             <pv name="CLL:CM35:2301:DS:LVL">
                <description>LINAC CM35 - Downstream Level</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM35:2602:US:PRESS">
-               <description>LINAC CM35 - Upstream Pressure</description>
-               <latching>TRUE</latching>
-               <delay>0</delay>
-               <count>0</count>
-            </pv>
-            <pv name="CPT:CM35:2302:DS:PRESS">
-               <description>LINAC CM35 - Downstream Pressure</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
