@@ -8,7 +8,7 @@
          <guidance>
             <details>Alarm handler summary PV: CRYO:CP0:CTRL:STATSUMY</details>
          </guidance>
-         <pv name="SIOC:CP00:CR01:STATSUMY">
+         <pv name="SIOC:CP00:CR01:HEARTBEAT">
             <description>CP0 CTRL IOC - Write permission control</description>
             <latching>TRUE</latching>
             <delay>0</delay>
@@ -17,7 +17,7 @@
          <guidance>
             <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
          </guidance>
-         <pv name="SIOC:CP00:CR02:STATSUMY">
+         <pv name="SIOC:CP00:CR02:HEARTBEAT">
             <description>CP0 CTRL IOC - Support calculations</description>
             <latching>TRUE</latching>
             <delay>0</delay>
@@ -31,7 +31,7 @@
          <guidance>
             <details>Alarm handler summary PV: CRYO:CP0:UTIL:STATSUMY</details>
          </guidance>
-         <pv name="SIOC:CP08:CR01:STATSUMY">
+         <pv name="SIOC:CP08:CR01:HEARTBEAT">
             <description>CP0 CTRL - Utilities IOC</description>
             <latching>TRUE</latching>
             <delay>0</delay>
@@ -514,11 +514,16 @@
                <count>0</count>
             </pv>
          </component>
+      </component>
+      <component name="Cryoplant 1">
+         <guidance>
+            <details>Alarm handler summary PV: CRYO:CP1:STATSUMY</details>
+         </guidance>
          <component name="Gas Management">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:GMGT:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR07:STATSUMY">
+            <pv name="SIOC:CP12:CR07:HEARTBEAT">
                <description>CP1 GMGT - Gas management IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -655,7 +660,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP1:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR01:STATSUMY">
+            <pv name="SIOC:CP12:CR01:HEARTBEAT">
                <description>CP1 WCMP1 - Warm compressor 1 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -822,7 +827,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP2:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR02:STATSUMY">
+            <pv name="SIOC:CP12:CR02:HEARTBEAT">
                <description>CP1 WCMP2 - Warm compressor 2 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -989,7 +994,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP3:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR03:STATSUMY">
+            <pv name="SIOC:CP12:CR03:HEARTBEAT">
                <description>CP1 WCMP3 - Warm compressor 3 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -1156,7 +1161,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP4:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR04:STATSUMY">
+            <pv name="SIOC:CP12:CR04:HEARTBEAT">
                <description>CP1 WCMP4 - Warm compressor 4 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -1323,7 +1328,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP5:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR05:STATSUMY">
+            <pv name="SIOC:CP12:CR05:HEARTBEAT">
                <description>CP1 WCMP5 - Warm compressor 5 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -1490,7 +1495,7 @@
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP1:WCMP6:STATSUMY</details>
             </guidance>
-            <pv name="SIOC:CP12:CR06:STATSUMY">
+            <pv name="SIOC:CP12:CR06:HEARTBEAT">
                <description>CP1 WCMP6 - Warm compressor 6 IOC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -1653,916 +1658,874 @@
                <count>0</count>
             </pv>
          </component>
-      </component>
-      <component name="CP1 4K Coldbox">
-         <guidance>
-            <details>Alarm handler summary PV: CRYO:CP1:4KCB:STATSUMY</details>
-         </guidance>
-         <pv name="SIOC:CP12:CR08:STATSUMY">
-            <description>CP1 4KCB - 4K coldbox IOC</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
-         <pv name="PLC:CP12:CR08:ALARM2_B0">
-            <description>CP1 4KCB - 4K coldbox PLC</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <guidance>
-            <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-         </guidance>
-         <pv name="CCBX:CP12:0:TRIP">
-            <description>CP1 4KCB - Overview Trip</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CLT:CP12:2510:LOLO">
-            <description>CP1 4KCB - LN2 Pre-cooling</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP12:0:ADS_ALM">
-            <description>CP1 4KCB - 80K adsorbers</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:1:TRIP">
-            <description>CP1 4KCB - Turbine 1</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2432:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2332:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2332:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X35:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X3X:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X3X:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:1:KTRIPHI">
-            <description>CP1 4KCB - Trip:T1 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:243X:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2332:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2436:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2435:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2433:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 no speed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2433:TRIPHI">
-            <description>CP1 4KCB - Trip:T1 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2432:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 inlet valve closed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2242:TRIPLO">
-            <description>CP1 4KCB - Trip:T1 outlet valves opening issue</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:2:TRIP">
-            <description>CP1 4KCB - Turbine 2</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2452:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2352:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2352:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X55:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X5X:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X5X:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:2:KTRIPHI">
-            <description>CP1 4KCB - Trip:T2 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:245X:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2352:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2456:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2455:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2453:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 no speed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2453:TRIPHI">
-            <description>CP1 4KCB - Trip:T2 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2452:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 inlet valve closed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2358:TRIPLO">
-            <description>CP1 4KCB - Trip:T2 outlet valve opening issue</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:3:TRIP">
-            <description>CP1 4KCB - Turbine 3</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2472:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2372:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2372:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X75:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X7X:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X7X:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:3:KTRIPHI">
-            <description>CP1 4KCB - Trip:T3 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:247X:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2372:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2476:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2475:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2473:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 no speed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2473:TRIPHI">
-            <description>CP1 4KCB - Trip:T3 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2472:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 inlet valve closed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2378:TRIPLO">
-            <description>CP1 4KCB - Trip:T3 outlet valve opening issue</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:4:TRIP">
-            <description>CP1 4KCB - Turbine 4</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2482:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2382:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2382:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X85:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X8X:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X8X:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:4:KTRIPHI">
-            <description>CP1 4KCB - Trip:T4 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:248X:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2382:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2486:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2485:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2483:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 no speed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2483:TRIPHI">
-            <description>CP1 4KCB - Trip:T4 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2482:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 inlet valve closed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPV:CP12:2388:TRIPLO">
-            <description>CP1 4KCB - Trip:T4 outlet valve opening issue</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2432:HIHI">
-            <description>CP1 4KCB - Alarm:T1 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2332:LOLO">
-            <description>CP1 4KCB - Alarm:T1 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2332:HIHI">
-            <description>CP1 4KCB - Alarm:T1 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X35:LOLO">
-            <description>CP1 4KCB - Alarm:T1 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X3X:LOLO">
-            <description>CP1 4KCB - Alarm:T1 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X3X:HIHI">
-            <description>CP1 4KCB - Alarm:T1 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:1:KHIHI">
-            <description>CP1 4KCB - Alarm:T1 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:243X:HIHI">
-            <description>CP1 4KCB - Alarm:T1 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2332:LOLO">
-            <description>CP1 4KCB - Alarm:T1 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2436:HIHI">
-            <description>CP1 4KCB - Alarm:T1 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2435:LOLO">
-            <description>CP1 4KCB - Alarm:T1 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2433:HIHI">
-            <description>CP1 4KCB - Alarm:T1 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2452:HIHI">
-            <description>CP1 4KCB - Alarm:T2 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2352:LOLO">
-            <description>CP1 4KCB - Alarm:T2 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2352:HIHI">
-            <description>CP1 4KCB - Alarm:T2 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X55:LOLO">
-            <description>CP1 4KCB - Alarm:T2 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X5X:LOLO">
-            <description>CP1 4KCB - Alarm:T2 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X5X:HIHI">
-            <description>CP1 4KCB - Alarm:T2 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:2:KHIHI">
-            <description>CP1 4KCB - Alarm:T2 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:245X:HIHI">
-            <description>CP1 4KCB - Alarm:T2 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2352:LOLO">
-            <description>CP1 4KCB - Alarm:T2 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2456:HIHI">
-            <description>CP1 4KCB - Alarm:T2 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2455:LOLO">
-            <description>CP1 4KCB - Alarm:T2 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2453:HIHI">
-            <description>CP1 4KCB - Alarm:T2 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2472:HIHI">
-            <description>CP1 4KCB - Alarm:T3 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2372:LOLO">
-            <description>CP1 4KCB - Alarm:T3 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2372:HIHI">
-            <description>CP1 4KCB - Alarm:T3 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X75:LOLO">
-            <description>CP1 4KCB - Alarm:T3 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X7X:LOLO">
-            <description>CP1 4KCB - Alarm:T3 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X7X:HIHI">
-            <description>CP1 4KCB - Alarm:T3 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:3:KHIHI">
-            <description>CP1 4KCB - Alarm:T3 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:247X:HIHI">
-            <description>CP1 4KCB - Alarm:T3 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2372:LOLO">
-            <description>CP1 4KCB - Alarm:T3 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2476:HIHI">
-            <description>CP1 4KCB - Alarm:T3 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2475:LOLO">
-            <description>CP1 4KCB - Alarm:T3 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2473:HIHI">
-            <description>CP1 4KCB - Alarm:T3 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2482:HIHI">
-            <description>CP1 4KCB - Alarm:T4 inlet pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2382:LOLO">
-            <description>CP1 4KCB - Alarm:T4 discharge pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPT:CP12:2382:HIHI">
-            <description>CP1 4KCB - Alarm:T4 discharge pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X85:LOLO">
-            <description>CP1 4KCB - Alarm:T4 bearing pressure diff low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X8X:LOLO">
-            <description>CP1 4KCB - Alarm:T4 brake pressure low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:2X8X:HIHI">
-            <description>CP1 4KCB - Alarm:T4 brake pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTBN:CP12:4:KHIHI">
-            <description>CP1 4KCB - Alarm:T4 wheel pressure high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CPDT:CP12:248X:HIHI">
-            <description>CP1 4KCB - Alarm:T4 inlet filter press drop high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTD:CP12:2382:LOLO">
-            <description>CP1 4KCB - Alarm:T4 discharge temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2486:HIHI">
-            <description>CP1 4KCB - Alarm:T4 brake temp high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CTT:CP12:2485:LOLO">
-            <description>CP1 4KCB - Alarm:T4 bearing temp low</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CST:CP12:2483:HIHI">
-            <description>CP1 4KCB - Alarm:T4 speed high</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CVAC:CP12:3610:TRIP">
-            <description>CP1 4LCB - Upper coldbox vacuum</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CVAC:CP12:3630:TRIP">
-            <description>CP1 4KCB - Lower coldbox vacuum</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-      </component>
-      <component name="CP1 2K Coldbox">
-         <guidance>
-            <details>Alarm handler summary PV: CRYO:CP1:2KCB:STATSUMY</details>
-         </guidance>
-         <pv name="SIOC:CP14:CR01:STATSUMY">
-            <description>CP1 2KCB - 2K coldbox IOC</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
-         <pv name="PLC:CP14:CR01:ALARM2_B0">
-            <description>CP1 2KCB - 2K coldbox PLC</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <guidance>
-            <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-         </guidance>
-         <pv name="CCBX:CP14:0:TRIP">
-            <description>CP1 2KCB - 2K coldbox</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CVAC:CP14:1010:TRIP">
-            <description>CP1 2KCB - 2K coldbox vacuum</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:1:TRIP">
-            <description>CP1 2KCB - CC1 Drive Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:2:TRIP">
-            <description>CP1 2KCB - CC2 Drive Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:3:TRIP">
-            <description>CP1 2KCB - CC3 Drive Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:4:TRIP">
-            <description>CP1 2KCB - CC4 Drive Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:5:TRIP">
-            <description>CP1 2KCB - CC5 Drive Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:6:TRIP">
-            <description>CP1 2KCB - CC1 Bearing Levitation Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:7:TRIP">
-            <description>CP1 2KCB - CC2 Bearing Levitation Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:8:TRIP">
-            <description>CP1 2KCB - CC3 Bearing Levitation Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:9:TRIP">
-            <description>CP1 2KCB - CC4 Bearing Levitation Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:10:TRIP">
-            <description>CP1 2KCB - CC5 Bearing Levitation Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:14:TRIP">
-            <description>CP1 2KCB - CC1 CAN Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:15:TRIP">
-            <description>CP1 2KCB - CC2 CAN Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:16:TRIP">
-            <description>CP1 2KCB - CC3 CAN Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:17:TRIP">
-            <description>CP1 2KCB - CC4 CAN Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:18:TRIP">
-            <description>CP1 2KCB - CC5 CAN Fault</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:19:TRIP">
-            <description>CP1 2KCB - CC1 Stopped Unexpectedly</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:20:TRIP">
-            <description>CP1 2KCB - CC2 Stopped Unexpectedly</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:21:TRIP">
-            <description>CP1 2KCB - CC3 Stopped Unexpectedly</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:22:TRIP">
-            <description>CP1 2KCB - CC4 Stopped Unexpectedly</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:23:TRIP">
-            <description>CP1 2KCB - CC5 Stopped Unexpectedly</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:24:TRIP">
-            <description>CP1 2KCB - Outlet Valves Not Closed</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:25:TRIP">
-            <description>CP1 2KCB - Flow Surge</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:26:TRIP">
-            <description>CP1 2KCB - Backflow to LINAC</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:27:TRIP">
-            <description>CP1 2KCB - 4KCB Trip</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CCBX:CP14:28:TRIP">
-            <description>CP1 2KCB - LINAC Trip</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
+         <component name="4K Coldbox">
+            <guidance>
+               <details>Alarm handler summary PV: CRYO:CP1:4KCB:STATSUMY</details>
+            </guidance>
+            <pv name="SIOC:CP12:CR08:HEARTBEAT">
+               <description>CP1 4KCB - 4K coldbox IOC</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
+            <pv name="PLC:CP12:CR08:ALARM2_B0">
+               <description>CP1 4KCB - 4K coldbox PLC</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <guidance>
+               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+            </guidance>
+            <pv name="CLT:CP12:2510:LOLO">
+               <description>CP1 4KCB - LN2 Pre-cooling</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP12:0:ADS_ALM">
+               <description>CP1 4KCB - 80K adsorbers</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2432:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2332:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2332:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X35:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X3X:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X3X:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:1:KTRIPHI">
+               <description>CP1 4KCB - Trip:T1 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:243X:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2332:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2436:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2435:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2433:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 no speed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2433:TRIPHI">
+               <description>CP1 4KCB - Trip:T1 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2432:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 inlet valve closed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2242:TRIPLO">
+               <description>CP1 4KCB - Trip:T1 outlet valves opening issue</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2452:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2352:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2352:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X55:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X5X:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X5X:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:2:KTRIPHI">
+               <description>CP1 4KCB - Trip:T2 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:245X:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2352:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2456:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2455:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2453:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 no speed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2453:TRIPHI">
+               <description>CP1 4KCB - Trip:T2 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2452:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 inlet valve closed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2358:TRIPLO">
+               <description>CP1 4KCB - Trip:T2 outlet valve opening issue</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2472:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2372:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2372:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X75:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X7X:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X7X:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:3:KTRIPHI">
+               <description>CP1 4KCB - Trip:T3 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:247X:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2372:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2476:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2475:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2473:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 no speed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2473:TRIPHI">
+               <description>CP1 4KCB - Trip:T3 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2472:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 inlet valve closed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2378:TRIPLO">
+               <description>CP1 4KCB - Trip:T3 outlet valve opening issue</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2482:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2382:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2382:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X85:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X8X:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X8X:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:4:KTRIPHI">
+               <description>CP1 4KCB - Trip:T4 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:248X:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2382:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2486:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2485:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2483:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 no speed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2483:TRIPHI">
+               <description>CP1 4KCB - Trip:T4 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2482:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 inlet valve closed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPV:CP12:2388:TRIPLO">
+               <description>CP1 4KCB - Trip:T4 outlet valve opening issue</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2432:HIHI">
+               <description>CP1 4KCB - Alarm:T1 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2332:LOLO">
+               <description>CP1 4KCB - Alarm:T1 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2332:HIHI">
+               <description>CP1 4KCB - Alarm:T1 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X35:LOLO">
+               <description>CP1 4KCB - Alarm:T1 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X3X:LOLO">
+               <description>CP1 4KCB - Alarm:T1 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X3X:HIHI">
+               <description>CP1 4KCB - Alarm:T1 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:1:KHIHI">
+               <description>CP1 4KCB - Alarm:T1 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:243X:HIHI">
+               <description>CP1 4KCB - Alarm:T1 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2332:LOLO">
+               <description>CP1 4KCB - Alarm:T1 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2436:HIHI">
+               <description>CP1 4KCB - Alarm:T1 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2435:LOLO">
+               <description>CP1 4KCB - Alarm:T1 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2433:HIHI">
+               <description>CP1 4KCB - Alarm:T1 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2452:HIHI">
+               <description>CP1 4KCB - Alarm:T2 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2352:LOLO">
+               <description>CP1 4KCB - Alarm:T2 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2352:HIHI">
+               <description>CP1 4KCB - Alarm:T2 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X55:LOLO">
+               <description>CP1 4KCB - Alarm:T2 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X5X:LOLO">
+               <description>CP1 4KCB - Alarm:T2 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X5X:HIHI">
+               <description>CP1 4KCB - Alarm:T2 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:2:KHIHI">
+               <description>CP1 4KCB - Alarm:T2 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:245X:HIHI">
+               <description>CP1 4KCB - Alarm:T2 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2352:LOLO">
+               <description>CP1 4KCB - Alarm:T2 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2456:HIHI">
+               <description>CP1 4KCB - Alarm:T2 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2455:LOLO">
+               <description>CP1 4KCB - Alarm:T2 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2453:HIHI">
+               <description>CP1 4KCB - Alarm:T2 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2472:HIHI">
+               <description>CP1 4KCB - Alarm:T3 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2372:LOLO">
+               <description>CP1 4KCB - Alarm:T3 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2372:HIHI">
+               <description>CP1 4KCB - Alarm:T3 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X75:LOLO">
+               <description>CP1 4KCB - Alarm:T3 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X7X:LOLO">
+               <description>CP1 4KCB - Alarm:T3 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X7X:HIHI">
+               <description>CP1 4KCB - Alarm:T3 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:3:KHIHI">
+               <description>CP1 4KCB - Alarm:T3 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:247X:HIHI">
+               <description>CP1 4KCB - Alarm:T3 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2372:LOLO">
+               <description>CP1 4KCB - Alarm:T3 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2476:HIHI">
+               <description>CP1 4KCB - Alarm:T3 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2475:LOLO">
+               <description>CP1 4KCB - Alarm:T3 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2473:HIHI">
+               <description>CP1 4KCB - Alarm:T3 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2482:HIHI">
+               <description>CP1 4KCB - Alarm:T4 inlet pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2382:LOLO">
+               <description>CP1 4KCB - Alarm:T4 discharge pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPT:CP12:2382:HIHI">
+               <description>CP1 4KCB - Alarm:T4 discharge pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X85:LOLO">
+               <description>CP1 4KCB - Alarm:T4 bearing pressure diff low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X8X:LOLO">
+               <description>CP1 4KCB - Alarm:T4 brake pressure low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:2X8X:HIHI">
+               <description>CP1 4KCB - Alarm:T4 brake pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTBN:CP12:4:KHIHI">
+               <description>CP1 4KCB - Alarm:T4 wheel pressure high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CPDT:CP12:248X:HIHI">
+               <description>CP1 4KCB - Alarm:T4 inlet filter press drop high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTD:CP12:2382:LOLO">
+               <description>CP1 4KCB - Alarm:T4 discharge temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2486:HIHI">
+               <description>CP1 4KCB - Alarm:T4 brake temp high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CTT:CP12:2485:LOLO">
+               <description>CP1 4KCB - Alarm:T4 bearing temp low</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CST:CP12:2483:HIHI">
+               <description>CP1 4KCB - Alarm:T4 speed high</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CVAC:CP12:3610:TRIP">
+               <description>CP1 4LCB - Upper coldbox vacuum</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CVAC:CP12:3630:TRIP">
+               <description>CP1 4KCB - Lower coldbox vacuum</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+         </component>
+         <component name="2K Coldbox">
+            <guidance>
+               <details>Alarm handler summary PV: CRYO:CP1:2KCB:STATSUMY</details>
+            </guidance>
+            <pv name="SIOC:CP14:CR01:HEARTBEAT">
+               <description>CP1 2KCB - 2K coldbox IOC</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
+            <pv name="PLC:CP14:CR01:ALARM2_B0">
+               <description>CP1 2KCB - 2K coldbox PLC</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <guidance>
+               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+            </guidance>
+            <pv name="CVAC:CP14:1010:TRIP">
+               <description>CP1 2KCB - 2K coldbox vacuum</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:1:TRIP">
+               <description>CP1 2KCB - CC1 Drive Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:2:TRIP">
+               <description>CP1 2KCB - CC2 Drive Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:3:TRIP">
+               <description>CP1 2KCB - CC3 Drive Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:4:TRIP">
+               <description>CP1 2KCB - CC4 Drive Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:5:TRIP">
+               <description>CP1 2KCB - CC5 Drive Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:6:TRIP">
+               <description>CP1 2KCB - CC1 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:7:TRIP">
+               <description>CP1 2KCB - CC2 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:8:TRIP">
+               <description>CP1 2KCB - CC3 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:9:TRIP">
+               <description>CP1 2KCB - CC4 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:10:TRIP">
+               <description>CP1 2KCB - CC5 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:14:TRIP">
+               <description>CP1 2KCB - CC1 CAN Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:15:TRIP">
+               <description>CP1 2KCB - CC2 CAN Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:16:TRIP">
+               <description>CP1 2KCB - CC3 CAN Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:17:TRIP">
+               <description>CP1 2KCB - CC4 CAN Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:18:TRIP">
+               <description>CP1 2KCB - CC5 CAN Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:19:TRIP">
+               <description>CP1 2KCB - CC1 Stopped Unexpectedly</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:20:TRIP">
+               <description>CP1 2KCB - CC2 Stopped Unexpectedly</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:21:TRIP">
+               <description>CP1 2KCB - CC3 Stopped Unexpectedly</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:22:TRIP">
+               <description>CP1 2KCB - CC4 Stopped Unexpectedly</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:23:TRIP">
+               <description>CP1 2KCB - CC5 Stopped Unexpectedly</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:24:TRIP">
+               <description>CP1 2KCB - Outlet Valves Not Closed</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:25:TRIP">
+               <description>CP1 2KCB - Flow Surge</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:26:TRIP">
+               <description>CP1 2KCB - Backflow to LINAC</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:28:TRIP">
+               <description>CP1 2KCB - LINAC Trip</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+         </component>
       </component>
       <component name="Distribution">
          <guidance>
@@ -2580,7 +2543,7 @@
             <delay>0</delay>
             <count>0</count>
          </pv>
-         <pv name="SIOC:DB01:CR01:STATSUMY">
+         <pv name="SIOC:DB01:CR01:HEARTBEAT">
             <description>LINAC DIST - Distribution box 1 IOC</description>
             <latching>TRUE</latching>
             <delay>0</delay>
@@ -2589,7 +2552,7 @@
          <guidance>
             <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
          </guidance>
-         <pv name="SIOC:DB02:CR01:STATSUMY">
+         <pv name="SIOC:DB02:CR01:HEARTBEAT">
             <description>LINAC DIST - Distribution box 2 IOC</description>
             <latching>TRUE</latching>
             <delay>0</delay>
