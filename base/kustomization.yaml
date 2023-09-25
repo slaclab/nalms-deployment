@@ -8,6 +8,7 @@ resources:
   - phoebus-alrm-srv-lcls.yaml
   - phoebus-alrm-srv-cryo.yaml
   - loki-alrm-log-lcls.yaml
+  - loki-alrm-log-cryo.yaml
 configMapGenerator:
   - name: nalms-lcls-configmap
     files: [xml/lcls.xml]
