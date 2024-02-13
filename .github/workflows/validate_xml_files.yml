@@ -24,7 +24,7 @@ jobs:
         pip install --upgrade pip
         pip install --requirement dev-requirements.txt
     - name: Validate Phoebus will parse xml correctly
-      run: ./xml/validate_xml_for_phoebus.py
+      run: python xml/validate_xml_for_phoebus.py
     - name: Lint with xmllint
       run: ./xml/lint_xml.sh
       shell: bash
