@@ -19,6 +19,12 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install package needed for linting an xml file
       run: sudo apt-get install libxml2-utils
+    - name: Install python requirements
+      run: |
+        pip install --upgrade pip
+        pip install --requirement dev-requirements.txt
+    - name: Validate Phoebus will parse xml correctly
+      run: python xml/validate_xml_for_phoebus.py
     - name: Lint with xmllint
-      run: ./xml/validate.sh
+      run: ./xml/lint_xml.sh
       shell: bash

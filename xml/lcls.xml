@@ -8314,12 +8314,6 @@
                         <delay>0</delay>
                         <filter>DSC:GUNB:BC01:07:PermitCfgSCFP</filter>
                      </pv>
-                     <pv name="DSC:GUNB:BC01:07:PermitCfgSC">
-                        <description/>
-                        <latching>false</latching>
-                        <delay>0</delay>
-                        <filter>DSC:GUNB:BC01:07:PermitCfgSCFP</filter>
-                     </pv>
                      <pv name="DSC:GUNB:BC01:08:Bypassed_A">
                         <description/>
                         <latching>false</latching>
@@ -8331,12 +8325,6 @@
                         <latching>false</latching>
                         <delay>0</delay>
                         <filter>DSC:GUNB:BC01:08:Bypassed_BFP</filter>
-                     </pv>
-                     <pv name="DSC:GUNB:BC01:08:PermitCfgSC">
-                        <description/>
-                        <latching>false</latching>
-                        <delay>0</delay>
-                        <filter>DSC:GUNB:BC01:08:PermitCfgSCFP</filter>
                      </pv>
                      <pv name="DSC:GUNB:BC01:08:PermitCfgSC">
                         <description/>
