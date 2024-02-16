@@ -28,12 +28,6 @@
                   <delay>0</delay>
                   <filter>BCS:MCC0:1:SBIPERMITFP</filter>
                </pv>
-               <pv name="BCS:MCC0:1:TESTONLY">
-                  <description/>
-                  <latching>false</latching>
-                  <delay>0</delay>
-                  <filter>BCS:MCC0:1:SBIPERMITFP</filter>
-               </pv>
                <pv name="BCS:IN20:1:TIUPERM">
                   <description/>
                   <latching>false</latching>
