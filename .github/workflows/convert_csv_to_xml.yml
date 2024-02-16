@@ -42,3 +42,4 @@ jobs:
         git commit -am "CI/MNT: convert csv to xml from PR# $PRNUM"
         ls -R XML/
         git push
+      continue-on-error: true
