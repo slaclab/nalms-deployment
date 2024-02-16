@@ -41,4 +41,5 @@ jobs:
         export PRNUM=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
         git commit -am "CI/MNT: convert csv to xml from PR# $PRNUM"
         git push
+      shell: bash
       continue-on-error: true
