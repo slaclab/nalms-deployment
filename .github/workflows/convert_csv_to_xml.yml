@@ -27,7 +27,7 @@ jobs:
     - name: Validate csv file is compatible with Phoebus
       run: python xml/validate_csv_for_phoebus.py xml/lcls.csv
     - name: Convert csv to xml
-      run: python xml/alarm_csv2xml.py xml/lcls.csv
+      run: python xml/alarm_csv2xml.py -i xml/lcls.csv -c LCLS
     - name: Validate Phoebus will parse xml correctly
       run: python xml/validate_xml_for_phoebus.py
     - name: Lint with xmllint
