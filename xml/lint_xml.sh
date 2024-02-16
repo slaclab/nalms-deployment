@@ -9,5 +9,5 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Temporarily run on lcls only, restore once alarm server restart is more stable
 FILE="$SCRIPT_DIR/lcls.xml"
-xmllint --noout --schema "$SCRIPT_DIR/server.xsd" "$FILE" || ((exit_code++))
+xmllint --noout --schema "$SCRIPT_DIR/phoebus-alarm-server.xsd" "$FILE" || ((exit_code++))
 exit $exit_code
