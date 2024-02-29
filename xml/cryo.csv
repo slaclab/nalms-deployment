@@ -1,11 +1,11 @@
 #Indent,Branch,PV,Description,Latch,Delay,Count,Filter,Guidance
 0,Global,CRYO:GLOBALSC:1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:GLOBALSC:1:STATSUMY
 1,Common,CRYO:CP0:CTRL:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:CTRL:STATSUMY
-,,SIOC:CP00:CR01:HEARTBEAT,CP0 CTRL IOC - Write permission control,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,SIOC:CP00:CR02:HEARTBEAT,CP0 CTRL IOC - Support calculations,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
+,,SIOC:CP00:CR01:HEARTBEAT,CP0 CTRL IOC - Write permission control,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,SIOC:CP00:CR02:HEARTBEAT,CP0 CTRL IOC - Support calculations,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
 1,Utilities,CRYO:CP0:UTIL:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:UTIL:STATSUMY
-,,SIOC:CP08:CR01:HEARTBEAT,CP0 CTRL - Utilities IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP08:CR01:ALARM2_B0,CP0 CTRL - Utilities PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP08:CR01:HEARTBEAT,CP0 CTRL - Utilities IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP08:CR01:ALARM2_B0,CP0 CTRL - Utilities PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 2,Instrument Air,CRYO:CP0:IA:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:IA:STATSUMY
 ,,UTIL:CP01:4:ALARM_STATUS,CP0 IA - Instrument air summary,TRUE,0,0,,
 ,,CPT:CP08:IA1:ALM,CP0 IA - CPT-82061 Press. Low,TRUE,0,0,,
@@ -68,7 +68,7 @@
 ,,CPT:CP07:RC6:ALM,CP0 RCVY - CPT-11035 Dirty Line Press. Low,TRUE,0,0,,
 ,,CPT:CP07:RC7:ALM,CP0 RCVY - CPT-11035 Dirty Line Press. High,TRUE,0,0,,
 2,Purifier 1,CRYO:CP0:PURF1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:PURF1:STATSUMY
-,,UTIL:CP01:6:ALARM_STATUS,CP0 PURF1 - Purifier 1 ,TRUE,0,0,,
+,,UTIL:CP01:6:ALARM_STATUS,"CP0 PURF1 - Purifier 1 ",TRUE,0,0,,
 ,,CTP:CP07:ADS11:ALM,CP0 PURF1 - TP-73112 Temp. High,TRUE,0,0,,
 ,,CTP:CP07:ADS12:ALM,CP0 PURF1 - TP-73162 Temp. Low,TRUE,0,0,,
 ,,CTP:CP07:ADS13:ALM,CP0 PURF1 - TP-73131 Temp. Low,TRUE,0,0,,
@@ -85,10 +85,10 @@
 ,,CPDT:CP07:ADS25:ALM,CP0 PURF2 - PDT-732 DP High,TRUE,0,0,,
 ,,CLT:CP07:ADS26:ALM,CP0 PURF2 - LT-73262 Level Low,TRUE,0,0,,
 ,,CPT:CP07:ADS27:ALM,CP0 PURF2 - CPT-73254 Press. Low,TRUE,0,0,,
-1,Cryoplant 1 ,CRYO:CP1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:STATSUMY
+1,"Cryoplant 1 ",CRYO:CP1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:STATSUMY
 2,Gas Management,CRYO:CP1:GMGT:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:GMGT:STATSUMY
-,,SIOC:CP12:CR07:HEARTBEAT,CP1 GMGT - Gas management IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR07:ALARM2_B0,CP1 GMGT - Gas management PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR07:HEARTBEAT,CP1 GMGT - Gas management IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR07:ALARM2_B0,CP1 GMGT - Gas management PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,CPT:CP12:G1:ALM,CP1 GMGT - LP Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:G2:ALM,CP1 GMGT - MP Pressure Ratio Low,TRUE,0,0,,
 ,,CPT:CP12:G3:ALM,CP1 GMGT - MP Compressor DP Low,TRUE,0,0,,
@@ -109,8 +109,8 @@
 ,,CPT:CP12:G18:ALM,CP1 GMGT - LP Line Pressure High,TRUE,0,0,,
 ,,CPDT:CP12:G19:ALM,CP1 GMGT - Carbon Bed DP High,TRUE,0,0,,
 2,Warm compressor 1,CRYO:CP1:WCMP1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP1:STATSUMY
-,,SIOC:CP12:CR01:HEARTBEAT,CP1 WCMP1 - Warm compressor 1 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR01:ALARM2_B0,CP1 WCMP1 - Warm compressor 1 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR01:HEARTBEAT,CP1 WCMP1 - Warm compressor 1 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR01:ALARM2_B0,CP1 WCMP1 - Warm compressor 1 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:11:C100_ALARM,CP1 WCMP1 - Warm compressor 1,TRUE,0,0,,
 ,,CPT:CP12:11:ALM,CP1 WCMP1 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:21:ALM,CP1 WCMP1 - Suction Pressure High,TRUE,0,0,,
@@ -136,8 +136,8 @@
 ,,CTP:CP12:221:ALM,CP1 WCMP1 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:231:ALM,CP1 WCMP1 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,Warm compressor 2,CRYO:CP1:WCMP2:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP2:STATSUMY
-,,SIOC:CP12:CR02:HEARTBEAT,CP1 WCMP2 - Warm compressor 2 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR02:ALARM2_B0,CP1 WCMP2 - Warm compressor 2 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR02:HEARTBEAT,CP1 WCMP2 - Warm compressor 2 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR02:ALARM2_B0,CP1 WCMP2 - Warm compressor 2 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:12:C100_ALARM,CP1 WCMP2 - Warm compressor 2,TRUE,0,0,,
 ,,CPT:CP12:12:ALM,CP1 WCMP2 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:22:ALM,CP1 WCMP2 - Suction Pressure High,TRUE,0,0,,
@@ -163,8 +163,8 @@
 ,,CTP:CP12:222:ALM,CP1 WCMP2 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:232:ALM,CP1 WCMP2 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,Warm compressor 3,CRYO:CP1:WCMP3:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP3:STATSUMY
-,,SIOC:CP12:CR03:HEARTBEAT,CP1 WCMP3 - Warm compressor 3 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR03:ALARM2_B0,CP1 WCMP3 - Warm compressor 3 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR03:HEARTBEAT,CP1 WCMP3 - Warm compressor 3 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR03:ALARM2_B0,CP1 WCMP3 - Warm compressor 3 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:13:C100_ALARM,CP1 WCMP3 - Warm compressor 3,TRUE,0,0,,
 ,,CPT:CP12:13:ALM,CP1 WCMP3 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:23:ALM,CP1 WCMP3 - Suction Pressure High,TRUE,0,0,,
@@ -190,8 +190,8 @@
 ,,CTP:CP12:223:ALM,CP1 WCMP3 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:233:ALM,CP1 WCMP3 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,Warm compressor 4,CRYO:CP1:WCMP4:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP4:STATSUMY
-,,SIOC:CP12:CR04:HEARTBEAT,CP1 WCMP4 - Warm compressor 4 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR04:ALARM2_B0,CP1 WCMP4 - Warm compressor 4 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR04:HEARTBEAT,CP1 WCMP4 - Warm compressor 4 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR04:ALARM2_B0,CP1 WCMP4 - Warm compressor 4 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:14:C100_ALARM,CP1 WCMP4 - Warm compressor 4,TRUE,0,0,,
 ,,CPT:CP12:14:ALM,CP1 WCMP4 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:24:ALM,CP1 WCMP4 - Suction Pressure High,TRUE,0,0,,
@@ -217,8 +217,8 @@
 ,,CTP:CP12:224:ALM,CP1 WCMP4 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:234:ALM,CP1 WCMP4 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,Warm compressor 5,CRYO:CP1:WCMP5:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP5:STATSUMY
-,,SIOC:CP12:CR05:HEARTBEAT,CP1 WCMP5 - Warm compressor 5 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR05:ALARM2_B0,CP1 WCMP5 - Warm compressor 5 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR05:HEARTBEAT,CP1 WCMP5 - Warm compressor 5 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR05:ALARM2_B0,CP1 WCMP5 - Warm compressor 5 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:15:C100_ALARM,CP1 WCMP5 - Warm compressor 5,TRUE,0,0,,
 ,,CPT:CP12:15:ALM,CP1 WCMP5 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:25:ALM,CP1 WCMP5 - Suction Pressure High,TRUE,0,0,,
@@ -244,8 +244,8 @@
 ,,CTP:CP12:225:ALM,CP1 WCMP5 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:235:ALM,CP1 WCMP5 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,Warm compressor 6,CRYO:CP1:WCMP6:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:WCMP6:STATSUMY
-,,SIOC:CP12:CR06:HEARTBEAT,CP1 WCMP6 - Warm compressor 6 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR06:ALARM2_B0,CP1 WCMP6 - Warm compressor 6 PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR06:HEARTBEAT,CP1 WCMP6 - Warm compressor 6 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR06:ALARM2_B0,CP1 WCMP6 - Warm compressor 6 PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,WCMP:CP12:16:C100_ALARM,CP1 WCMP6 - Warm compressor 6,TRUE,0,0,,
 ,,CPT:CP12:16:ALM,CP1 WCMP6 - Suction Pressure Low,TRUE,0,0,,
 ,,CPT:CP12:26:ALM,CP1 WCMP6 - Suction Pressure High,TRUE,0,0,,
@@ -271,8 +271,8 @@
 ,,CTP:CP12:226:ALM,CP1 WCMP6 - Motor Bearing #1 Temperature High,TRUE,0,0,,
 ,,CTP:CP12:236:ALM,CP1 WCMP6 - Motor Bearing #2 Temperature High,TRUE,0,0,,
 2,4K Coldbox,CRYO:CP1:4KCB:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:4KCB:STATSUMY
-,,SIOC:CP12:CR08:HEARTBEAT,CP1 4KCB - 4K coldbox IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP12:CR08:ALARM2_B0,CP1 4KCB - 4K coldbox PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP12:CR08:HEARTBEAT,CP1 4KCB - 4K coldbox IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP12:CR08:ALARM2_B0,CP1 4KCB - 4K coldbox PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,CLT:CP12:2510:LOLO,CP1 4KCB - LN2 Pre-cooling,TRUE,0,0,,
 ,,CCBX:CP12:0:ADS_ALM,CP1 4KCB - 80K adsorbers,TRUE,0,0,,
 ,,CPT:CP12:2432:TRIPHI,CP1 4KCB - Trip:T1 inlet pressure high,TRUE,0,0,,
@@ -386,38 +386,39 @@
 ,,CVAC:CP12:3610:TRIP,CP1 4LCB - Upper coldbox vacuum,TRUE,0,0,,
 ,,CVAC:CP12:3630:TRIP,CP1 4KCB - Lower coldbox vacuum,TRUE,0,0,,
 2,2K Coldbox,CRYO:CP1:2KCB:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP1:2KCB:STATSUMY
-,,SIOC:CP14:CR01:HEARTBEAT,CP1 2KCB - 2K coldbox IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,PLC:CP14:CR01:ALARM2_B0,CP1 2KCB - 2K coldbox PLC,TRUE,0,0,,The PLC is not communicating with the EPICS IOC. Call controls engineer. 
+,,SIOC:CP14:CR01:HEARTBEAT,CP1 2KCB - 2K coldbox IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,PLC:CP14:CR01:ALARM2_B0,CP1 2KCB - 2K coldbox PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
 ,,CVAC:CP14:1010:TRIP,CP1 2KCB - 2K coldbox vacuum,TRUE,0,0,,
-,,CCBX:CP14:1:TRIP,CP1 2KCB - CC1 Drive Fault,TRUE,0,0,,
-,,CCBX:CP14:2:TRIP,CP1 2KCB - CC2 Drive Fault,TRUE,0,0,,
-,,CCBX:CP14:3:TRIP,CP1 2KCB - CC3 Drive Fault,TRUE,0,0,,
-,,CCBX:CP14:4:TRIP,CP1 2KCB - CC4 Drive Fault,TRUE,0,0,,
-,,CCBX:CP14:5:TRIP,CP1 2KCB - CC5 Drive Fault,TRUE,0,0,,
-,,CCBX:CP14:6:TRIP,CP1 2KCB - CC1 Bearing Levitation Fault,TRUE,0,0,,
-,,CCBX:CP14:7:TRIP,CP1 2KCB - CC2 Bearing Levitation Fault,TRUE,0,0,,
-,,CCBX:CP14:8:TRIP,CP1 2KCB - CC3 Bearing Levitation Fault,TRUE,0,0,,
-,,CCBX:CP14:9:TRIP,CP1 2KCB - CC4 Bearing Levitation Fault,TRUE,0,0,,
-,,CCBX:CP14:10:TRIP,CP1 2KCB - CC5 Bearing Levitation Fault,TRUE,0,0,,
-,,CCBX:CP14:14:TRIP,CP1 2KCB - CC1 CAN Fault,TRUE,0,0,,
-,,CCBX:CP14:15:TRIP,CP1 2KCB - CC2 CAN Fault,TRUE,0,0,,
-,,CCBX:CP14:16:TRIP,CP1 2KCB - CC3 CAN Fault,TRUE,0,0,,
-,,CCBX:CP14:17:TRIP,CP1 2KCB - CC4 CAN Fault,TRUE,0,0,,
-,,CCBX:CP14:18:TRIP,CP1 2KCB - CC5 CAN Fault,TRUE,0,0,,
-,,CCBX:CP14:19:TRIP,CP1 2KCB - CC1 Stopped Unexpectedly,TRUE,0,0,,
-,,CCBX:CP14:20:TRIP,CP1 2KCB - CC2 Stopped Unexpectedly,TRUE,0,0,,
-,,CCBX:CP14:21:TRIP,CP1 2KCB - CC3 Stopped Unexpectedly,TRUE,0,0,,
-,,CCBX:CP14:22:TRIP,CP1 2KCB - CC4 Stopped Unexpectedly,TRUE,0,0,,
-,,CCBX:CP14:23:TRIP,CP1 2KCB - CC5 Stopped Unexpectedly,TRUE,0,0,,
-,,CCBX:CP14:24:TRIP,CP1 2KCB - Outlet Valves Not Closed,TRUE,0,0,,
-,,CCBX:CP14:25:TRIP,CP1 2KCB - Flow Surge,TRUE,0,0,,
-,,CCBX:CP14:26:TRIP,CP1 2KCB - Backflow to LINAC,TRUE,0,0,,
-,,CCBX:CP14:28:TRIP,CP1 2KCB - LINAC Trip,TRUE,0,0,,
+,,CCBX:CP14:1:TRIP,CP1 2KCB - CC5 Discharge Pressure High,TRUE,0,0,,
+,,CCBX:CP14:2:TRIP,CP1 2KCB - CC1 Drive Fault,TRUE,0,0,,
+,,CCBX:CP14:3:TRIP,CP1 2KCB - CC2 Drive Fault,TRUE,0,0,,
+,,CCBX:CP14:4:TRIP,CP1 2KCB - CC3 Drive Fault,TRUE,0,0,,
+,,CCBX:CP14:5:TRIP,CP1 2KCB - CC4 Drive Fault,TRUE,0,0,,
+,,CCBX:CP14:6:TRIP,CP1 2KCB - CC5 Drive Fault,TRUE,0,0,,
+,,CCBX:CP14:7:TRIP,CP1 2KCB - CC1 Bearing Levitation Fault,TRUE,0,0,,
+,,CCBX:CP14:8:TRIP,CP1 2KCB - CC2 Bearing Levitation Fault,TRUE,0,0,,
+,,CCBX:CP14:9:TRIP,CP1 2KCB - CC3 Bearing Levitation Fault,TRUE,0,0,,
+,,CCBX:CP14:10:TRIP,CP1 2KCB - CC4 Bearing Levitation Fault,TRUE,0,0,,
+,,CCBX:CP14:11:TRIP,CP1 2KCB - CC5 Bearing Levitation Fault,TRUE,0,0,,
+,,CCBX:CP14:15:TRIP,CP1 2KCB - CC1 CAN Fault,TRUE,0,0,,
+,,CCBX:CP14:16:TRIP,CP1 2KCB - CC2 CAN Fault,TRUE,0,0,,
+,,CCBX:CP14:17:TRIP,CP1 2KCB - CC3 CAN Fault,TRUE,0,0,,
+,,CCBX:CP14:18:TRIP,CP1 2KCB - CC4 CAN Fault,TRUE,0,0,,
+,,CCBX:CP14:19:TRIP,CP1 2KCB - CC5 CAN Fault,TRUE,0,0,,
+,,CCBX:CP14:20:TRIP,CP1 2KCB - CC1 Stopped Unexpectedly,TRUE,0,0,,
+,,CCBX:CP14:21:TRIP,CP1 2KCB - CC2 Stopped Unexpectedly,TRUE,0,0,,
+,,CCBX:CP14:22:TRIP,CP1 2KCB - CC3 Stopped Unexpectedly,TRUE,0,0,,
+,,CCBX:CP14:23:TRIP,CP1 2KCB - CC4 Stopped Unexpectedly,TRUE,0,0,,
+,,CCBX:CP14:24:TRIP,CP1 2KCB - CC5 Stopped Unexpectedly,TRUE,0,0,,
+,,CCBX:CP14:25:TRIP,CP1 2KCB - Outlet Valves Not Closed,TRUE,0,0,,
+,,CCBX:CP14:26:TRIP,"CP1 2KCB - Flow Surge ",TRUE,0,0,,
+,,CCBX:CP14:27:TRIP,CP1 2KCB - Backflow to LINAC,TRUE,0,0,,
+,,CCBX:CP14:28:TRIP,CP1 2KCB - 4KCB Trip,TRUE,0,0,,
+,,CCBX:CP14:29:TRIP,CP1 2KCB - LINAC Trip,TRUE,0,0,,
 1,Distribution,CRYO:CP1:DIST:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:DIST:STATSUMY
 ,,WATR:BSYA:100:COMP_AIR_P,LINAC DIST - Compressed air,TRUE,0,0,,
-,,CRYO:IFBX:STATSUMY,LINAC DIST - Interface box,TRUE,0,0,,
-,,SIOC:DB01:CR01:HEARTBEAT,LINAC DIST - Distribution box 1 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
-,,SIOC:DB02:CR01:HEARTBEAT,LINAC DIST - Distribution box 2 IOC,TRUE,0,0,,The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. 
+,,SIOC:DB01:CR01:HEARTBEAT,LINAC DIST - Distribution box 1 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,SIOC:DB02:CR01:HEARTBEAT,LINAC DIST - Distribution box 2 IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
 1,Linac,CRYO:CP0:CM:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:CM:STATSUMY
 ,,CCM:CM00:0:TRIP_STATUS,LINAC - Linac trip,TRUE,0,0,,
 2,CM01,CRYO:CP0:CM01:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:CM01:STATSUMY

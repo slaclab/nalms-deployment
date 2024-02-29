@@ -2382,144 +2382,156 @@
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:1:TRIP">
-               <description>CP1 2KCB - CC1 Drive Fault</description>
+               <description>CP1 2KCB - CC5 Discharge Pressure High</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:2:TRIP">
-               <description>CP1 2KCB - CC2 Drive Fault</description>
+               <description>CP1 2KCB - CC1 Drive Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:3:TRIP">
-               <description>CP1 2KCB - CC3 Drive Fault</description>
+               <description>CP1 2KCB - CC2 Drive Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:4:TRIP">
-               <description>CP1 2KCB - CC4 Drive Fault</description>
+               <description>CP1 2KCB - CC3 Drive Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:5:TRIP">
-               <description>CP1 2KCB - CC5 Drive Fault</description>
+               <description>CP1 2KCB - CC4 Drive Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:6:TRIP">
-               <description>CP1 2KCB - CC1 Bearing Levitation Fault</description>
+               <description>CP1 2KCB - CC5 Drive Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:7:TRIP">
-               <description>CP1 2KCB - CC2 Bearing Levitation Fault</description>
+               <description>CP1 2KCB - CC1 Bearing Levitation Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:8:TRIP">
-               <description>CP1 2KCB - CC3 Bearing Levitation Fault</description>
+               <description>CP1 2KCB - CC2 Bearing Levitation Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:9:TRIP">
-               <description>CP1 2KCB - CC4 Bearing Levitation Fault</description>
+               <description>CP1 2KCB - CC3 Bearing Levitation Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:10:TRIP">
+               <description>CP1 2KCB - CC4 Bearing Levitation Fault</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:11:TRIP">
                <description>CP1 2KCB - CC5 Bearing Levitation Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:14:TRIP">
+            <pv name="CCBX:CP14:15:TRIP">
                <description>CP1 2KCB - CC1 CAN Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:15:TRIP">
+            <pv name="CCBX:CP14:16:TRIP">
                <description>CP1 2KCB - CC2 CAN Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:16:TRIP">
+            <pv name="CCBX:CP14:17:TRIP">
                <description>CP1 2KCB - CC3 CAN Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:17:TRIP">
+            <pv name="CCBX:CP14:18:TRIP">
                <description>CP1 2KCB - CC4 CAN Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:18:TRIP">
+            <pv name="CCBX:CP14:19:TRIP">
                <description>CP1 2KCB - CC5 CAN Fault</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:19:TRIP">
+            <pv name="CCBX:CP14:20:TRIP">
                <description>CP1 2KCB - CC1 Stopped Unexpectedly</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:20:TRIP">
+            <pv name="CCBX:CP14:21:TRIP">
                <description>CP1 2KCB - CC2 Stopped Unexpectedly</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:21:TRIP">
+            <pv name="CCBX:CP14:22:TRIP">
                <description>CP1 2KCB - CC3 Stopped Unexpectedly</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:22:TRIP">
+            <pv name="CCBX:CP14:23:TRIP">
                <description>CP1 2KCB - CC4 Stopped Unexpectedly</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:23:TRIP">
+            <pv name="CCBX:CP14:24:TRIP">
                <description>CP1 2KCB - CC5 Stopped Unexpectedly</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:24:TRIP">
+            <pv name="CCBX:CP14:25:TRIP">
                <description>CP1 2KCB - Outlet Valves Not Closed</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:25:TRIP">
+            <pv name="CCBX:CP14:26:TRIP">
                <description>CP1 2KCB - Flow Surge</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
-            <pv name="CCBX:CP14:26:TRIP">
+            <pv name="CCBX:CP14:27:TRIP">
                <description>CP1 2KCB - Backflow to LINAC</description>
                <latching>TRUE</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:28:TRIP">
+               <description>CP1 2KCB - 4KCB Trip</description>
+               <latching>TRUE</latching>
+               <delay>0</delay>
+               <count>0</count>
+            </pv>
+            <pv name="CCBX:CP14:29:TRIP">
                <description>CP1 2KCB - LINAC Trip</description>
                <latching>TRUE</latching>
                <delay>0</delay>
@@ -2533,12 +2545,6 @@
          </guidance>
          <pv name="WATR:BSYA:100:COMP_AIR_P">
             <description>LINAC DIST - Compressed air</description>
-            <latching>TRUE</latching>
-            <delay>0</delay>
-            <count>0</count>
-         </pv>
-         <pv name="CRYO:IFBX:STATSUMY">
-            <description>LINAC DIST - Interface box</description>
             <latching>TRUE</latching>
             <delay>0</delay>
             <count>0</count>
