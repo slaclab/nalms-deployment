@@ -1,0 +1,11 @@
+site_name: NALMS Deployment
+repo_url: https://github.com/slaclab/nalms-deployment
+
+nav:
+  - Home: index.md
+
+theme:
+  name: 'material'
+
+plugins:
+  - search
