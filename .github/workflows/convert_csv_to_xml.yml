@@ -24,6 +24,8 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install --requirement dev-requirements.txt
+    - name: Combine subsystems into lcls.csv
+      run: python xml/build_lcls.py
     - name: Validate csv file is compatible with Phoebus
       run: python xml/validate_csv_for_phoebus.py xml/lcls.csv
     - name: Convert csv to xml
