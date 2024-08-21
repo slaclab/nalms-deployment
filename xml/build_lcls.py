@@ -17,7 +17,7 @@ def main():
         for subsystem in SUBSYSTEMS:
             #Convert subsystem name to lowercase and create name of its CSV file
             system = subsystem.lower()
-            csv_name = "subsystems/{}_converted".format(system)
+            csv_name = "xml/subsystems/{}_converted".format(system)
 
             sub_csv = open(csv_name, "r")
 
