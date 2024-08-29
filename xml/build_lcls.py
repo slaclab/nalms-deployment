@@ -33,5 +33,5 @@ def main():
     
     print("LCLS Built")
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
