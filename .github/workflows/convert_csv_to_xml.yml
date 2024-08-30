@@ -32,7 +32,7 @@ jobs:
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
         export PRNUM=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
-        git add lcls.csv
+        git add xml/lcls.csv
         git commit -am "CI/MNT: update lcls.csv from PR# $PRNUM"
         git push
       shell: bash
