@@ -27,7 +27,7 @@ jobs:
     - name: Combine subsystems into lcls.csv
       run: python xml/build_lcls.py
     - name: push csv to main
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+#      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |
         git config --global user.name github-actions
         git config --global user.email github-actions@github.com
