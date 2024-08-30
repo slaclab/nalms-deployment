@@ -4,15 +4,15 @@ SUBSYSTEMS = ["BCS", "EVNT", "GADC", "MC", "MGNT", "MPS", "NTWK", "ODM", "PPS", 
 
 def main():
 
-    lcls_filepath = "lcls.csv"
+    lcls_filepath = "xml/lcls.csv"
     if isfile(lcls_filepath):
         pass
     else:
         #Create lcls.csv if it doesn't exist already
-        open("lcls.csv", "x")
+        open(lcls_filepath, "x")
 
     print("Building LCLS")
-    with open("lcls.csv", "w") as lcls:
+    with open(lcls_filepath, "w") as lcls:
         count = 0
         for subsystem in SUBSYSTEMS:
             #Convert subsystem name to lowercase and create name of its CSV file
