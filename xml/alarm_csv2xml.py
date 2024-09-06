@@ -24,9 +24,11 @@ def csvtoxml(infile, outfile, cname):
         stack.append(config)
         level = 0
         for row in content:
+            print("ITEMS: ", row.items(), "\n")
             row.update((k, v.strip()) for k, v in row.items())
             if row['#Indent']:
                 level = int(row['#Indent'])
+                print("LEVEL: ", level, "\n")
                 while len(stack) > level + 1:
                     stack.pop()
                 sel = ET.SubElement(stack[level], 'component')

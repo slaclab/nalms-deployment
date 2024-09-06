@@ -14,17 +14,15 @@ def main():
     print("Building LCLS")
     with open(lcls_filepath, "w") as lcls:
         count = 0
+        lcls.writelines("#Indent,Branch,PV,Description,Latch,Delay,Count,Filter,Guidance\n")
+        lcls.writelines("0,LCLS,,,,,,,\n")
         for subsystem in SUBSYSTEMS:
             #Convert subsystem name to lowercase and create name of its CSV file
             system = subsystem.lower()
             csv_name = "xml/subsystems/{}_converted".format(system)
 
-            sub_csv = open(csv_name, "r")
-
-            if count == 0:
-                pass
-            else:
-                next(sub_csv)
+            sub_csv = open(csv_name, "r")    
+            next(sub_csv)
             
             lcls.write(sub_csv.read())
             count+=1
