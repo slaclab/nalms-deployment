@@ -1,6 +1,6 @@
 #Indent,Branch,PV,Description,Latch,Delay,Count,Filter,Guidance
 1,BCS,,,,,,,
-2,ALL:BCS:1,,,,,,,"BCS ,TESTING123Group Name: ALL:BCS:1 ,SummaryPV: ALL:BCS:1:STATSUMY ,"
+2,ALL:BCS:1,,,,,,,"BCS ,Group Name: ALL:BCS:1 ,SummaryPV: ALL:BCS:1:STATSUMY ,"
 3,BCS:GLOBAL:1,,,,,,,"GLOBAL BCS subsystem ,Group Name: BCS:GLOBAL:1 ,Summary PV:  BCS:GLOBAL:1:STATSUMY ,"
 ,,BCS:IN20:1:BEAMPERM,,False,0,,BCS:IN20:1:BEAMPERMFP,
 ,,BCS:IN20:1:SBIPERM,,False,0,,BCS:IN20:1:SBIPERMFP,
