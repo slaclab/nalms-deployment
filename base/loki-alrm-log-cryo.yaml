@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loki-alrm-log-cryo
+  labels:
+    app: loki-alrm-log-cryo
+    app.kubernetes.io/name: loki-alarm-logger
+    app.kubernetes.io/part-of: nalms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loki-alrm-log-cryo
+  template:
+    metadata:
+      labels:
+        app: loki-alrm-log-cryo
+        app.kubernetes.io/name: loki-alarm-logger
+        app.kubernetes.io/part-of: nalms
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+            - weight: 100
+              podAffinityTerm:
+                labelSelector:
+                  matchExpressions:
+                    - key: app.kubernetes.io/name
+                      operator: In
+                      values: [loki-alarm-logger]
+                topologyKey: kubernetes.io/hostname
+      containers:
+        - name: loki-alrm-log-cryo
+          image: tidacs/nalms-loki-alarm-logger:v1.4
+          args:
+            - --topics
+            - CRYO,CRYOCommand
+            - --bootstrap-servers
+            - nalms-kafka-bootstrap:9092
+      restartPolicy: Always
+ 
