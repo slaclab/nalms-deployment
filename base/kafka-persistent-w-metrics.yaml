@@ -28,13 +28,13 @@ spec:
               metallb.universe.tf/address-pool: sdf-ad-ingest
               metallb.universe.tf/loadBalancerIPs: 172.24.8.133
           brokers:
-            - broker: 0
+            - broker: 3
               annotations:
                 metallb.universe.tf/address-pool: sdf-ad-ingest
-            - broker: 1
+            - broker: 4
               annotations:
                 metallb.universe.tf/address-pool: sdf-ad-ingest
-            - broker: 2
+            - broker: 5
               annotations:
                 metallb.universe.tf/address-pool: sdf-ad-ingest
     jvmOptions:
