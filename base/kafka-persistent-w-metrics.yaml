@@ -23,20 +23,24 @@ spec:
         type: loadbalancer
         tls: false
         configuration:
+          allocateLoadBalancerNodePorts: false
           bootstrap:
             annotations:
-              metallb.universe.tf/address-pool: sdf-ad-ingest
-              metallb.universe.tf/loadBalancerIPs: 172.24.8.133
+              metallb.io/address-pool: sdf-ad-ingest
+            loadBalancerIP: 172.24.8.133
           brokers:
             - broker: 3
               annotations:
-                metallb.universe.tf/address-pool: sdf-ad-ingest
+                metallb.io/address-pool: sdf-ad-ingest
+              loadBalancerIP: 172.24.8.134
             - broker: 4
               annotations:
-                metallb.universe.tf/address-pool: sdf-ad-ingest
+                metallb.io/address-pool: sdf-ad-ingest
+              loadBalancerIP: 172.24.8.130
             - broker: 5
               annotations:
-                metallb.universe.tf/address-pool: sdf-ad-ingest
+                metallb.io/address-pool: sdf-ad-ingest
+              loadBalancerIP: 172.24.8.140
     jvmOptions:
       -Xms: 8192m
       -Xmx: 8192m
