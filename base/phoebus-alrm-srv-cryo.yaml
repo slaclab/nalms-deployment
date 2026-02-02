@@ -61,7 +61,7 @@ spec:
             - name: EPICS_CA_AUTO_ADDR_LIST
               value: 'NO'
             - name: EPICS_CA_ADDR_LIST
-              value: 134.79.151.21:5068
+              value: 134.79.151.21:5065
             - name: EPICS_CA_REPEATER_PORT
               value: '5065'
             - name: EPICS_CA_SERVER_PORT
