@@ -1,6 +1,0 @@
----
-bases: [../../base]
-namespace: nalms-prod
-patchesStrategicMerge:
-  - ns.yaml
-  - eck-es-nodes.yaml
