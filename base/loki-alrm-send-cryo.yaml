@@ -32,10 +32,10 @@ spec:
                 topologyKey: kubernetes.io/hostname
       containers:
         - name: loki-alrm-send-cryo
-          image: tidacs/nalms-loki-alarm-sender:v1.0
+          image: tidacs/nalms-loki-alarm-sender:v1.1
           args:
             - --topics
-            - CRYO,CRYOCommand
+            - CRYO
             - --bootstrap-servers
             - nalms-kafka-bootstrap:9092
           env:
