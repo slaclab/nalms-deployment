@@ -8,7 +8,8 @@ metadata:
     strimzi.io/kraft: enabled
 spec:
   kafka:
-    version: 4.1.1
+    version: 4.2.1
+    metadataVersion: 4.2-IV1
     listeners:
       - name: plain
         port: 9092
@@ -65,7 +66,7 @@ spec:
     logging:
       type: inline
       loggers:
-        kafka.root.logger.level: INFO
+        rootLogger.level: INFO
     readinessProbe:
       initialDelaySeconds: 15
       timeoutSeconds: 5
