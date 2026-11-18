@@ -1,0 +1,10 @@
+---
+# The Strimzi cluster operator. It is applied on its own, separately from base/, because an operator
+# upgrade has to finish rolling the Kafka pods before anything else is changed.
+#
+# The bundle is the release file from https://github.com/strimzi/strimzi-kafka-operator/releases with
+# "namespace: myproject" replaced by "namespace: nalms-dev". When upgrading, replace the file and
+# update its name below.
+namespace: nalms-dev
+resources:
+  - strimzi-cluster-operator-1.1.0.yaml

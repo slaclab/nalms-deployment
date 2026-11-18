@@ -1,11 +1,19 @@
 ---
+# Everything deployed to the nalms-dev namespace apart from the Strimzi operator bundle, which is
+# applied on its own (see the README).
+#
+# Labels are written out in each manifest rather than being added here with commonLabels. A common
+# label also rewrites every selector, and selectors cannot be changed on a Deployment or StatefulSet
+# that already exists.
+#
+# The LCLS alarm server and logger are not deployed at the moment, so they are commented out.
 namespace: nalms-dev
-commonLabels:
-  app: nalms
 resources:
   - ns.yaml
   - kafka-persistent-w-metrics.yaml
-  - phoebus-alrm-srv-lcls.yaml
+  - kafka-broker-nodepool.yaml
+  - kafka-controller-nodepool.yaml
+#  - phoebus-alrm-srv-lcls.yaml
   - phoebus-alrm-srv-cryo.yaml
 #  - loki-alrm-log-lcls.yaml
   - loki-alrm-log-cryo.yaml
@@ -17,5 +25,6 @@ configMapGenerator:
     files: [alarm-properties/alarm_server.properties]
 generatorOptions:
   labels:
+    app: nalms
     app.kubernetes.io/part-of: phoebus
     app.kubernetes.io/component: configmap
