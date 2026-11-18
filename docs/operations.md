@@ -74,6 +74,19 @@ To let someone edit alarm configurations, give them write access to the reposito
 Checks on a pull request from a fork by a first-time contributor do not start until a
 maintainer selects "Approve and run" on the pull request.
 
+## Changing the tools
+
+The scripts in `tools/` have tests in `tools/tests/`. The check on every pull request runs them
+before it validates and converts the CSV, so a change that breaks the validator or the converter
+fails the check. To run them yourself:
+
+```sh
+pip install -r dev-requirements.txt
+python -m pytest tools/tests
+```
+
+When adding a rule to the validator, add a case for it to `tools/tests/test_validate_csv.py`.
+
 ## Upgrading the Strimzi operator
 
 Download the new release bundle from

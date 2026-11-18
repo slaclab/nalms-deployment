@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# macOS
+.DS_Store
