@@ -71,8 +71,9 @@ On every pull request that touches `alarm-config/` or `tools/`, the
 
 Two things to expect:
 
-- After the workflow adds its commit, GitHub shows "1 workflow awaiting approval". This is the
-  same workflow queued again for the commit it just made. A maintainer can approve it or ignore it.
+- The checks do not run again on the commit the workflow adds, so the pull request shows no
+  check result for that last commit. The result that matters is the one on your own commit
+  just before it, which is where the XML was generated and validated.
 - For a pull request from a fork, the workflow cannot add a commit. The XML is generated
   and committed when the pull request is merged instead.
 
