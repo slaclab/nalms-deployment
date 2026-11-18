@@ -12,7 +12,7 @@ spec:
   storage:
     type: persistent-claim
     size: 5Gi
-    deleteClaim: false
+    # deleteClaim is left at its default of false, so the volumes are kept if a node is removed
   resources:
     requests:
       memory: 3Gi

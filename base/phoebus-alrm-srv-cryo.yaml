@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
+    app: nalms
     io.kompose.service: phoebus-alrm-srv-cryo
     app.kubernetes.io/name: phoebus-alarm-server
     app.kubernetes.io/part-of: nalms
@@ -10,6 +11,7 @@ metadata:
 spec:
   clusterIP: None
   selector:
+    app: nalms
     io.kompose.service: phoebus-alrm-srv-cryo
 ---
 apiVersion: apps/v1
@@ -17,6 +19,7 @@ kind: StatefulSet
 metadata:
   creationTimestamp:
   labels:
+    app: nalms
     io.kompose.service: phoebus-alrm-srv-cryo
     app.kubernetes.io/name: phoebus-alarm-server
     app.kubernetes.io/part-of: nalms
@@ -24,12 +27,14 @@ metadata:
 spec:
   selector:
     matchLabels:
+      app: nalms
       io.kompose.service: phoebus-alrm-srv-cryo
   serviceName: phoebus-alrm-srv-cryo
   template:
     metadata:
       creationTimestamp:
       labels:
+        app: nalms
         io.kompose.service: phoebus-alrm-srv-cryo
         app.kubernetes.io/name: phoebus-alarm-server
         app.kubernetes.io/part-of: nalms
