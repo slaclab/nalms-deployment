@@ -9,7 +9,7 @@
             <details>Alarm handler summary PV: CRYO:CP0:CTRL:STATSUMY</details>
          </guidance>
          <pv name="SIOC:CP00:CR01:HEARTBEAT">
-            <description>CP0 CTRL IOC - Write permission control TEST</description>
+            <description>CP0 CTRL IOC - Write permission control TEST2</description>
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
