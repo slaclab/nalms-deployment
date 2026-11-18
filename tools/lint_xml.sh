@@ -5,11 +5,12 @@
 
 exit_code=0
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+CONFIG_DIR="$SCRIPT_DIR/../alarm-config"
 
 # Only cryo by default, add lcls once the LCLS config is stable
 CONFIGS="${*:-cryo}"
 
 for CONFIG in $CONFIGS; do
-  xmllint --noout --schema "$SCRIPT_DIR/phoebus-alarm-server.xsd" "$SCRIPT_DIR/$CONFIG.xml" || ((exit_code++))
+  xmllint --noout --schema "$SCRIPT_DIR/phoebus-alarm-server.xsd" "$CONFIG_DIR/$CONFIG.xml" || ((exit_code++))
 done
 exit $exit_code

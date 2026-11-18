@@ -14,8 +14,12 @@ Currently deployed to the `nalms-dev` namespace on the SLAC k8s cluster with:
 - `base/` — all active manifests: the Strimzi operator bundle, the Kafka cluster and
   node pools, Phoebus alarm servers, and the alarm logger/sender deployments, tied
   together with kustomize.
-- `xml/` — alarm configuration sources (CSV to XML tooling and the generated Phoebus
-  alarm configs).
+- `alarm-config/` — the alarm configurations. Each has a CSV file, which is the source to
+  edit, and a Phoebus XML file generated from it. The XML is generated and committed by
+  CI, so it should not be edited by hand.
+- `tools/` — the CSV to XML converter, the validation scripts and the XML schema.
+- `images/` — source for container images built from this repository, currently the
+  git-sync sidecar that delivers alarm configuration changes to the alarm servers.
 - `docs/` — MkDocs sources for the documentation site.
 
 ## Deploying
