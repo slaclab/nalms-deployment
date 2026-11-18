@@ -45,7 +45,8 @@ def csvtoxml(infile, outfile, cname):
                 desc = ET.SubElement(pv, 'description')
                 desc.text = row['Description']
                 latch = ET.SubElement(pv, 'latching')
-                latch.text = row['Latch']
+                # The xsd types this as xs:boolean, which only accepts lowercase true/false
+                latch.text = row['Latch'].lower()
                 delay = ET.SubElement(pv, 'delay')
                 delay.text = row['Delay']
                 if row['Count']:
