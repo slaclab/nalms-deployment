@@ -1,10 +1,13 @@
 # This workflow validates the alarm config csv files, converts them to xml and validates that as well. The main
 # idea here is that the end user only needs to edit csv files and not worry about the xml.
 #
-# The generated xml is committed automatically:
-#   - For a PR from a branch in this repo, onto the PR branch, so the xml change can be reviewed with the csv.
-#   - On a push to main, onto main. This covers PRs from forks, which the workflow cannot push to.
-# The xml is always regenerated from the csv, so any manual edit to a generated xml file is overwritten.
+# For a PR from a branch in this repo, the generated xml is committed onto the PR branch automatically, so the
+# xml change can be reviewed with the csv. The xml is always regenerated from the csv, so any manual edit to a
+# generated xml file is overwritten.
+#
+# The workflow never pushes to main, which only accepts changes through an approved pull request. A PR from a
+# fork cannot be updated by the workflow either, so it has to include the regenerated xml itself. In both of
+# those cases the workflow fails if the xml does not match the csv.
 #
 # NOTE: The alarm servers pick up xml changes on main automatically and restart, so a merged csv change goes
 # live a few minutes after the merge.
@@ -23,16 +26,13 @@ on:
       - 'tools/**'
       - 'dev-requirements.txt'
       - '.github/workflows/convert_csv_to_xml.yml'
+  # Runs on every pull request, whatever files it changes, because its result is required before merging
   pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'alarm-config/**'
-      - 'tools/**'
-      - 'dev-requirements.txt'
-      - '.github/workflows/convert_csv_to_xml.yml'
+    branches: [ "main", "rule-test-base" ]
 
 permissions:
   contents: write
+  statuses: write
 
 # Run one at a time per branch so that two merges close together cannot race on the push
 concurrency:
@@ -46,13 +46,15 @@ env:
 
 jobs:
   build:
+    # The ruleset on main requires a check with this name to pass before a pull request can be merged
+    name: alarm-config-check
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
-        # Check out the branch itself where we may push to it, rather than a detached commit. For PRs
-        # from forks this is left empty, which gives the default merge commit.
-        ref: ${{ github.event_name == 'push' && github.ref_name || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref || '') }}
+        # For a PR from a branch in this repo, check out the branch itself rather than a detached commit,
+        # so that the generated xml can be pushed to it. Otherwise this is empty, which gives the default.
+        ref: ${{ env.SAME_REPO_PR == 'true' && github.head_ref || '' }}
     - name: Install package needed for linting an xml file
       run: sudo apt-get install libxml2-utils
     - name: Install python requirements
@@ -90,21 +92,32 @@ jobs:
           echo "changed=true" >> "$GITHUB_OUTPUT"
         fi
     - name: Commit generated xml
-      if: steps.changes.outputs.changed == 'true' && (github.event_name == 'push' || env.SAME_REPO_PR == 'true')
+      if: steps.changes.outputs.changed == 'true' && env.SAME_REPO_PR == 'true'
       env:
         PR_NUMBER: ${{ github.event.pull_request.number }}
+        GH_TOKEN: ${{ github.token }}
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        if [ -z "$PR_NUMBER" ]; then
-          PR_NUMBER=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
-        fi
         # [skip ci] stops GitHub from starting this workflow again for the commit made here. Without
         # it, a pull request updated by a workflow gets a second run that is held until someone
         # approves it, which shows up as "1 workflow awaiting approval". That run is not needed,
         # because the xml in this commit was generated and checked by the steps above.
         git commit -m "CI/MNT: convert csv to xml from PR# $PR_NUMBER" -m "[skip ci]"
         git push
-    - name: Note xml that will be generated after merge
-      if: steps.changes.outputs.changed == 'true' && github.event_name == 'pull_request' && env.SAME_REPO_PR != 'true'
-      run: echo "::notice::The xml in this PR does not match the csv. It will be regenerated from the csv and committed when the PR is merged."
+        # The commit just pushed is now the last commit of the pull request, and no workflow runs on
+        # it. Record this run's result against it, under the same name as this job, so that the
+        # required check is satisfied.
+        gh api "repos/$GITHUB_REPOSITORY/statuses/$(git rev-parse HEAD)" \
+          -f state=success -f context=alarm-config-check \
+          -f description="xml generated and checked by the run on the previous commit" \
+          -f target_url="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" > /dev/null
+    - name: Fail if the xml is out of date and cannot be committed here
+      if: steps.changes.outputs.changed == 'true' && env.SAME_REPO_PR != 'true'
+      run: |
+        if [ "$GITHUB_EVENT_NAME" = "pull_request" ]; then
+          echo "::error::The xml in this pull request does not match the csv. The workflow cannot add it to a pull request from a fork. Run the conversion yourself and commit the xml (see docs/editing-alarms.md), or open the pull request from a branch in this repository."
+        else
+          echo "::error::The xml on $GITHUB_REF_NAME does not match the csv. Open a pull request that regenerates it."
+        fi
+        exit 1

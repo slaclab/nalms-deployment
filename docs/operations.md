@@ -53,6 +53,25 @@ Some things to know when applying `base/`:
 - Do not apply the alarm server file directly with `kubectl apply -f`. It refers to configmaps
   by the names kustomize generates.
 
+## Rules on the main branch
+
+A repository ruleset named "Protect main" (Settings, Rules, Rulesets) applies to `main`:
+
+- Changes can only reach `main` through a pull request with one approval from someone other
+  than the author. Any person with write access can approve.
+- Repository admins can merge a pull request without an approval. They still have to open one.
+- `main` cannot be deleted or force pushed.
+
+There are no required status checks, so a pull request can be merged even if its checks failed.
+Reviewers are expected to look at them. A failed check means no XML was generated, so a merge
+in that state does not change what the alarm server runs, but it does leave a CSV on `main`
+that does not convert.
+
+To let someone edit alarm configurations, give them write access to the repository.
+
+Checks on a pull request from a fork by a first-time contributor do not start until a
+maintainer selects "Approve and run" on the pull request.
+
 ## Upgrading the Strimzi operator
 
 Download the new release bundle from
