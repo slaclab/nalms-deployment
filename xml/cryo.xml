@@ -10,7 +10,7 @@
          </guidance>
          <pv name="SIOC:CP00:CR01:HEARTBEAT">
             <description>CP0 CTRL IOC - Write permission control</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -19,7 +19,7 @@
          </guidance>
          <pv name="SIOC:CP00:CR02:HEARTBEAT">
             <description>CP0 CTRL IOC - Support calculations</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -33,7 +33,7 @@
          </guidance>
          <pv name="SIOC:CP08:CR01:HEARTBEAT">
             <description>CP0 CTRL - Utilities IOC</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -42,7 +42,7 @@
          </guidance>
          <pv name="PLC:CP08:CR01:ALARM2_B0">
             <description>CP0 CTRL - Utilities PLC</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -55,19 +55,19 @@
             </guidance>
             <pv name="UTIL:CP01:4:ALARM_STATUS">
                <description>CP0 IA - Instrument air summary</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:IA1:ALM">
                <description>CP0 IA - CPT-82061 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTE:CP08:IA2:ALM">
                <description>CP0 IA - CTE-82061 Temp High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -78,85 +78,85 @@
             </guidance>
             <pv name="CPT:CP01:ST1:ALM">
                <description>CP0 GHES - CPT-11010 Clean Line Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST2:ALM">
                <description>CP0 GHES - CPT-11010 Clean Line Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST3:ALM">
                <description>CP0 GHES - CPT-11100 Tank 1 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST4:ALM">
                <description>CP0 GHES - CPT-11100 Tank 1 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST5:ALM">
                <description>CP0 GHES - CPT-11200 Tank 2 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST6:ALM">
                <description>CP0 GHES - CPT-11200 Tank 2 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST7:ALM">
                <description>CP0 GHES - CPT-11300 Tank 3 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST8:ALM">
                <description>CP0 GHES - CPT-11300 Tank 3 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST9:ALM">
                <description>CP0 GHES - CPT-11400 Tank 4 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST10:ALM">
                <description>CP0 GHES - CPT-11400 Tank 4 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST11:ALM">
                <description>CP0 GHES - CPT-11500 Tank 5 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST12:ALM">
                <description>CP0 GHES - CPT-11500 Tank 5 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST13:ALM">
                <description>CP0 GHES - CPT-11600 Tank 6 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP01:ST14:ALM">
                <description>CP0 GHES - CPT-11600 Tank 6 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -167,55 +167,55 @@
             </guidance>
             <pv name="UTIL:CP01:0:ALARM_STATUS">
                <description>CP0 LN2D - LN2 dewar</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:LN1:ALM">
                <description>CP0 LN2D - CPT-88101 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:LN2:ALM">
                <description>CP0 LN2D - CPT-88101 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:LN3:ALM">
                <description>CP0 LN2D - CPT-88201 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:LN4:ALM">
                <description>CP0 LN2D - CPT-88201 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP08:LN5:ALM">
                <description>CP0 LN2D - CLT-88101 Level Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP08:LN6:ALM">
                <description>CP0 LN2D - CLT-88101 Level High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP08:LN7:ALM">
                <description>CP0 LN2D - CLT-88201 Level Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP08:LN8:ALM">
                <description>CP0 LN2D - CLT-88101 Level High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -231,37 +231,37 @@
             </guidance>
             <pv name="UTIL:CP01:3:ALARM_STATUS">
                <description>CP0 GV - Guard Vacuum</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:GV1:ALM">
                <description>CP0 GV - CPT-84000 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:GV2:ALM">
                <description>CP0 GV - C2PT-84030 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:GV3:ALM">
                <description>CP0 GV - C2PT-84020 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:GV4:ALM">
                <description>CP0 GV - C1PT-84010 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP08:GV5:ALM">
                <description>CP0 GV - C1PT-84004 Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -272,85 +272,85 @@
             </guidance>
             <pv name="UTIL:CP01:2:ALARM_STATUS">
                <description>CP0 CANL - Analyzers</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL1:ALM">
                <description>CP0 CANL - C1-ANL-23821 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL2:ALM">
                <description>CP0 CANL - C1-ANL-23822 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL3:ALM">
                <description>CP0 CANL - C1-ANL-23823 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP22:ANL4:ALM">
                <description>CP0 CANL - C2-ANL-23821 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL5:ALM">
                <description>CP0 CANL - C1-ANL-23801 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL6:ALM">
                <description>CP0 CANL - C1-ANL-23802 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL7:ALM">
                <description>CP0 CANL - C1-ANL-23803 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL8:ALM">
                <description>CP0 CANL - C1-ANL-23804 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL9:ALM">
                <description>CP0 CANL - C1-ANL-23805 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP12:ANL10:ALM">
                <description>CP0 CANL - C1-ANL-23806 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP22:ANL11:ALM">
                <description>CP0 CANL - C2-ANL-23801 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP22:ANL12:ALM">
                <description>CP0 CANL - C2-ANL-23802 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CANL:CP22:ANL13:ALM">
                <description>CP0 CANL - C2-ANL-23803 High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -361,49 +361,49 @@
             </guidance>
             <pv name="UTIL:CP01:1:ALARM_STATUS">
                <description>CP0 RCVY - Recovery System</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC1:ALM">
                <description>CP0 RCVY - CPT-71010 RC Suction Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC2:ALM">
                <description>CP0 RCVY - CPT-71010 RC Suction Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC3:ALM">
                <description>CP0 RCVY - CPT-71030 RC Discharge Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC4:ALM">
                <description>CP0 RCVY - CPT-71030 RC Discharge Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC5:ALM">
                <description>CP0 RCVY - CPT-11034 Purifier Dis. Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC6:ALM">
                <description>CP0 RCVY - CPT-11035 Dirty Line Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:RC7:ALM">
                <description>CP0 RCVY - CPT-11035 Dirty Line Press. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -414,49 +414,49 @@
             </guidance>
             <pv name="UTIL:CP01:6:ALARM_STATUS">
                <description>CP0 PURF1 - Purifier 1</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS11:ALM">
                <description>CP0 PURF1 - TP-73112 Temp. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS12:ALM">
                <description>CP0 PURF1 - TP-73162 Temp. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS13:ALM">
                <description>CP0 PURF1 - TP-73131 Temp. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS14:ALM">
                <description>CP0 PURF1 - CTP-73124H Temp. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP07:ADS15:ALM">
                <description>CP0 PURF1 - PDT-731 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP07:ADS16:ALM">
                <description>CP0 PURF1 - LT-73162 Level Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:ADS17:ALM">
                <description>CP0 PURF1 - CPT-73154 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -467,49 +467,49 @@
             </guidance>
             <pv name="UTIL:CP01:7:ALARM_STATUS">
                <description>CP0 PURF2 - Purifier 2</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS21:ALM">
                <description>CP0 PURF2 - TP-73212 Temp.High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS22:ALM">
                <description>CP0 PURF2 - TP-73262 Temp. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS23:ALM">
                <description>CP0 PURF2 - TP-73231 Temp. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP07:ADS24:ALM">
                <description>CP0 PURF2 - CTP-73224H Temp. High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP07:ADS25:ALM">
                <description>CP0 PURF2 - PDT-732 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLT:CP07:ADS26:ALM">
                <description>CP0 PURF2 - LT-73262 Level Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP07:ADS27:ALM">
                <description>CP0 PURF2 - CPT-73254 Press. Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -525,7 +525,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR07:HEARTBEAT">
                <description>CP1 GMGT - Gas management IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -534,7 +534,7 @@
             </guidance>
             <pv name="PLC:CP12:CR07:ALARM2_B0">
                <description>CP1 GMGT - Gas management PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -543,115 +543,115 @@
             </guidance>
             <pv name="CPT:CP12:G1:ALM">
                <description>CP1 GMGT - LP Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G2:ALM">
                <description>CP1 GMGT - MP Pressure Ratio Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G3:ALM">
                <description>CP1 GMGT - MP Compressor DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G4:ALM">
                <description>CP1 GMGT - HP Compressor PR/DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G5:ALM">
                <description>CP1 GMGT - HP Compressor DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:G6:ALM">
                <description>CP1 GMGT - HP-MPH Bypass Valve PID Controller</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:G7:ALM">
                <description>CP1 GMGT - Final Oil Removal Discharge Temp Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:G8:ALM">
                <description>CP1 GMGT - Final Oil Removal Discharge Temp High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:G9:ALM">
                <description>CP1 GMGT - MP Cold Box Return Temp Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:G10:ALM">
                <description>CP1 GMGT - LP Cold Box Return Temp Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G11:ALM">
                <description>CP1 GMGT - HP Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G12:ALM">
                <description>CP1 GMGT - HP Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G13:ALM">
                <description>CP1 GMGT - MPH Line Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G14:ALM">
                <description>CP1 GMGT - MPH Line Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G15:ALM">
                <description>CP1 GMGT - MP Line Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G16:ALM">
                <description>CP1 GMGT - MP Line Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G17:ALM">
                <description>CP1 GMGT - LP Line Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:G18:ALM">
                <description>CP1 GMGT - LP Line Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:G19:ALM">
                <description>CP1 GMGT - Carbon Bed DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -662,7 +662,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR01:HEARTBEAT">
                <description>CP1 WCMP1 - Warm compressor 1 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -671,7 +671,7 @@
             </guidance>
             <pv name="PLC:CP12:CR01:ALARM2_B0">
                <description>CP1 WCMP1 - Warm compressor 1 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -680,145 +680,145 @@
             </guidance>
             <pv name="WCMP:CP12:11:C100_ALARM">
                <description>CP1 WCMP1 - Warm compressor 1</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:11:ALM">
                <description>CP1 WCMP1 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:21:ALM">
                <description>CP1 WCMP1 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:31:ALM">
                <description>CP1 WCMP1 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:41:ALM">
                <description>CP1 WCMP1 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:51:ALM">
                <description>CP1 WCMP1 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:61:ALM">
                <description>CP1 WCMP1 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:71:ALM">
                <description>CP1 WCMP1 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:81:ALM">
                <description>CP1 WCMP1 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:91:ALM">
                <description>CP1 WCMP1 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:101:ALM">
                <description>CP1 WCMP1 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:111:ALM">
                <description>CP1 WCMP1 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:121:ALM">
                <description>CP1 WCMP1 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:131:ALM">
                <description>CP1 WCMP1 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:141:ALM">
                <description>CP1 WCMP1 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:151:ALM">
                <description>CP1 WCMP1 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:161:ALM">
                <description>CP1 WCMP1 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:171:ALM">
                <description>CP1 WCMP1 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:181:ALM">
                <description>CP1 WCMP1 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:191:ALM">
                <description>CP1 WCMP1 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:201:ALM">
                <description>CP1 WCMP1 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:211:ALM">
                <description>CP1 WCMP1 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:221:ALM">
                <description>CP1 WCMP1 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:231:ALM">
                <description>CP1 WCMP1 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -829,7 +829,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR02:HEARTBEAT">
                <description>CP1 WCMP2 - Warm compressor 2 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -838,7 +838,7 @@
             </guidance>
             <pv name="PLC:CP12:CR02:ALARM2_B0">
                <description>CP1 WCMP2 - Warm compressor 2 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -847,145 +847,145 @@
             </guidance>
             <pv name="WCMP:CP12:12:C100_ALARM">
                <description>CP1 WCMP2 - Warm compressor 2</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:12:ALM">
                <description>CP1 WCMP2 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:22:ALM">
                <description>CP1 WCMP2 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:32:ALM">
                <description>CP1 WCMP2 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:42:ALM">
                <description>CP1 WCMP2 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:52:ALM">
                <description>CP1 WCMP2 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:62:ALM">
                <description>CP1 WCMP2 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:72:ALM">
                <description>CP1 WCMP2 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:82:ALM">
                <description>CP1 WCMP2 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:92:ALM">
                <description>CP1 WCMP2 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:102:ALM">
                <description>CP1 WCMP2 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:112:ALM">
                <description>CP1 WCMP2 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:122:ALM">
                <description>CP1 WCMP2 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:132:ALM">
                <description>CP1 WCMP2 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:142:ALM">
                <description>CP1 WCMP2 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:152:ALM">
                <description>CP1 WCMP2 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:162:ALM">
                <description>CP1 WCMP2 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:172:ALM">
                <description>CP1 WCMP2 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:182:ALM">
                <description>CP1 WCMP2 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:192:ALM">
                <description>CP1 WCMP2 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:202:ALM">
                <description>CP1 WCMP2 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:212:ALM">
                <description>CP1 WCMP2 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:222:ALM">
                <description>CP1 WCMP2 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:232:ALM">
                <description>CP1 WCMP2 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -996,7 +996,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR03:HEARTBEAT">
                <description>CP1 WCMP3 - Warm compressor 3 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1005,7 +1005,7 @@
             </guidance>
             <pv name="PLC:CP12:CR03:ALARM2_B0">
                <description>CP1 WCMP3 - Warm compressor 3 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1014,145 +1014,145 @@
             </guidance>
             <pv name="WCMP:CP12:13:C100_ALARM">
                <description>CP1 WCMP3 - Warm compressor 3</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:13:ALM">
                <description>CP1 WCMP3 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:23:ALM">
                <description>CP1 WCMP3 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:33:ALM">
                <description>CP1 WCMP3 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:43:ALM">
                <description>CP1 WCMP3 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:53:ALM">
                <description>CP1 WCMP3 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:63:ALM">
                <description>CP1 WCMP3 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:73:ALM">
                <description>CP1 WCMP3 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:83:ALM">
                <description>CP1 WCMP3 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:93:ALM">
                <description>CP1 WCMP3 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:103:ALM">
                <description>CP1 WCMP3 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:113:ALM">
                <description>CP1 WCMP3 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:123:ALM">
                <description>CP1 WCMP3 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:133:ALM">
                <description>CP1 WCMP3 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:143:ALM">
                <description>CP1 WCMP3 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:153:ALM">
                <description>CP1 WCMP3 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:163:ALM">
                <description>CP1 WCMP3 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:173:ALM">
                <description>CP1 WCMP3 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:183:ALM">
                <description>CP1 WCMP3 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:193:ALM">
                <description>CP1 WCMP3 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:203:ALM">
                <description>CP1 WCMP3 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:213:ALM">
                <description>CP1 WCMP3 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:223:ALM">
                <description>CP1 WCMP3 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:233:ALM">
                <description>CP1 WCMP3 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1163,7 +1163,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR04:HEARTBEAT">
                <description>CP1 WCMP4 - Warm compressor 4 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1172,7 +1172,7 @@
             </guidance>
             <pv name="PLC:CP12:CR04:ALARM2_B0">
                <description>CP1 WCMP4 - Warm compressor 4 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1181,145 +1181,145 @@
             </guidance>
             <pv name="WCMP:CP12:14:C100_ALARM">
                <description>CP1 WCMP4 - Warm compressor 4</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:14:ALM">
                <description>CP1 WCMP4 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:24:ALM">
                <description>CP1 WCMP4 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:34:ALM">
                <description>CP1 WCMP4 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:44:ALM">
                <description>CP1 WCMP4 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:54:ALM">
                <description>CP1 WCMP4 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:64:ALM">
                <description>CP1 WCMP4 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:74:ALM">
                <description>CP1 WCMP4 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:84:ALM">
                <description>CP1 WCMP4 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:94:ALM">
                <description>CP1 WCMP4 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:104:ALM">
                <description>CP1 WCMP4 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:114:ALM">
                <description>CP1 WCMP4 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:124:ALM">
                <description>CP1 WCMP4 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:134:ALM">
                <description>CP1 WCMP4 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:144:ALM">
                <description>CP1 WCMP4 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:154:ALM">
                <description>CP1 WCMP4 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:164:ALM">
                <description>CP1 WCMP4 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:174:ALM">
                <description>CP1 WCMP4 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:184:ALM">
                <description>CP1 WCMP4 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:194:ALM">
                <description>CP1 WCMP4 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:204:ALM">
                <description>CP1 WCMP4 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:214:ALM">
                <description>CP1 WCMP4 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:224:ALM">
                <description>CP1 WCMP4 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:234:ALM">
                <description>CP1 WCMP4 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1330,7 +1330,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR05:HEARTBEAT">
                <description>CP1 WCMP5 - Warm compressor 5 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1339,7 +1339,7 @@
             </guidance>
             <pv name="PLC:CP12:CR05:ALARM2_B0">
                <description>CP1 WCMP5 - Warm compressor 5 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1348,145 +1348,145 @@
             </guidance>
             <pv name="WCMP:CP12:15:C100_ALARM">
                <description>CP1 WCMP5 - Warm compressor 5</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:15:ALM">
                <description>CP1 WCMP5 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:25:ALM">
                <description>CP1 WCMP5 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:35:ALM">
                <description>CP1 WCMP5 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:45:ALM">
                <description>CP1 WCMP5 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:55:ALM">
                <description>CP1 WCMP5 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:65:ALM">
                <description>CP1 WCMP5 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:75:ALM">
                <description>CP1 WCMP5 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:85:ALM">
                <description>CP1 WCMP5 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:95:ALM">
                <description>CP1 WCMP5 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:105:ALM">
                <description>CP1 WCMP5 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:115:ALM">
                <description>CP1 WCMP5 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:125:ALM">
                <description>CP1 WCMP5 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:135:ALM">
                <description>CP1 WCMP5 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:145:ALM">
                <description>CP1 WCMP5 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:155:ALM">
                <description>CP1 WCMP5 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:165:ALM">
                <description>CP1 WCMP5 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:175:ALM">
                <description>CP1 WCMP5 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:185:ALM">
                <description>CP1 WCMP5 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:195:ALM">
                <description>CP1 WCMP5 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:205:ALM">
                <description>CP1 WCMP5 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:215:ALM">
                <description>CP1 WCMP5 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:225:ALM">
                <description>CP1 WCMP5 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:235:ALM">
                <description>CP1 WCMP5 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1497,7 +1497,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR06:HEARTBEAT">
                <description>CP1 WCMP6 - Warm compressor 6 IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1506,7 +1506,7 @@
             </guidance>
             <pv name="PLC:CP12:CR06:ALARM2_B0">
                <description>CP1 WCMP6 - Warm compressor 6 PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1515,145 +1515,145 @@
             </guidance>
             <pv name="WCMP:CP12:16:C100_ALARM">
                <description>CP1 WCMP6 - Warm compressor 6</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:16:ALM">
                <description>CP1 WCMP6 - Suction Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:26:ALM">
                <description>CP1 WCMP6 - Suction Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:36:ALM">
                <description>CP1 WCMP6 - Discharge Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:46:ALM">
                <description>CP1 WCMP6 - Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:56:ALM">
                <description>CP1 WCMP6 - Cooling Water Pressure Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:66:ALM">
                <description>CP1 WCMP6 - Oil Cooling DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:76:ALM">
                <description>CP1 WCMP6 - Oil Cooling DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:86:ALM">
                <description>CP1 WCMP6 - Bearing Oil DP Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:96:ALM">
                <description>CP1 WCMP6 - Bearing Oil DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPD:CP12:106:ALM">
                <description>CP1 WCMP6 - Bearing Oil FLT21139 DP High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:116:ALM">
                <description>CP1 WCMP6 - Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:126:ALM">
                <description>CP1 WCMP6 - Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:136:ALM">
                <description>CP1 WCMP6 - Skid Discharge Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:146:ALM">
                <description>CP1 WCMP6 - Oil Pump Suction Temperature Low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:156:ALM">
                <description>CP1 WCMP6 - Oil Pump Suction Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:166:ALM">
                <description>CP1 WCMP6 - Cooling Water Inlet Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CDT:CP12:176:ALM">
                <description>CP1 WCMP6 - Cooling Water Delta Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CJTM:CP12:186:ALM">
                <description>CP1 WCMP6 - CMP211 Motor Current High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:196:ALM">
                <description>CP1 WCMP6 - Motor Winding #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:206:ALM">
                <description>CP1 WCMP6 - Motor Winding #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:216:ALM">
                <description>CP1 WCMP6 - Motor Winding #3 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:226:ALM">
                <description>CP1 WCMP6 - Motor Bearing #1 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTP:CP12:236:ALM">
                <description>CP1 WCMP6 - Motor Bearing #2 Temperature High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1664,7 +1664,7 @@
             </guidance>
             <pv name="SIOC:CP12:CR08:HEARTBEAT">
                <description>CP1 4KCB - 4K coldbox IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1673,7 +1673,7 @@
             </guidance>
             <pv name="PLC:CP12:CR08:ALARM2_B0">
                <description>CP1 4KCB - 4K coldbox PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -1682,673 +1682,673 @@
             </guidance>
             <pv name="CLT:CP12:2510:LOLO">
                <description>CP1 4KCB - LN2 Pre-cooling</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP12:0:ADS_ALM">
                <description>CP1 4KCB - 80K adsorbers</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2432:TRIPHI">
                <description>CP1 4KCB - Trip:T1 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2332:TRIPLO">
                <description>CP1 4KCB - Trip:T1 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2332:TRIPHI">
                <description>CP1 4KCB - Trip:T1 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X35:TRIPLO">
                <description>CP1 4KCB - Trip:T1 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X3X:TRIPLO">
                <description>CP1 4KCB - Trip:T1 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X3X:TRIPHI">
                <description>CP1 4KCB - Trip:T1 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:1:KTRIPHI">
                <description>CP1 4KCB - Trip:T1 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:243X:TRIPHI">
                <description>CP1 4KCB - Trip:T1 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2332:TRIPLO">
                <description>CP1 4KCB - Trip:T1 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2436:TRIPHI">
                <description>CP1 4KCB - Trip:T1 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2435:TRIPLO">
                <description>CP1 4KCB - Trip:T1 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2433:TRIPLO">
                <description>CP1 4KCB - Trip:T1 no speed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2433:TRIPHI">
                <description>CP1 4KCB - Trip:T1 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2432:TRIPLO">
                <description>CP1 4KCB - Trip:T1 inlet valve closed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2242:TRIPLO">
                <description>CP1 4KCB - Trip:T1 outlet valves opening issue</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2452:TRIPHI">
                <description>CP1 4KCB - Trip:T2 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2352:TRIPLO">
                <description>CP1 4KCB - Trip:T2 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2352:TRIPHI">
                <description>CP1 4KCB - Trip:T2 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X55:TRIPLO">
                <description>CP1 4KCB - Trip:T2 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X5X:TRIPLO">
                <description>CP1 4KCB - Trip:T2 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X5X:TRIPHI">
                <description>CP1 4KCB - Trip:T2 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:2:KTRIPHI">
                <description>CP1 4KCB - Trip:T2 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:245X:TRIPHI">
                <description>CP1 4KCB - Trip:T2 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2352:TRIPLO">
                <description>CP1 4KCB - Trip:T2 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2456:TRIPHI">
                <description>CP1 4KCB - Trip:T2 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2455:TRIPLO">
                <description>CP1 4KCB - Trip:T2 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2453:TRIPLO">
                <description>CP1 4KCB - Trip:T2 no speed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2453:TRIPHI">
                <description>CP1 4KCB - Trip:T2 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2452:TRIPLO">
                <description>CP1 4KCB - Trip:T2 inlet valve closed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2358:TRIPLO">
                <description>CP1 4KCB - Trip:T2 outlet valve opening issue</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2472:TRIPHI">
                <description>CP1 4KCB - Trip:T3 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2372:TRIPLO">
                <description>CP1 4KCB - Trip:T3 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2372:TRIPHI">
                <description>CP1 4KCB - Trip:T3 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X75:TRIPLO">
                <description>CP1 4KCB - Trip:T3 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X7X:TRIPLO">
                <description>CP1 4KCB - Trip:T3 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X7X:TRIPHI">
                <description>CP1 4KCB - Trip:T3 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:3:KTRIPHI">
                <description>CP1 4KCB - Trip:T3 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:247X:TRIPHI">
                <description>CP1 4KCB - Trip:T3 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2372:TRIPLO">
                <description>CP1 4KCB - Trip:T3 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2476:TRIPHI">
                <description>CP1 4KCB - Trip:T3 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2475:TRIPLO">
                <description>CP1 4KCB - Trip:T3 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2473:TRIPLO">
                <description>CP1 4KCB - Trip:T3 no speed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2473:TRIPHI">
                <description>CP1 4KCB - Trip:T3 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2472:TRIPLO">
                <description>CP1 4KCB - Trip:T3 inlet valve closed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2378:TRIPLO">
                <description>CP1 4KCB - Trip:T3 outlet valve opening issue</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2482:TRIPHI">
                <description>CP1 4KCB - Trip:T4 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2382:TRIPLO">
                <description>CP1 4KCB - Trip:T4 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2382:TRIPHI">
                <description>CP1 4KCB - Trip:T4 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X85:TRIPLO">
                <description>CP1 4KCB - Trip:T4 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X8X:TRIPLO">
                <description>CP1 4KCB - Trip:T4 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X8X:TRIPHI">
                <description>CP1 4KCB - Trip:T4 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:4:KTRIPHI">
                <description>CP1 4KCB - Trip:T4 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:248X:TRIPHI">
                <description>CP1 4KCB - Trip:T4 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2382:TRIPLO">
                <description>CP1 4KCB - Trip:T4 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2486:TRIPHI">
                <description>CP1 4KCB - Trip:T4 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2485:TRIPLO">
                <description>CP1 4KCB - Trip:T4 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2483:TRIPLO">
                <description>CP1 4KCB - Trip:T4 no speed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2483:TRIPHI">
                <description>CP1 4KCB - Trip:T4 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2482:TRIPLO">
                <description>CP1 4KCB - Trip:T4 inlet valve closed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPV:CP12:2388:TRIPLO">
                <description>CP1 4KCB - Trip:T4 outlet valve opening issue</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2432:HIHI">
                <description>CP1 4KCB - Alarm:T1 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2332:LOLO">
                <description>CP1 4KCB - Alarm:T1 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2332:HIHI">
                <description>CP1 4KCB - Alarm:T1 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X35:LOLO">
                <description>CP1 4KCB - Alarm:T1 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X3X:LOLO">
                <description>CP1 4KCB - Alarm:T1 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X3X:HIHI">
                <description>CP1 4KCB - Alarm:T1 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:1:KHIHI">
                <description>CP1 4KCB - Alarm:T1 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:243X:HIHI">
                <description>CP1 4KCB - Alarm:T1 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2332:LOLO">
                <description>CP1 4KCB - Alarm:T1 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2436:HIHI">
                <description>CP1 4KCB - Alarm:T1 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2435:LOLO">
                <description>CP1 4KCB - Alarm:T1 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2433:HIHI">
                <description>CP1 4KCB - Alarm:T1 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2452:HIHI">
                <description>CP1 4KCB - Alarm:T2 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2352:LOLO">
                <description>CP1 4KCB - Alarm:T2 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2352:HIHI">
                <description>CP1 4KCB - Alarm:T2 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X55:LOLO">
                <description>CP1 4KCB - Alarm:T2 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X5X:LOLO">
                <description>CP1 4KCB - Alarm:T2 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X5X:HIHI">
                <description>CP1 4KCB - Alarm:T2 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:2:KHIHI">
                <description>CP1 4KCB - Alarm:T2 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:245X:HIHI">
                <description>CP1 4KCB - Alarm:T2 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2352:LOLO">
                <description>CP1 4KCB - Alarm:T2 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2456:HIHI">
                <description>CP1 4KCB - Alarm:T2 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2455:LOLO">
                <description>CP1 4KCB - Alarm:T2 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2453:HIHI">
                <description>CP1 4KCB - Alarm:T2 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2472:HIHI">
                <description>CP1 4KCB - Alarm:T3 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2372:LOLO">
                <description>CP1 4KCB - Alarm:T3 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2372:HIHI">
                <description>CP1 4KCB - Alarm:T3 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X75:LOLO">
                <description>CP1 4KCB - Alarm:T3 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X7X:LOLO">
                <description>CP1 4KCB - Alarm:T3 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X7X:HIHI">
                <description>CP1 4KCB - Alarm:T3 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:3:KHIHI">
                <description>CP1 4KCB - Alarm:T3 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:247X:HIHI">
                <description>CP1 4KCB - Alarm:T3 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2372:LOLO">
                <description>CP1 4KCB - Alarm:T3 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2476:HIHI">
                <description>CP1 4KCB - Alarm:T3 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2475:LOLO">
                <description>CP1 4KCB - Alarm:T3 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2473:HIHI">
                <description>CP1 4KCB - Alarm:T3 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2482:HIHI">
                <description>CP1 4KCB - Alarm:T4 inlet pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2382:LOLO">
                <description>CP1 4KCB - Alarm:T4 discharge pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPT:CP12:2382:HIHI">
                <description>CP1 4KCB - Alarm:T4 discharge pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X85:LOLO">
                <description>CP1 4KCB - Alarm:T4 bearing pressure diff low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X8X:LOLO">
                <description>CP1 4KCB - Alarm:T4 brake pressure low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:2X8X:HIHI">
                <description>CP1 4KCB - Alarm:T4 brake pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTBN:CP12:4:KHIHI">
                <description>CP1 4KCB - Alarm:T4 wheel pressure high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPDT:CP12:248X:HIHI">
                <description>CP1 4KCB - Alarm:T4 inlet filter press drop high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTD:CP12:2382:LOLO">
                <description>CP1 4KCB - Alarm:T4 discharge temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2486:HIHI">
                <description>CP1 4KCB - Alarm:T4 brake temp high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CTT:CP12:2485:LOLO">
                <description>CP1 4KCB - Alarm:T4 bearing temp low</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CST:CP12:2483:HIHI">
                <description>CP1 4KCB - Alarm:T4 speed high</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CVAC:CP12:3610:TRIP">
                <description>CP1 4LCB - Upper coldbox vacuum</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CVAC:CP12:3630:TRIP">
                <description>CP1 4KCB - Lower coldbox vacuum</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2359,7 +2359,7 @@
             </guidance>
             <pv name="SIOC:CP14:CR01:HEARTBEAT">
                <description>CP1 2KCB - 2K coldbox IOC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2368,7 +2368,7 @@
             </guidance>
             <pv name="PLC:CP14:CR01:ALARM2_B0">
                <description>CP1 2KCB - 2K coldbox PLC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2377,163 +2377,163 @@
             </guidance>
             <pv name="CVAC:CP14:1010:TRIP">
                <description>CP1 2KCB - 2K coldbox vacuum</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:1:TRIP">
                <description>CP1 2KCB - CC5 Discharge Pressure High</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:2:TRIP">
                <description>CP1 2KCB - CC1 Drive Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:3:TRIP">
                <description>CP1 2KCB - CC2 Drive Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:4:TRIP">
                <description>CP1 2KCB - CC3 Drive Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:5:TRIP">
                <description>CP1 2KCB - CC4 Drive Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:6:TRIP">
                <description>CP1 2KCB - CC5 Drive Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:7:TRIP">
                <description>CP1 2KCB - CC1 Bearing Levitation Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:8:TRIP">
                <description>CP1 2KCB - CC2 Bearing Levitation Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:9:TRIP">
                <description>CP1 2KCB - CC3 Bearing Levitation Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:10:TRIP">
                <description>CP1 2KCB - CC4 Bearing Levitation Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:11:TRIP">
                <description>CP1 2KCB - CC5 Bearing Levitation Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:15:TRIP">
                <description>CP1 2KCB - CC1 CAN Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:16:TRIP">
                <description>CP1 2KCB - CC2 CAN Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:17:TRIP">
                <description>CP1 2KCB - CC3 CAN Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:18:TRIP">
                <description>CP1 2KCB - CC4 CAN Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:19:TRIP">
                <description>CP1 2KCB - CC5 CAN Fault</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:20:TRIP">
                <description>CP1 2KCB - CC1 Stopped Unexpectedly</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:21:TRIP">
                <description>CP1 2KCB - CC2 Stopped Unexpectedly</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:22:TRIP">
                <description>CP1 2KCB - CC3 Stopped Unexpectedly</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:23:TRIP">
                <description>CP1 2KCB - CC4 Stopped Unexpectedly</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:24:TRIP">
                <description>CP1 2KCB - CC5 Stopped Unexpectedly</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:25:TRIP">
                <description>CP1 2KCB - Outlet Valves Not Closed</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:26:TRIP">
                <description>CP1 2KCB - Flow Surge</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:27:TRIP">
                <description>CP1 2KCB - Backflow to LINAC</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:28:TRIP">
                <description>CP1 2KCB - 4KCB Trip</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CCBX:CP14:29:TRIP">
                <description>CP1 2KCB - LINAC Trip</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2545,13 +2545,13 @@
          </guidance>
          <pv name="WATR:BSYA:100:COMP_AIR_P">
             <description>LINAC DIST - Compressed air</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
          <pv name="SIOC:DB01:CR01:HEARTBEAT">
             <description>LINAC DIST - Distribution box 1 IOC</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -2560,7 +2560,7 @@
          </guidance>
          <pv name="SIOC:DB02:CR01:HEARTBEAT">
             <description>LINAC DIST - Distribution box 2 IOC</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -2574,7 +2574,7 @@
          </guidance>
          <pv name="CCM:CM00:0:TRIP_STATUS">
             <description>LINAC - Linac trip</description>
-            <latching>TRUE</latching>
+            <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
          </pv>
@@ -2584,31 +2584,31 @@
             </guidance>
             <pv name="CLIC:CM01:3001:PVJT:IMOD">
                <description>LINAC CM01 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM01:0000:EHCV:IMOD">
                <description>LINAC CM01 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM01:0000:EHCV:INTERLOCK">
                <description>LINAC CM01 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM01:2601:US:LVL">
                <description>LINAC CM01 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM01:2301:DS:LVL">
                <description>LINAC CM01 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2619,31 +2619,31 @@
             </guidance>
             <pv name="CLIC:CM02:3001:PVJT:IMOD">
                <description>LINAC CM02 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM02:0000:EHCV:IMOD">
                <description>LINAC CM02 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM02:0000:EHCV:INTERLOCK">
                <description>LINAC CM02 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM02:2601:US:LVL">
                <description>LINAC CM02 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM02:2301:DS:LVL">
                <description>LINAC CM02 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2654,31 +2654,31 @@
             </guidance>
             <pv name="CLIC:CM03:3001:PVJT:IMOD">
                <description>LINAC CM03 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM03:0000:EHCV:IMOD">
                <description>LINAC CM03 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM03:0000:EHCV:INTERLOCK">
                <description>LINAC CM03 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM03:2601:US:LVL">
                <description>LINAC CM03 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM03:2301:DS:LVL">
                <description>LINAC CM03 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2689,31 +2689,31 @@
             </guidance>
             <pv name="CLIC:HL01:3001:PVJT:IMOD">
                <description>LINAC CMH1 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:HL01:0000:EHCV:IMOD">
                <description>LINAC CMH1 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:HL01:0000:EHCV:INTERLOCK">
                <description>LINAC CMH1 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CMH1:2601:US:LVL">
                <description>LINAC CMH1 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CMH1:2301:DS:LVL">
                <description>LINAC CMH1 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2724,31 +2724,31 @@
             </guidance>
             <pv name="CLIC:HL02:3001:PVJT:IMOD">
                <description>LINAC CMH2 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:HL02:0000:EHCV:IMOD">
                <description>LINAC CMH2 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:HL02:0000:EHCV:INTERLOCK">
                <description>LINAC CMH2 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CMH2:2601:US:LVL">
                <description>LINAC CMH2 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CMH2:2301:DS:LVL">
                <description>LINAC CMH2 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2759,31 +2759,31 @@
             </guidance>
             <pv name="CLIC:CM04:3001:PVJT:IMOD">
                <description>LINAC CM04 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM04:0000:EHCV:IMOD">
                <description>LINAC CM04 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM04:0000:EHCV:INTERLOCK">
                <description>LINAC CM04 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM04:2601:US:LVL">
                <description>LINAC CM04 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM04:2301:DS:LVL">
                <description>LINAC CM04 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2794,31 +2794,31 @@
             </guidance>
             <pv name="CLIC:CM05:3001:PVJT:IMOD">
                <description>LINAC CM05 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM05:0000:EHCV:IMOD">
                <description>LINAC CM05 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM05:0000:EHCV:INTERLOCK">
                <description>LINAC CM05 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM05:2601:US:LVL">
                <description>LINAC CM05 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM05:2301:DS:LVL">
                <description>LINAC CM05 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2829,31 +2829,31 @@
             </guidance>
             <pv name="CLIC:CM06:3001:PVJT:IMOD">
                <description>LINAC CM06 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM06:0000:EHCV:IMOD">
                <description>LINAC CM06 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM06:0000:EHCV:INTERLOCK">
                <description>LINAC CM06 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM06:2601:US:LVL">
                <description>LINAC CM06 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM06:2301:DS:LVL">
                <description>LINAC CM06 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2864,31 +2864,31 @@
             </guidance>
             <pv name="CLIC:CM07:3001:PVJT:IMOD">
                <description>LINAC CM07 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM07:0000:EHCV:IMOD">
                <description>LINAC CM07 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM07:0000:EHCV:INTERLOCK">
                <description>LINAC CM07 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM07:2601:US:LVL">
                <description>LINAC CM07 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM07:2301:DS:LVL">
                <description>LINAC CM07 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2899,31 +2899,31 @@
             </guidance>
             <pv name="CLIC:CM08:3001:PVJT:IMOD">
                <description>LINAC CM08 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM08:0000:EHCV:IMOD">
                <description>LINAC CM08 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM08:0000:EHCV:INTERLOCK">
                <description>LINAC CM08 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM08:2601:US:LVL">
                <description>LINAC CM08 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM08:2301:DS:LVL">
                <description>LINAC CM08 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2934,31 +2934,31 @@
             </guidance>
             <pv name="CLIC:CM09:3001:PVJT:IMOD">
                <description>LINAC CM09 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM09:0000:EHCV:IMOD">
                <description>LINAC CM09 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM09:0000:EHCV:INTERLOCK">
                <description>LINAC CM09 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM09:2601:US:LVL">
                <description>LINAC CM09 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM09:2301:DS:LVL">
                <description>LINAC CM09 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -2969,31 +2969,31 @@
             </guidance>
             <pv name="CLIC:CM10:3001:PVJT:IMOD">
                <description>LINAC CM10 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM10:0000:EHCV:IMOD">
                <description>LINAC CM10 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM10:0000:EHCV:INTERLOCK">
                <description>LINAC CM10 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM10:2601:US:LVL">
                <description>LINAC CM10 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM10:2301:DS:LVL">
                <description>LINAC CM10 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3004,31 +3004,31 @@
             </guidance>
             <pv name="CLIC:CM11:3001:PVJT:IMOD">
                <description>LINAC CM11 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM11:0000:EHCV:IMOD">
                <description>LINAC CM11 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM11:0000:EHCV:INTERLOCK">
                <description>LINAC CM11 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM11:2601:US:LVL">
                <description>LINAC CM11 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM11:2301:DS:LVL">
                <description>LINAC CM11 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3039,31 +3039,31 @@
             </guidance>
             <pv name="CLIC:CM12:3001:PVJT:IMOD">
                <description>LINAC CM12 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM12:0000:EHCV:IMOD">
                <description>LINAC CM12 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM12:0000:EHCV:INTERLOCK">
                <description>LINAC CM12 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM12:2601:US:LVL">
                <description>LINAC CM12 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM12:2301:DS:LVL">
                <description>LINAC CM12 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3074,31 +3074,31 @@
             </guidance>
             <pv name="CLIC:CM13:3001:PVJT:IMOD">
                <description>LINAC CM13 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM13:0000:EHCV:IMOD">
                <description>LINAC CM13 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM13:0000:EHCV:INTERLOCK">
                <description>LINAC CM13 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM13:2601:US:LVL">
                <description>LINAC CM13 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM13:2301:DS:LVL">
                <description>LINAC CM13 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3109,31 +3109,31 @@
             </guidance>
             <pv name="CLIC:CM14:3001:PVJT:IMOD">
                <description>LINAC CM14 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM14:0000:EHCV:IMOD">
                <description>LINAC CM14 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM14:0000:EHCV:INTERLOCK">
                <description>LINAC CM14 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM14:2601:US:LVL">
                <description>LINAC CM14 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM14:2301:DS:LVL">
                <description>LINAC CM14 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3144,31 +3144,31 @@
             </guidance>
             <pv name="CLIC:CM15:3001:PVJT:IMOD">
                <description>LINAC CM15 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM15:0000:EHCV:IMOD">
                <description>LINAC CM15 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM15:0000:EHCV:INTERLOCK">
                <description>LINAC CM15 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM15:2601:US:LVL">
                <description>LINAC CM15 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM15:2301:DS:LVL">
                <description>LINAC CM15 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3179,31 +3179,31 @@
             </guidance>
             <pv name="CLIC:CM16:3001:PVJT:IMOD">
                <description>LINAC CM16 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM16:0000:EHCV:IMOD">
                <description>LINAC CM16 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM16:0000:EHCV:INTERLOCK">
                <description>LINAC CM16 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM16:2601:US:LVL">
                <description>LINAC CM16 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM16:2301:DS:LVL">
                <description>LINAC CM16 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3214,31 +3214,31 @@
             </guidance>
             <pv name="CLIC:CM17:3001:PVJT:IMOD">
                <description>LINAC CM17 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM17:0000:EHCV:IMOD">
                <description>LINAC CM17 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM17:0000:EHCV:INTERLOCK">
                <description>LINAC CM17 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM17:2601:US:LVL">
                <description>LINAC CM17 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM17:2301:DS:LVL">
                <description>LINAC CM17 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3249,31 +3249,31 @@
             </guidance>
             <pv name="CLIC:CM18:3001:PVJT:IMOD">
                <description>LINAC CM18 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM18:0000:EHCV:IMOD">
                <description>LINAC CM18 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM18:0000:EHCV:INTERLOCK">
                <description>LINAC CM18 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM18:2601:US:LVL">
                <description>LINAC CM18 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM18:2301:DS:LVL">
                <description>LINAC CM18 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3284,31 +3284,31 @@
             </guidance>
             <pv name="CLIC:CM19:3001:PVJT:IMOD">
                <description>LINAC CM19 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM19:0000:EHCV:IMOD">
                <description>LINAC CM19 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM19:0000:EHCV:INTERLOCK">
                <description>LINAC CM19 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM19:2601:US:LVL">
                <description>LINAC CM19 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM19:2301:DS:LVL">
                <description>LINAC CM19 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3319,31 +3319,31 @@
             </guidance>
             <pv name="CLIC:CM20:3001:PVJT:IMOD">
                <description>LINAC CM20 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM20:0000:EHCV:IMOD">
                <description>LINAC CM20 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM20:0000:EHCV:INTERLOCK">
                <description>LINAC CM20 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM20:2601:US:LVL">
                <description>LINAC CM20 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM20:2301:DS:LVL">
                <description>LINAC CM20 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3354,31 +3354,31 @@
             </guidance>
             <pv name="CLIC:CM21:3001:PVJT:IMOD">
                <description>LINAC CM21 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM21:0000:EHCV:IMOD">
                <description>LINAC CM21 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM21:0000:EHCV:INTERLOCK">
                <description>LINAC CM21 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM21:2601:US:LVL">
                <description>LINAC CM21 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM21:2301:DS:LVL">
                <description>LINAC CM21 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3389,31 +3389,31 @@
             </guidance>
             <pv name="CLIC:CM22:3001:PVJT:IMOD">
                <description>LINAC CM22 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM22:0000:EHCV:IMOD">
                <description>LINAC CM22 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM22:0000:EHCV:INTERLOCK">
                <description>LINAC CM22 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM22:2601:US:LVL">
                <description>LINAC CM22 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM22:2301:DS:LVL">
                <description>LINAC CM22 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3424,31 +3424,31 @@
             </guidance>
             <pv name="CLIC:CM23:3001:PVJT:IMOD">
                <description>LINAC CM23 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM23:0000:EHCV:IMOD">
                <description>LINAC CM23 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM23:0000:EHCV:INTERLOCK">
                <description>LINAC CM23 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM23:2601:US:LVL">
                <description>LINAC CM23 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM23:2301:DS:LVL">
                <description>LINAC CM23 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3459,31 +3459,31 @@
             </guidance>
             <pv name="CLIC:CM24:3001:PVJT:IMOD">
                <description>LINAC CM24 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM24:0000:EHCV:IMOD">
                <description>LINAC CM24 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM24:0000:EHCV:INTERLOCK">
                <description>LINAC CM24 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM24:2601:US:LVL">
                <description>LINAC CM24 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM24:2301:DS:LVL">
                <description>LINAC CM24 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3494,31 +3494,31 @@
             </guidance>
             <pv name="CLIC:CM25:3001:PVJT:IMOD">
                <description>LINAC CM25 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM25:0000:EHCV:IMOD">
                <description>LINAC CM25 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM25:0000:EHCV:INTERLOCK">
                <description>LINAC CM25 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM25:2601:US:LVL">
                <description>LINAC CM25 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM25:2301:DS:LVL">
                <description>LINAC CM25 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3529,31 +3529,31 @@
             </guidance>
             <pv name="CLIC:CM26:3001:PVJT:IMOD">
                <description>LINAC CM26 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM26:0000:EHCV:IMOD">
                <description>LINAC CM26 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM26:0000:EHCV:INTERLOCK">
                <description>LINAC CM26 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM26:2601:US:LVL">
                <description>LINAC CM26 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM26:2301:DS:LVL">
                <description>LINAC CM26 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3564,31 +3564,31 @@
             </guidance>
             <pv name="CLIC:CM27:3001:PVJT:IMOD">
                <description>LINAC CM27 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM27:0000:EHCV:IMOD">
                <description>LINAC CM27 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM27:0000:EHCV:INTERLOCK">
                <description>LINAC CM27 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM27:2601:US:LVL">
                <description>LINAC CM27 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM27:2301:DS:LVL">
                <description>LINAC CM27 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3599,31 +3599,31 @@
             </guidance>
             <pv name="CLIC:CM28:3001:PVJT:IMOD">
                <description>LINAC CM28 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM28:0000:EHCV:IMOD">
                <description>LINAC CM28 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM28:0000:EHCV:INTERLOCK">
                <description>LINAC CM28 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM28:2601:US:LVL">
                <description>LINAC CM28 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM28:2301:DS:LVL">
                <description>LINAC CM28 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3634,31 +3634,31 @@
             </guidance>
             <pv name="CLIC:CM29:3001:PVJT:IMOD">
                <description>LINAC CM29 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM29:0000:EHCV:IMOD">
                <description>LINAC CM29 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM29:0000:EHCV:INTERLOCK">
                <description>LINAC CM29 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM29:2601:US:LVL">
                <description>LINAC CM29 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM29:2301:DS:LVL">
                <description>LINAC CM29 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3669,31 +3669,31 @@
             </guidance>
             <pv name="CLIC:CM30:3001:PVJT:IMOD">
                <description>LINAC CM30 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM30:0000:EHCV:IMOD">
                <description>LINAC CM30 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM30:0000:EHCV:INTERLOCK">
                <description>LINAC CM30 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM30:2601:US:LVL">
                <description>LINAC CM30 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM30:2301:DS:LVL">
                <description>LINAC CM30 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3704,31 +3704,31 @@
             </guidance>
             <pv name="CLIC:CM31:3001:PVJT:IMOD">
                <description>LINAC CM31 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM31:0000:EHCV:IMOD">
                <description>LINAC CM31 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM31:0000:EHCV:INTERLOCK">
                <description>LINAC CM31 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM31:2601:US:LVL">
                <description>LINAC CM31 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM31:2301:DS:LVL">
                <description>LINAC CM31 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3739,31 +3739,31 @@
             </guidance>
             <pv name="CLIC:CM32:3001:PVJT:IMOD">
                <description>LINAC CM32 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM32:0000:EHCV:IMOD">
                <description>LINAC CM32 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM32:0000:EHCV:INTERLOCK">
                <description>LINAC CM32 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM32:2601:US:LVL">
                <description>LINAC CM32 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM32:2301:DS:LVL">
                <description>LINAC CM32 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3774,31 +3774,31 @@
             </guidance>
             <pv name="CLIC:CM33:3001:PVJT:IMOD">
                <description>LINAC CM33 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM33:0000:EHCV:IMOD">
                <description>LINAC CM33 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM33:0000:EHCV:INTERLOCK">
                <description>LINAC CM33 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM33:2601:US:LVL">
                <description>LINAC CM33 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM33:2301:DS:LVL">
                <description>LINAC CM33 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3809,31 +3809,31 @@
             </guidance>
             <pv name="CLIC:CM34:3001:PVJT:IMOD">
                <description>LINAC CM34 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM34:0000:EHCV:IMOD">
                <description>LINAC CM34 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM34:0000:EHCV:INTERLOCK">
                <description>LINAC CM34 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM34:2601:US:LVL">
                <description>LINAC CM34 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM34:2301:DS:LVL">
                <description>LINAC CM34 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
@@ -3844,31 +3844,31 @@
             </guidance>
             <pv name="CLIC:CM35:3001:PVJT:IMOD">
                <description>LINAC CM35 - Valve Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM35:0000:EHCV:IMOD">
                <description>LINAC CM35 - Heater Interlock Mode status</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CPIC:CM35:0000:EHCV:INTERLOCK">
                <description>LINAC CM35 - Heater Interlock Condition</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM35:2601:US:LVL">
                <description>LINAC CM35 - Upstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>
             <pv name="CLL:CM35:2301:DS:LVL">
                <description>LINAC CM35 - Downstream Level</description>
-               <latching>TRUE</latching>
+               <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
             </pv>

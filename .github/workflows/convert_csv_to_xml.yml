@@ -1,9 +1,17 @@
-# This workflow will validate the alarm config csv file and convert it to xml and validate that as well. When
-# a PR is approved and merged, it will then commit the generated xml file to main. The main idea here is that
-# the end user only needs to edit csv files and not worry about the xml.
+# This workflow validates the alarm config csv files, converts them to xml and validates that as well. The main
+# idea here is that the end user only needs to edit csv files and not worry about the xml.
+#
+# The generated xml is committed automatically:
+#   - For a PR from a branch in this repo, onto the PR branch, so the xml change can be reviewed with the csv.
+#   - On a push to main, onto main. This covers PRs from forks, which the workflow cannot push to.
+# The xml is always regenerated from the csv, so any manual edit to a generated xml file is overwritten.
+#
+# NOTE: The alarm servers pick up xml changes on main automatically and restart, so a merged csv change goes
+# live a few minutes after the merge.
 #
 # Only the CRYO config is handled for now. The LCLS csv does not currently validate or convert cleanly, so it
-# is left out until that is resolved.
+# is left out until that is resolved. To add a config, add its lowercase name to CONFIGS below. It is read from
+# xml/<name>.csv and written to xml/<name>.xml, with the uppercase name used as the config name.
 
 name: Convert alarm config csv to xml
 
@@ -24,11 +32,25 @@ on:
 permissions:
   contents: write
 
+# Run one at a time per branch so that two merges close together cannot race on the push
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: false
+
+env:
+  CONFIGS: cryo
+  # True when the PR branch lives in this repo, which means the workflow is able to push to it
+  SAME_REPO_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      with:
+        # Check out the branch itself where we may push to it, rather than a detached commit. For PRs
+        # from forks this is left empty, which gives the default merge commit.
+        ref: ${{ github.event_name == 'push' && github.ref_name || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref || '') }}
     - name: Install package needed for linting an xml file
       run: sudo apt-get install libxml2-utils
     - name: Install python requirements
@@ -37,24 +59,46 @@ jobs:
         pip install --requirement dev-requirements.txt
 #    - name: Combine subsystems into lcls.csv
 #      run: python xml/build_lcls.py
-    - name: Validate csv file is compatible with Phoebus
-      run: python xml/validate_csv_for_phoebus.py xml/cryo.csv
+    - name: Validate csv files are compatible with Phoebus
+      run: |
+        for config in $CONFIGS; do
+          python xml/validate_csv_for_phoebus.py "xml/$config.csv"
+        done
     - name: Convert csv to xml
-      run: python xml/alarm_csv2xml.py -i xml/cryo.csv -c CRYO
+      run: |
+        for config in $CONFIGS; do
+          python xml/alarm_csv2xml.py -i "xml/$config.csv" -c "${config^^}"
+        done
     - name: Validate Phoebus will parse xml correctly
       run: python xml/validate_xml_for_phoebus.py
-# Disabled until the converter writes lowercase booleans for <latching>. The current cryo.xml has
-# <latching>TRUE</latching>, which Phoebus accepts but the xsd does not.
-#    - name: Lint with xmllint
-#      run: ./xml/lint_xml.sh
-#      shell: bash
-    - name: push to main
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: |
-        git config --global user.name github-actions
-        git config --global user.email github-actions@github.com
-        export PRNUM=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
-        git commit -am "CI/MNT: convert csv to xml from PR# $PRNUM"
-        git push
+    - name: Lint with xmllint
+      run: ./xml/lint_xml.sh $CONFIGS
       shell: bash
-      continue-on-error: true
+    - name: Check for xml changes
+      id: changes
+      run: |
+        files=""
+        for config in $CONFIGS; do files="$files xml/$config.xml"; done
+        git add $files
+        if git diff --cached --quiet; then
+          echo "Generated xml is already up to date"
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+        else
+          git diff --cached --stat
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+        fi
+    - name: Commit generated xml
+      if: steps.changes.outputs.changed == 'true' && (github.event_name == 'push' || env.SAME_REPO_PR == 'true')
+      env:
+        PR_NUMBER: ${{ github.event.pull_request.number }}
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        if [ -z "$PR_NUMBER" ]; then
+          PR_NUMBER=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
+        fi
+        git commit -m "CI/MNT: convert csv to xml from PR# $PR_NUMBER"
+        git push
+    - name: Note xml that will be generated after merge
+      if: steps.changes.outputs.changed == 'true' && github.event_name == 'pull_request' && env.SAME_REPO_PR != 'true'
+      run: echo "::notice::The xml in this PR does not match the csv. It will be regenerated from the csv and committed when the PR is merged."
