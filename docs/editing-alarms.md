@@ -50,15 +50,12 @@ Every other line is either a branch of the alarm tree or a PV inside the branch 
 | `Delay` | The alarm is raised only if the PV stays in alarm for at least this many seconds. `0` raises it immediately. |
 | `Count` | Used with `Delay`. The alarm is also raised if the PV goes into alarm this many times within the delay, even if it never stays in alarm for the whole delay. `0` turns this off. |
 | `Filter` | Optional expression, usually based on other PVs, that enables the alarm. The alarm is only enabled while the expression is greater than zero. |
-| `Guidance` | Optional message explaining what the alarm means and who to contact. See the known issue below. |
+| `Guidance` | Optional message explaining what the alarm means and who to contact. |
 
 Wrap a value in double quotes if it contains a comma.
 
 These columns correspond to the Phoebus alarm configuration options described in the
 [NALMS configuration documentation](https://slaclab.github.io/nalms/configuration/).
-
-**Known issue:** guidance written on a PV row is currently attached to the branch the PV is in,
-not to the PV itself.
 
 ## What the checks do
 

@@ -56,7 +56,7 @@ def csvtoxml(infile, outfile, cname):
                     filt = ET.SubElement(pv, 'filter')
                     filt.text = row['Filter']
                 if row['Guidance']:
-                    guidance = ET.SubElement(sel, 'guidance')
+                    guidance = ET.SubElement(pv, 'guidance')
                     details = ET.SubElement(guidance, 'details')
                     details.text = row['Guidance']
 
