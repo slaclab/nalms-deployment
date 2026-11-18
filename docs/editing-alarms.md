@@ -8,8 +8,11 @@ is generated from it automatically.
 
 1. Edit the CSV on a branch and open a pull request.
 2. The checks validate the CSV and add the regenerated XML to the pull request.
-3. When the pull request is merged, the alarm server reloads the new configuration within
-   about two minutes. Nothing needs to be deployed by hand.
+3. Once the checks have passed, you merge it. The alarm server reloads the new configuration
+   within about two minutes. Nothing needs to be deployed by hand.
+
+You need write access to the repository to do this. Changes cannot be pushed straight to
+`main`, they have to go through a pull request.
 
 ## The CSV format
 
@@ -59,8 +62,8 @@ These columns correspond to the Phoebus alarm configuration options described in
 
 ## What the checks do
 
-On every pull request that touches `alarm-config/` or `tools/`, the
-"Convert alarm config csv to xml" workflow:
+On every pull request, the "Convert alarm config csv to xml" workflow runs a check named
+`alarm-config-check`. It:
 
 1. Checks that no PV is listed twice in the same branch. The same PV may appear in different
    branches.
@@ -71,11 +74,13 @@ On every pull request that touches `alarm-config/` or `tools/`, the
 
 Two things to expect:
 
-- The checks do not run again on the commit the workflow adds, so the pull request shows no
-  check result for that last commit. The result that matters is the one on your own commit
-  just before it, which is where the XML was generated and validated.
-- For a pull request from a fork, the workflow cannot add a commit. The XML is generated
-  and committed when the pull request is merged instead.
+- The checks do not run again on the commit the workflow adds. The workflow records the
+  result of the run that generated it against that commit, so the pull request shows
+  `alarm-config-check` as passed.
+- For a pull request from a fork, the workflow cannot add a commit, and the check fails
+  until the pull request includes the regenerated XML. Either run the conversion yourself
+  (see below) and commit the XML, or ask for write access and open the pull request from a
+  branch in this repository.
 
 Do not edit the XML files by hand. They are regenerated from the CSV every time, so a manual
 change is overwritten.
@@ -96,8 +101,21 @@ python tools/validate_xml_for_phoebus.py
 ```
 
 The last step needs `xmllint`, which is in the `libxml2-utils` package on Debian and Ubuntu.
-The conversion rewrites `alarm-config/cryo.xml`. You can commit that along with the CSV or
-discard it, the result is the same.
+The conversion rewrites `alarm-config/cryo.xml`. For a pull request from a branch in this
+repository you can commit that along with the CSV or discard it, the result is the same.
+
+## Merging
+
+A pull request can be merged once `alarm-config-check` has passed. It cannot be merged while
+the check is failing or still running. No approval from another person is required, so you can
+merge your own pull request.
+
+The check only confirms that the CSV is well formed. Before merging, make sure that:
+
+- the CSV change is what you intended, and the XML change matches it;
+- now is an acceptable time for the alarm server to reload (see the next section).
+
+If you are unsure about a change, ask a colleague to review the pull request first.
 
 ## What happens when a change is merged
 
