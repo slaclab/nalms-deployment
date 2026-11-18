@@ -11,8 +11,6 @@ resources:
   - loki-alrm-log-cryo.yaml
   - loki-alrm-send-cryo.yaml
 configMapGenerator:
-  - name: nalms-lcls-configmap
-    files: [xml/lcls.xml]
   - name: nalms-cryo-configmap
     files: [xml/cryo.xml]
   - name: nalms-alarm-server-configmap

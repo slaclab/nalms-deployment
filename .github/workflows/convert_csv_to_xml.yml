@@ -11,7 +11,7 @@
 #
 # Only the CRYO config is handled for now. The LCLS csv does not currently validate or convert cleanly, so it
 # is left out until that is resolved. To add a config, add its lowercase name to CONFIGS below. It is read from
-# xml/<name>.csv and written to xml/<name>.xml, with the uppercase name used as the config name.
+# alarm-config/<name>.csv and written to alarm-config/<name>.xml, with the uppercase name used as the config name.
 
 name: Convert alarm config csv to xml
 
@@ -19,13 +19,15 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'xml/**'
+      - 'alarm-config/**'
+      - 'tools/**'
       - 'dev-requirements.txt'
       - '.github/workflows/convert_csv_to_xml.yml'
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'xml/**'
+      - 'alarm-config/**'
+      - 'tools/**'
       - 'dev-requirements.txt'
       - '.github/workflows/convert_csv_to_xml.yml'
 
@@ -58,27 +60,27 @@ jobs:
         pip install --upgrade pip
         pip install --requirement dev-requirements.txt
 #    - name: Combine subsystems into lcls.csv
-#      run: python xml/build_lcls.py
+#      run: python tools/build_lcls.py
     - name: Validate csv files are compatible with Phoebus
       run: |
         for config in $CONFIGS; do
-          python xml/validate_csv_for_phoebus.py "xml/$config.csv"
+          python tools/validate_csv_for_phoebus.py "alarm-config/$config.csv"
         done
     - name: Convert csv to xml
       run: |
         for config in $CONFIGS; do
-          python xml/alarm_csv2xml.py -i "xml/$config.csv" -c "${config^^}"
+          python tools/alarm_csv2xml.py -i "alarm-config/$config.csv" -c "${config^^}"
         done
     - name: Validate Phoebus will parse xml correctly
-      run: python xml/validate_xml_for_phoebus.py
+      run: python tools/validate_xml_for_phoebus.py
     - name: Lint with xmllint
-      run: ./xml/lint_xml.sh $CONFIGS
+      run: ./tools/lint_xml.sh $CONFIGS
       shell: bash
     - name: Check for xml changes
       id: changes
       run: |
         files=""
-        for config in $CONFIGS; do files="$files xml/$config.xml"; done
+        for config in $CONFIGS; do files="$files alarm-config/$config.xml"; done
         git add $files
         if git diff --cached --quiet; then
           echo "Generated xml is already up to date"

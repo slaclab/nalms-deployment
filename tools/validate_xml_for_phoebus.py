@@ -40,9 +40,9 @@ def validate_xml(xml_file_name: str, xml_content: str) -> bool:
 
 @click.command()
 @click.option('--xml-dir', 'xml_dir', type=click.Path(exists=True),
-              default=os.path.dirname(os.path.abspath(__file__)),
+              default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'alarm-config'),
               show_default=True,
-              help="Directory path containing xml files to validate. Defaults to this script's directory.")
+              help="Directory path containing xml files to validate. Defaults to the alarm-config directory of this repo.")
 def main(xml_dir):
     xml_dir = Path(xml_dir)
 
