@@ -99,7 +99,11 @@ jobs:
         if [ -z "$PR_NUMBER" ]; then
           PR_NUMBER=$(git log --grep="Merge pull request" --pretty=oneline -1 | sed -En "s/.*#([[:digit:]]+).*/\1/p")
         fi
-        git commit -m "CI/MNT: convert csv to xml from PR# $PR_NUMBER"
+        # [skip ci] stops GitHub from starting this workflow again for the commit made here. Without
+        # it, a pull request updated by a workflow gets a second run that is held until someone
+        # approves it, which shows up as "1 workflow awaiting approval". That run is not needed,
+        # because the xml in this commit was generated and checked by the steps above.
+        git commit -m "CI/MNT: convert csv to xml from PR# $PR_NUMBER" -m "[skip ci]"
         git push
     - name: Note xml that will be generated after merge
       if: steps.changes.outputs.changed == 'true' && github.event_name == 'pull_request' && env.SAME_REPO_PR != 'true'
