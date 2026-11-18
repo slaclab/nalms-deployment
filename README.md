@@ -7,7 +7,7 @@ carries the alarm topics, a Phoebus alarm server for each deployed alarm configu
 
 Currently deployed to the `nalms-dev` namespace on the SLAC k8s cluster with:
 
-- Strimzi operator 1.1.0
+- Strimzi operator 1.3.1
 - Kafka 4.2.1 (KRaft mode, broker and controller node pools)
 
 ## Layout
