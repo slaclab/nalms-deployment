@@ -19,6 +19,11 @@ resources:
   - loki-alrm-log-cryo.yaml
   - loki-alrm-send-cryo.yaml
 configMapGenerator:
+  # xml/cryo.xml is an empty placeholder, not the real configuration (that is alarm-config/cryo.xml,
+  # delivered by the git-sync sidecar). It is copied into the pod at start so the file exists before
+  # the sidecar's first sync. The alarm server skips it because its config name is lowercase "cryo"
+  # and the server expects "CRYO". Do not change that name, and note that any edit to the file
+  # changes the generated configmap name, which restarts the alarm server on the next apply.
   - name: nalms-cryo-configmap
     files: [xml/cryo.xml]
   - name: nalms-alarm-server-configmap
