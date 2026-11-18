@@ -18,7 +18,8 @@ Currently deployed to the `nalms-dev` namespace on the SLAC k8s cluster with:
 - `alarm-config/` — the alarm configurations. Each has a CSV file, which is the source to
   edit, and a Phoebus XML file generated from it. The XML is generated and committed by
   CI, so it should not be edited by hand.
-- `tools/` — the CSV to XML converter, the validation scripts and the XML schema.
+- `tools/` — the CSV to XML converter, the validation scripts, the XML schema, and tests for
+  the converter and the CSV validation.
 - `images/` — source for container images built from this repository, currently the
   git-sync sidecar that delivers alarm configuration changes to the alarm servers.
 - `docs/` — the guides linked below.
