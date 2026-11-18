@@ -1,12 +1,13 @@
 #Indent,Branch,PV,Description,Latch,Delay,Count,Filter,Guidance
 0,Global,CRYO:GLOBALSC:1:STATSUMY,,,,,,Alarm handler summary PV: CRYO:GLOBALSC:1:STATSUMY
 1,Common,CRYO:CP0:CTRL:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:CTRL:STATSUMY
-,,SIOC:CP00:CR01:HEARTBEAT,CP0 CTRL IOC - Write permission control,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
-,,SIOC:CP00:CR02:HEARTBEAT,CP0 CTRL IOC - Support calculations,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,SIOC:CP00:CR01:HEARTBEAT,CP0 CTRL IOC - Write permission control,yes,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
+,,,CP0 CTRL IOC - Support calculations,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
 1,Utilities,CRYO:CP0:UTIL:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:UTIL:STATSUMY
+3,Too Deep,,,,,,,
 ,,SIOC:CP08:CR01:HEARTBEAT,CP0 CTRL - Utilities IOC,TRUE,0,0,,"The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute. "
 ,,PLC:CP08:CR01:ALARM2_B0,CP0 CTRL - Utilities PLC,TRUE,0,0,,"The PLC is not communicating with the EPICS IOC. Call controls engineer. "
-2,Instrument Air,CRYO:CP0:IA:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:IA:STATSUMY
+2,Instrument Air,CRYO:CP0:IA:STATSUMY,,,,,,Alarm handler summary PV: CRYO:CP0:IA:STATSUMY,extra
 ,,UTIL:CP01:4:ALARM_STATUS,CP0 IA - Instrument air summary,TRUE,0,0,,
 ,,CPT:CP08:IA1:ALM,CP0 IA - CPT-82061 Press. Low,TRUE,0,0,,
 ,,CTE:CP08:IA2:ALM,CP0 IA - CTE-82061 Temp High,TRUE,0,0,,
