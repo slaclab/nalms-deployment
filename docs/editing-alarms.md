@@ -36,8 +36,8 @@ Every other line is either a branch of the alarm tree or a PV inside the branch 
   `0`, and so on. A branch can be at most one level deeper than the branch before it.
 - `Guidance` is an optional message for operators explaining what an alarm in this branch
   means and who to contact.
-- The other columns are ignored on a branch row. The existing files put the branch's summary
-  PV in the `PV` column as a note.
+- The `PV` column is ignored on a branch row. The existing files put the branch's summary PV
+  there as a note. The remaining columns must be empty.
 
 **PV rows** leave `#Indent` and `Branch` empty. The PV belongs to the nearest branch row above it:
 
@@ -65,8 +65,7 @@ These columns correspond to the Phoebus alarm configuration options described in
 On every pull request, the "Convert alarm config csv to xml" workflow runs a check named
 `alarm-config-check`. It:
 
-1. Checks that no PV is listed twice in the same branch. The same PV may appear in different
-   branches.
+1. Checks that the CSV is well formed (see below).
 2. Converts the CSV to XML.
 3. Validates the XML against the Phoebus alarm configuration schema.
 4. If the XML changed, commits it to the pull request as a second commit, so it can be reviewed
@@ -81,6 +80,34 @@ Two things to expect:
   until the pull request includes the regenerated XML. Either run the conversion yourself
   (see below) and commit the XML, or ask for write access and open the pull request from a
   branch in this repository.
+
+### What is checked in the CSV
+
+- The header line is exactly as shown above, and every row has the same nine columns.
+- Each branch has a name and a whole number in `#Indent`, the first branch is at `0`, and no
+  branch is more than one level deeper than the one before it.
+- No two branches with the same parent have the same name.
+- Every branch has at least one PV or branch inside it.
+- Every PV is inside a branch and has a PV name.
+- No PV is listed twice in the same branch. The same PV may appear in different branches.
+- `Latch` is `TRUE` or `FALSE`, `Delay` is a whole number, and `Count` is a whole number or empty.
+- A branch row has nothing in `Description`, `Latch`, `Delay`, `Count` or `Filter`.
+
+Blank lines are ignored.
+
+If something is wrong, the check fails and lists each problem with its line number, for example:
+
+```
+alarm-config/cryo.csv: 1 problem found
+  line 212: Latch must be TRUE or FALSE, not "yes"
+```
+
+To see the list, select "Details" next to the failed check on the pull request. GitHub also
+shows the first few problems as annotations on the pull request. Fix the CSV and push again,
+and the check runs again.
+
+The check cannot tell whether a PV name is spelled correctly or exists. A PV that cannot be
+reached shows up in the alarm tree as disconnected after the change is merged.
 
 Do not edit the XML files by hand. They are regenerated from the CSV every time, so a manual
 change is overwritten.
