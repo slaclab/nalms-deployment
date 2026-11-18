@@ -13,19 +13,19 @@
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
          <pv name="SIOC:CP00:CR02:HEARTBEAT">
             <description>CP0 CTRL IOC - Support calculations</description>
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
       </component>
       <component name="Utilities">
          <guidance>
@@ -36,19 +36,19 @@
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
          <pv name="PLC:CP08:CR01:ALARM2_B0">
             <description>CP0 CTRL - Utilities PLC</description>
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-         </guidance>
          <component name="Instrument Air">
             <guidance>
                <details>Alarm handler summary PV: CRYO:CP0:IA:STATSUMY</details>
@@ -528,19 +528,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR07:ALARM2_B0">
                <description>CP1 GMGT - Gas management PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="CPT:CP12:G1:ALM">
                <description>CP1 GMGT - LP Pressure Low</description>
                <latching>true</latching>
@@ -665,19 +665,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR01:ALARM2_B0">
                <description>CP1 WCMP1 - Warm compressor 1 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:11:C100_ALARM">
                <description>CP1 WCMP1 - Warm compressor 1</description>
                <latching>true</latching>
@@ -832,19 +832,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR02:ALARM2_B0">
                <description>CP1 WCMP2 - Warm compressor 2 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:12:C100_ALARM">
                <description>CP1 WCMP2 - Warm compressor 2</description>
                <latching>true</latching>
@@ -999,19 +999,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR03:ALARM2_B0">
                <description>CP1 WCMP3 - Warm compressor 3 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:13:C100_ALARM">
                <description>CP1 WCMP3 - Warm compressor 3</description>
                <latching>true</latching>
@@ -1166,19 +1166,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR04:ALARM2_B0">
                <description>CP1 WCMP4 - Warm compressor 4 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:14:C100_ALARM">
                <description>CP1 WCMP4 - Warm compressor 4</description>
                <latching>true</latching>
@@ -1333,19 +1333,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR05:ALARM2_B0">
                <description>CP1 WCMP5 - Warm compressor 5 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:15:C100_ALARM">
                <description>CP1 WCMP5 - Warm compressor 5</description>
                <latching>true</latching>
@@ -1500,19 +1500,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR06:ALARM2_B0">
                <description>CP1 WCMP6 - Warm compressor 6 PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="WCMP:CP12:16:C100_ALARM">
                <description>CP1 WCMP6 - Warm compressor 6</description>
                <latching>true</latching>
@@ -1667,19 +1667,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP12:CR08:ALARM2_B0">
                <description>CP1 4KCB - 4K coldbox PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="CLT:CP12:2510:LOLO">
                <description>CP1 4KCB - LN2 Pre-cooling</description>
                <latching>true</latching>
@@ -2362,19 +2362,19 @@
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-            </guidance>
             <pv name="PLC:CP14:CR01:ALARM2_B0">
                <description>CP1 2KCB - 2K coldbox PLC</description>
                <latching>true</latching>
                <delay>0</delay>
                <count>0</count>
+               <guidance>
+                  <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
+               </guidance>
             </pv>
-            <guidance>
-               <details>The PLC is not communicating with the EPICS IOC. Call controls engineer.</details>
-            </guidance>
             <pv name="CVAC:CP14:1010:TRIP">
                <description>CP1 2KCB - 2K coldbox vacuum</description>
                <latching>true</latching>
@@ -2554,19 +2554,19 @@
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
          <pv name="SIOC:DB02:CR01:HEARTBEAT">
             <description>LINAC DIST - Distribution box 2 IOC</description>
             <latching>true</latching>
             <delay>0</delay>
             <count>0</count>
+            <guidance>
+               <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
+            </guidance>
          </pv>
-         <guidance>
-            <details>The EPICS IOC may not be running correctly. Try rebooting it from the network page. Call controls engineer if alarm does not clear after a minute.</details>
-         </guidance>
       </component>
       <component name="Linac">
          <guidance>
